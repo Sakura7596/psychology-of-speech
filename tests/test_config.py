@@ -1,6 +1,7 @@
 import os
 import pytest
 from unittest.mock import patch
+from pydantic import ValidationError
 
 
 def test_default_config():
@@ -42,5 +43,17 @@ def test_missing_api_key_in_dev():
     """测试 dev 环境缺少 API key 时的处理"""
     with patch.dict(os.environ, {}, clear=True):
         from src.config import Settings
-        with pytest.raises(Exception):
+        with pytest.raises(ValidationError):
             Settings()
+
+
+def test_get_settings_singleton():
+    """测试 get_settings 单例模式"""
+    import src.config as config_module
+    config_module._settings = None
+    with patch.dict(os.environ, {"DEEPSEEK_API_KEY": "test-key"}, clear=False):
+        from src.config import get_settings, Settings
+        s1 = get_settings()
+        s2 = get_settings()
+        assert s1 is s2
+        assert isinstance(s1, Settings)
