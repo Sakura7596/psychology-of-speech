@@ -2,6 +2,7 @@ import pytest
 from unittest.mock import AsyncMock, Mock, patch
 from src.llm.client import LLMClient, LLMResponse
 from src.llm.deepseek import DeepSeekAdapter
+from src.llm.prompts import PromptTemplates
 
 
 def test_llm_response_creation():
@@ -86,3 +87,42 @@ async def test_deepseek_adapter_generate_success():
     assert result.content == "测试"
     assert result.tokens_used == 42
     assert result.finish_reason == "stop"
+
+
+def test_get_system_prompt():
+    """测试获取系统提示词"""
+    prompt = PromptTemplates.get_system_prompt("text_analyst")
+    assert "语言学" in prompt or "文本" in prompt
+    assert len(prompt) > 50
+
+
+def test_get_analysis_prompt():
+    """测试获取分析提示词"""
+    prompt = PromptTemplates.get_analysis_prompt(
+        "text_analyst",
+        text="今天天气真好",
+        depth="standard",
+    )
+    assert "今天天气真好" in prompt
+    assert "standard" in prompt.lower() or "标准" in prompt
+
+
+def test_get_report_prompt():
+    """测试获取报告生成提示词"""
+    analyses = {
+        "text_analyst": {"result": "test"},
+        "psychology_analyst": {"result": "test"},
+    }
+    prompt = PromptTemplates.get_report_prompt(
+        text="原始文本",
+        analyses=analyses,
+        depth="standard",
+    )
+    assert "原始文本" in prompt
+    assert "text_analyst" in prompt
+
+
+def test_unknown_agent_raises():
+    """测试未知 Agent 名称抛出异常"""
+    with pytest.raises(KeyError):
+        PromptTemplates.get_system_prompt("nonexistent_agent")
