@@ -164,3 +164,27 @@ def test_kg_query_by_type():
 
     theories = kg.get_entities_by_type("theory")
     assert len(theories) == 2
+
+
+from src.knowledge.case_library import CaseLibrary
+
+
+def test_case_library_load():
+    """测试加载案例库"""
+    lib = CaseLibrary("data/cases")
+    assert lib.count() > 0
+
+
+def test_case_library_search():
+    """测试搜索案例"""
+    lib = CaseLibrary("data/cases")
+    results = lib.search("比喻")
+    assert len(results) > 0
+
+
+def test_case_library_filter_by_type():
+    """测试按类型过滤"""
+    lib = CaseLibrary("data/cases")
+    rhetoric_cases = lib.get_by_type("rhetoric")
+    assert len(rhetoric_cases) > 0
+    assert all(c["type"] == "rhetoric" for c in rhetoric_cases)

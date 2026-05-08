@@ -1,0 +1,6 @@
+[
+  {"id": "fall_001", "type": "fallacy", "subtype": "straw_man", "text": "你支持环保？那你是不是想让我们都回到原始社会？", "analysis": "稻草人谬误，歪曲对方立场后攻击", "keywords": ["稻草人", "歪曲", "环保"]},
+  {"id": "fall_002", "type": "fallacy", "subtype": "slippery_slope", "text": "如果允许学生用手机，他们就会沉迷游戏，然后成绩下降，最后毁了一生", "analysis": "滑坡谬误，无根据地推导出极端后果", "keywords": ["滑坡", "极端", "连锁"]},
+  {"id": "fall_003", "type": "fallacy", "subtype": "appeal_to_authority", "text": "爱因斯坦说过想象力比知识重要，所以不需要学习知识", "analysis": "诉诸权威谬误，断章取义名人名言", "keywords": ["诉诸权威", "爱因斯坦", "断章取义"]},
+  {"id": "fall_004", "type": "fallacy", "subtype": "ad_hominem", "text": "你一个没结过婚的人，有什么资格谈婚姻观？", "analysis": "人身攻击谬误，攻击说话者而非论点", "keywords": ["人身攻击", "资格", "婚姻"]}
+]

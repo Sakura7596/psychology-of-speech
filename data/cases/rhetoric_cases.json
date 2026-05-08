@@ -1,0 +1,6 @@
+[
+  {"id": "rhet_001", "type": "rhetoric", "subtype": "simile", "text": "他的心像冰一样冷", "analysis": "明喻，将'心'比作'冰'，表达冷漠无情", "keywords": ["比喻", "明喻", "冰", "冷"]},
+  {"id": "rhet_002", "type": "rhetoric", "subtype": "rhetorical_question", "text": "这难道不是显而易见的吗？", "analysis": "反问，用疑问形式表达确定观点", "keywords": ["反问", "难道", "显而易见"]},
+  {"id": "rhet_003", "type": "rhetoric", "subtype": "exaggeration", "text": "我等了一万年", "analysis": "夸张，用极大数字表达等待时间之长", "keywords": ["夸张", "一万年", "等待"]},
+  {"id": "rhet_004", "type": "rhetoric", "subtype": "parallelism", "text": "学习使人进步，学习使人聪明，学习使人强大", "analysis": "排比，三个相同句式并列，增强表达气势", "keywords": ["排比", "学习", "使人"]}
+]
