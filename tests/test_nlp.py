@@ -81,3 +81,57 @@ def test_tokenizer_empty_text():
     tok = Tokenizer(use_hanlp=False)
     tokens = tok.tokenize("")
     assert tokens == []
+
+
+from src.nlp.sentiment import SentimentAnalyzer
+
+
+def test_sentiment_analyze_mock():
+    """测试情感分析（mock pipeline）"""
+    analyzer = SentimentAnalyzer()
+
+    # Mock the transformers pipeline
+    mock_pipe = MagicMock()
+    mock_pipe.return_value = [[
+        {"label": "positive", "score": 0.9},
+        {"label": "negative", "score": 0.1},
+    ]]
+    analyzer._pipeline = mock_pipe
+
+    result = analyzer.analyze("今天心情非常好")
+    assert result["label"] == "positive"
+    assert result["score"] > 0.5
+
+
+def test_sentiment_negative_mock():
+    """测试负面情感（mock）"""
+    analyzer = SentimentAnalyzer()
+
+    mock_pipe = MagicMock()
+    mock_pipe.return_value = [[
+        {"label": "negative", "score": 0.85},
+        {"label": "positive", "score": 0.15},
+    ]]
+    analyzer._pipeline = mock_pipe
+
+    result = analyzer.analyze("这件事让我非常失望")
+    assert result["label"] == "negative"
+    assert result["score"] > 0.5
+
+
+def test_sentiment_detail_mock():
+    """测试细粒度情感分析（mock）"""
+    analyzer = SentimentAnalyzer()
+
+    mock_pipe = MagicMock()
+    mock_pipe.return_value = [[
+        {"label": "positive", "score": 0.6},
+        {"label": "negative", "score": 0.4},
+    ]]
+    analyzer._pipeline = mock_pipe
+
+    result = analyzer.analyze_detail("虽然有点累，但是很开心")
+    assert "positive_score" in result
+    assert "negative_score" in result
+    assert "dominant_emotion" in result
+    assert result["dominant_emotion"] == "positive"
