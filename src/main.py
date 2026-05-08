@@ -58,12 +58,26 @@ async def analyze_text(text: str, depth: str = "standard") -> dict:
     return result
 
 
+def serve():
+    """启动 Web 服务"""
+    import uvicorn
+    from src.api.app import create_app
+    app = create_app()
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+
+
 def main():
     """CLI 入口"""
     if len(sys.argv) < 2:
-        print("用法: python -m src.main '要分析的文本' [depth]")
+        print("用法:")
+        print("  python -m src.main '要分析的文本' [depth]    # CLI 分析")
+        print("  python -m src.main serve                     # 启动 Web 服务")
         print("depth: quick / standard / deep (默认 standard)")
         sys.exit(1)
+
+    if sys.argv[1] == "serve":
+        serve()
+        return
 
     text = sys.argv[1]
     depth = sys.argv[2] if len(sys.argv) > 2 else "standard"

@@ -17,9 +17,14 @@
 
 3. 运行分析：
    ```bash
+   # CLI 模式
    python -m src.main "要分析的文本"
    python -m src.main "要分析的文本" deep    # 深度分析
    python -m src.main "要分析的文本" quick   # 快速分析
+
+   # Web 服务模式
+   python -m src.main serve                   # 启动 http://localhost:8000
+   curl -X POST http://localhost:8000/analyze -H "Content-Type: application/json" -d '{"text": "要分析的文本"}'
    ```
 
 4. 运行测试：
@@ -63,7 +68,10 @@ src/
 ├── evaluation/
 │   ├── schema.py        # 评测数据集结构
 │   └── scorer.py        # 评测评分脚本
-├── api/                 # FastAPI Web 接口（待实现）
+├── api/
+│   ├── app.py           # FastAPI 应用工厂 + 日志中间件
+│   ├── routes.py        # 路由（/analyze, /health）
+│   └── models.py        # 请求/响应 Pydantic 模型
 └── utils/               # 工具函数（待实现）
 ```
 
@@ -74,7 +82,22 @@ src/
 - [x] 阶段三：RAG 知识引擎（ChromaDB、知识图谱、理论文献库、案例库、统一检索）
 - [x] 阶段四：心理分析 + 逻辑推理 Agent + Guardrails（心理分析、逻辑推理、幻觉防御、伦理守则、隐私保护）
 - [x] 阶段五：报告生成 + 协调器完善（报告生成 Agent、管道编排、端到端集成测试）
-- [ ] 阶段六：Web 接口 + 可观测性
+- [x] 阶段六：Web 接口 + 可观测性（FastAPI、/analyze、/health、日志中间件）
+
+## API 接口
+
+| 端点 | 方法 | 说明 |
+|------|------|------|
+| `/health` | GET | 健康检查 |
+| `/analyze` | POST | 文本分析（body: `{text, depth?, output_format?}`） |
+
+## 项目统计
+
+- 109 个测试全部通过
+- 6 个阶段全部完成
+- 5 个 Agent（协调器、文本解析、心理分析、逻辑推理、报告生成）
+- 3 层 Guardrails（幻觉防御、伦理守则、隐私保护）
+- RAG 知识引擎（向量库 + 知识图谱 + 案例库）
 
 ## 技术栈
 
