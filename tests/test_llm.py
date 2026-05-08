@@ -1,5 +1,5 @@
 import pytest
-from unittest.mock import AsyncMock
+from unittest.mock import AsyncMock, Mock, patch
 from src.llm.client import LLMClient, LLMResponse
 from src.llm.deepseek import DeepSeekAdapter
 
@@ -35,7 +35,6 @@ def test_llm_client_init():
     assert client.adapter is not None
 
 
-@pytest.mark.asyncio
 async def test_llm_client_generate():
     """测试 LLM 客户端生成（mock）"""
     mock_adapter = AsyncMock()
@@ -53,7 +52,6 @@ async def test_llm_client_generate():
     mock_adapter.generate.assert_called_once_with("测试提示词", None)
 
 
-@pytest.mark.asyncio
 async def test_llm_client_generate_with_system():
     """测试带系统提示的生成"""
     mock_adapter = AsyncMock()
@@ -68,3 +66,23 @@ async def test_llm_client_generate_with_system():
     response = await client.generate("用户提示", system_prompt="系统指令")
 
     mock_adapter.generate.assert_called_once_with("用户提示", "系统指令")
+
+
+async def test_deepseek_adapter_generate_success():
+    """测试 DeepSeek 适配器成功生成响应"""
+    mock_response = AsyncMock()
+    mock_response.status_code = 200
+    mock_response.raise_for_status = Mock()
+    mock_response.json = Mock(return_value={
+        "choices": [{"message": {"content": "测试"}, "finish_reason": "stop"}],
+        "model": "deepseek-chat",
+        "usage": {"total_tokens": 42},
+    })
+
+    adapter = DeepSeekAdapter(api_key="test-key")
+    with patch.object(adapter._client, "post", return_value=mock_response):
+        result = await adapter.generate("hello")
+
+    assert result.content == "测试"
+    assert result.tokens_used == 42
+    assert result.finish_reason == "stop"

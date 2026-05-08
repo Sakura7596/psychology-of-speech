@@ -1,5 +1,7 @@
 import httpx
+
 from src.llm.client import LLMAdapter, LLMResponse
+from src.llm.exceptions import LLMConnectionError, LLMResponseError
 
 
 class DeepSeekAdapter(LLMAdapter):
@@ -18,17 +20,22 @@ class DeepSeekAdapter(LLMAdapter):
         self.model = model
         self.temperature = temperature
         self.max_tokens = max_tokens
+        self._client = httpx.AsyncClient(timeout=120.0)
+
+    async def close(self):
+        """关闭底层 HTTP 客户端"""
+        await self._client.aclose()
 
     async def generate(
         self, prompt: str, system_prompt: str | None = None
     ) -> LLMResponse:
         messages = []
-        if system_prompt:
+        if system_prompt is not None:
             messages.append({"role": "system", "content": system_prompt})
         messages.append({"role": "user", "content": prompt})
 
-        async with httpx.AsyncClient() as client:
-            response = await client.post(
+        try:
+            response = await self._client.post(
                 f"{self.base_url}/chat/completions",
                 headers={
                     "Authorization": f"Bearer {self.api_key}",
@@ -40,13 +47,19 @@ class DeepSeekAdapter(LLMAdapter):
                     "temperature": self.temperature,
                     "max_tokens": self.max_tokens,
                 },
-                timeout=120.0,
             )
             response.raise_for_status()
-            data = response.json()
+        except httpx.HTTPStatusError as e:
+            raise LLMConnectionError(f"HTTP {e.response.status_code}: {e}") from e
+        except httpx.RequestError as e:
+            raise LLMConnectionError(f"请求失败: {e}") from e
 
-        choice = data["choices"][0]
-        usage = data.get("usage", {})
+        try:
+            data = response.json()
+            choice = data["choices"][0]
+            usage = data.get("usage", {})
+        except (KeyError, IndexError, ValueError) as e:
+            raise LLMResponseError(f"响应解析失败: {e}") from e
 
         return LLMResponse(
             content=choice["message"]["content"],

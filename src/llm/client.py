@@ -32,3 +32,14 @@ class LLMClient:
         self, prompt: str, system_prompt: str | None = None
     ) -> LLMResponse:
         return await self.adapter.generate(prompt, system_prompt)
+
+    async def close(self):
+        """关闭适配器底层资源"""
+        if hasattr(self.adapter, "close"):
+            await self.adapter.close()
+
+    async def __aenter__(self):
+        return self
+
+    async def __aexit__(self, exc_type, exc_val, exc_tb):
+        await self.close()
