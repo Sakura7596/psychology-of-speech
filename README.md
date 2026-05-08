@@ -41,10 +41,18 @@ src/
 │   ├── deepseek.py      # DeepSeek API 适配器
 │   ├── prompts.py       # Prompt 模板管理
 │   └── exceptions.py    # LLM 异常类
-├── nlp/                 # NLP 管道（待实现）
+├── nlp/
+│   ├── tokenizer.py     # 分词（HanLP + jieba）
+│   ├── syntax.py        # 句法分析（依存句法 + SRL）
+│   ├── sentiment.py     # 情感分析（transformers）
+│   └── rhetoric.py      # 修辞识别
+├── agents/
+│   └── text_analyst.py  # 文本解析 Agent（5 维分析）
 ├── knowledge/           # RAG 知识引擎（待实现）
 ├── guardrails/          # 安全/伦理防护（待实现）
-├── evaluation/          # 评测框架（待实现）
+├── evaluation/
+│   ├── schema.py        # 评测数据集结构
+│   └── scorer.py        # 评测评分脚本
 ├── api/                 # FastAPI Web 接口（待实现）
 └── utils/               # 工具函数（待实现）
 ```
@@ -52,7 +60,7 @@ src/
 ## 开发进度
 
 - [x] 阶段一：基础框架（配置、Agent 接口、LLM 客户端、协调器骨架、CLI 入口）
-- [ ] 阶段二：NLP 管道 + 文本解析 Agent
+- [x] 阶段二：NLP 管道 + 文本解析 Agent（HanLP、jieba、transformers、修辞识别、评测框架）
 - [ ] 阶段三：RAG 知识引擎
 - [ ] 阶段四：心理分析 + 逻辑推理 Agent
 - [ ] 阶段五：报告生成 + 协调器完善
