@@ -99,3 +99,68 @@ def test_vector_store_count():
         store.add("t1", "文本1")
         assert store.count() == 1
         store.close()
+
+
+from src.knowledge.knowledge_graph import KnowledgeGraph
+
+
+def test_kg_add_entity():
+    """测试添加实体"""
+    kg = KnowledgeGraph()
+    kg.add_entity("言语行为理论", "theory", {"founder": "Austin"})
+    assert kg.has_entity("言语行为理论")
+
+
+def test_kg_add_relation():
+    """测试添加关系"""
+    kg = KnowledgeGraph()
+    kg.add_entity("言语行为理论", "theory")
+    kg.add_entity("断言", "speech_act")
+    kg.add_relation("言语行为理论", "断言", "defines")
+
+    neighbors = kg.get_neighbors("言语行为理论")
+    assert "断言" in [n[0] for n in neighbors]
+
+
+def test_kg_find_path():
+    """测试路径查找"""
+    kg = KnowledgeGraph()
+    kg.add_entity("A", "theory")
+    kg.add_entity("B", "concept")
+    kg.add_entity("C", "feature")
+    kg.add_relation("A", "B", "applies_to")
+    kg.add_relation("B", "C", "indicates")
+
+    path = kg.find_path("A", "C")
+    assert len(path) >= 2
+    assert path[0] == "A"
+    assert path[-1] == "C"
+
+
+def test_kg_save_load():
+    """测试序列化和反序列化"""
+    import tempfile, os
+
+    kg = KnowledgeGraph()
+    kg.add_entity("test", "type")
+
+    with tempfile.NamedTemporaryFile(suffix=".json", delete=False, mode="w") as f:
+        path = f.name
+    try:
+        kg.save(path)
+        kg2 = KnowledgeGraph()
+        kg2.load(path)
+        assert kg2.has_entity("test")
+    finally:
+        os.unlink(path)
+
+
+def test_kg_query_by_type():
+    """测试按类型查询"""
+    kg = KnowledgeGraph()
+    kg.add_entity("言语行为理论", "theory")
+    kg.add_entity("会话含义", "theory")
+    kg.add_entity("断言", "speech_act")
+
+    theories = kg.get_entities_by_type("theory")
+    assert len(theories) == 2
