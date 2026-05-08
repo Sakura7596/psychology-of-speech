@@ -217,3 +217,58 @@ def test_knowledge_graph_relations():
     kg.load("data/graph/psychology_graph.json")
     neighbors = kg.get_neighbors("言语行为理论")
     assert len(neighbors) > 0
+
+
+from src.knowledge.retriever import KnowledgeRetriever
+from unittest.mock import MagicMock
+
+
+def test_retriever_initialization():
+    """测试检索器初始化"""
+    retriever = KnowledgeRetriever(
+        vector_store=None,
+        knowledge_graph=None,
+        case_library=None,
+    )
+    assert retriever is not None
+
+
+def test_retriever_with_mock():
+    """测试融合检索（mock）"""
+    mock_vs = MagicMock()
+    mock_vs.query.return_value = [
+        {"id": "v1", "text": "向量结果", "metadata": {"source": "vector"}, "distance": 0.1}
+    ]
+
+    mock_kg = MagicMock()
+    mock_kg.get_neighbors.return_value = [("相关实体", {"relation": "related"})]
+    mock_kg.find_path.return_value = ["A", "B"]
+
+    mock_cl = MagicMock()
+    mock_cl.search.return_value = [
+        {"id": "c1", "text": "案例结果", "type": "rhetoric"}
+    ]
+
+    retriever = KnowledgeRetriever(
+        vector_store=mock_vs,
+        knowledge_graph=mock_kg,
+        case_library=mock_cl,
+    )
+
+    results = retriever.retrieve("比喻修辞")
+    assert "vector_results" in results
+    assert "graph_results" in results
+    assert "case_results" in results
+
+
+def test_retriever_context_string():
+    """测试上下文字符串生成"""
+    mock_vs = MagicMock()
+    mock_vs.query.return_value = [{"text": "相关知识"}]
+
+    mock_cl = MagicMock()
+    mock_cl.search.return_value = [{"subtype": "simile", "text": "像冰一样", "analysis": "明喻"}]
+
+    retriever = KnowledgeRetriever(vector_store=mock_vs, case_library=mock_cl)
+    context = retriever.get_context_string("比喻")
+    assert "相关知识" in context or "明喻" in context
