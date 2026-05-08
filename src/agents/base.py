@@ -34,6 +34,9 @@ class AnalysisContext:
     sibling_results: dict[str, "AgentResult"] = field(default_factory=dict)
 
 
+RELIABILITY_THRESHOLD = 0.3
+
+
 @dataclass
 class AgentResult:
     """Agent 分析结果"""
@@ -43,10 +46,14 @@ class AgentResult:
     sources: list[str]
     errors: list[str] = field(default_factory=list)
 
+    def __post_init__(self):
+        if not 0.0 <= self.confidence <= 1.0:
+            raise ValueError(f"confidence must be between 0.0 and 1.0, got {self.confidence}")
+
     @property
     def is_reliable(self) -> bool:
-        """置信度 >= 0.3 视为可靠"""
-        return self.confidence >= 0.3
+        """置信度 >= RELIABILITY_THRESHOLD 视为可靠"""
+        return self.confidence >= RELIABILITY_THRESHOLD
 
 
 class BaseAgent(ABC):
