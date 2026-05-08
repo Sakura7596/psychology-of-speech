@@ -136,3 +136,30 @@ def test_analysis_plan_creation():
     )
     assert len(plan.agents) == 2
     assert plan.depth == AnalysisDepth.STANDARD
+
+
+def test_orchestrator_full_pipeline():
+    """测试完整分析管道"""
+    from unittest.mock import MagicMock
+
+    orchestrator = Orchestrator()
+
+    def make_mock(name, data):
+        mock = MagicMock()
+        mock.analyze.return_value = AgentResult(
+            agent_name=name, analysis=data, confidence=0.8, sources=["mock"]
+        )
+        return mock
+
+    agents = {
+        "text_analyst": make_mock("text_analyst", {"tokens": 10}),
+        "psychology_analyst": make_mock("psychology_analyst", {"intent": "express"}),
+        "logic_analyst": make_mock("logic_analyst", {"fallacies": []}),
+        "report_generator": make_mock("report_generator", {"report": "完整报告"}),
+    }
+
+    ctx = AnalysisContext(text="这是一段测试文本，用于验证协调器的完整管道。", depth=AnalysisDepth.STANDARD)
+    result = orchestrator.run_pipeline(ctx, agents)
+
+    assert result is not None
+    assert "report" in result.analysis or "analyses" in result

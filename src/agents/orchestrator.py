@@ -91,3 +91,46 @@ class Orchestrator:
         ]
 
         return merged
+
+    def run_pipeline(
+        self,
+        context: "AnalysisContext",
+        agents: dict[str, "BaseAgent"],
+    ) -> "AgentResult":
+        """运行完整分析管道"""
+        from src.agents.base import AgentResult, AnalysisContext
+
+        plan = self.plan_analysis(context.text, context.depth)
+
+        # 第一阶段：分析 Agent
+        analysis_agents = ["text_analyst", "psychology_analyst", "logic_analyst"]
+        sibling_results = {}
+
+        for agent_name in analysis_agents:
+            if agent_name in agents and agent_name in plan.agents:
+                try:
+                    result = agents[agent_name].analyze(context)
+                    sibling_results[agent_name] = result
+                except Exception as e:
+                    sibling_results[agent_name] = AgentResult(
+                        agent_name=agent_name,
+                        analysis={"error": str(e)},
+                        confidence=0.0, sources=[], errors=[str(e)],
+                    )
+
+        # 第二阶段：报告生成
+        report_context = AnalysisContext(
+            text=context.text, depth=context.depth,
+            language=context.language, features=context.features,
+            metadata=context.metadata, sibling_results=sibling_results,
+        )
+
+        if "report_generator" in agents:
+            return agents["report_generator"].analyze(report_context)
+        else:
+            merged = self.merge_results({n: r.analysis for n, r in sibling_results.items()})
+            return AgentResult(
+                agent_name="orchestrator", analysis=merged,
+                confidence=merged.get("overall_confidence", 0.5),
+                sources=list(sibling_results.keys()),
+            )
