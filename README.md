@@ -22,9 +22,11 @@
    python -m src.main "要分析的文本" deep    # 深度分析
    python -m src.main "要分析的文本" quick   # 快速分析
 
-   # Web 服务模式
+   # Web 服务模式（后端 API）
    python -m src.main serve                   # 启动 http://localhost:8000
-   curl -X POST http://localhost:8000/analyze -H "Content-Type: application/json" -d '{"text": "要分析的文本"}'
+
+   # 前端界面（需要同时启动后端）
+   cd frontend && npm install && npm run dev  # 启动 http://localhost:5173
    ```
 
 4. 运行测试：
@@ -91,10 +93,23 @@ src/
 | `/health` | GET | 健康检查 |
 | `/analyze` | POST | 文本分析（body: `{text, depth?, output_format?}`） |
 
+## 前端界面
+
+Vue 3 + Vite + Tailwind CSS 构建，位于 `frontend/` 目录。
+
+```bash
+cd frontend
+npm install
+npm run dev          # 开发服务器 http://localhost:5173
+npm run build        # 生产构建
+```
+
+设计风格：克制学术风 + 趣味点缀（Agent 图标动画、置信度温度计、修辞标记）
+
 ## 项目统计
 
 - 109 个测试全部通过
-- 6 个阶段全部完成
+- 6 个阶段全部完成 + 前端界面
 - 5 个 Agent（协调器、文本解析、心理分析、逻辑推理、报告生成）
 - 3 层 Guardrails（幻觉防御、伦理守则、隐私保护）
 - RAG 知识引擎（向量库 + 知识图谱 + 案例库）
