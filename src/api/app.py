@@ -2,6 +2,7 @@
 import logging
 import time
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.requests import Request
 from src.api.routes import router
@@ -23,6 +24,13 @@ def create_app() -> FastAPI:
         title="语言心理学话语分析系统",
         description="基于语言心理学的多智能体话语分析 API",
         version="0.1.0",
+    )
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=["http://localhost:5173", "http://localhost:3000"],
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
     )
     app.add_middleware(LoggingMiddleware)
     app.include_router(router)
