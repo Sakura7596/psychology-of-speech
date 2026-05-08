@@ -1326,18 +1326,15 @@ git commit -m "docs: add README with quick start guide"
 
 ## 阶段二：NLP 管道 + 文本解析 Agent（1-2 周）
 
+> **详细计划已生成：** [2026-05-08-phase2-nlp-text-analyst.md](./2026-05-08-phase2-nlp-text-analyst.md)
+
 - [ ] Task 9: HanLP 集成（分词、依存句法、语义角色标注）
 - [ ] Task 10: jieba 后备分词 + 自定义词典
 - [ ] Task 11: transformers 中文情感/心理模型集成
 - [ ] Task 12: 修辞识别模块
 - [ ] Task 13: 文本解析 Agent 完整实现（5 个分析维度）
-- [ ] Task 14: 文本解析 Agent 测试与调优
-
-## 阶段二附：评测基准构建（0.5-1 周）
-
-- [ ] Task 15: 设计评测数据集结构（JSON Schema）
-- [ ] Task 16: 收集/标注 50-100 条对话（覆盖心理、逻辑、修辞、情感）
-- [ ] Task 17: 评测脚本实现（自动评分 + 回归测试）
+- [ ] Task 14: 评测数据集结构与评分脚本
+- [ ] Task 15: 阶段二总结
 
 ## 阶段三：RAG 知识引擎（2-3 周）
 
