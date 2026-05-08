@@ -1,0 +1,10 @@
+[
+  {"id": "sent_001", "text": "今天天气真好，心情非常愉快！", "expected": {"sentiment": "positive"}, "category": "sentiment", "difficulty": "easy"},
+  {"id": "sent_002", "text": "这件事让我非常失望，简直是浪费时间。", "expected": {"sentiment": "negative"}, "category": "sentiment", "difficulty": "easy"},
+  {"id": "sent_003", "text": "今天是星期三。", "expected": {"sentiment": "neutral"}, "category": "sentiment", "difficulty": "easy"},
+  {"id": "rhet_001", "text": "他的心像冰一样冷。", "expected": {"rhetoric_type": "simile"}, "category": "rhetoric", "difficulty": "medium"},
+  {"id": "rhet_002", "text": "这难道不是显而易见的吗？", "expected": {"rhetoric_type": "rhetorical_question"}, "category": "rhetoric", "difficulty": "medium"},
+  {"id": "modal_001", "text": "你必须在明天之前完成这个任务。", "expected": {"modal_type": "necessity"}, "category": "modality", "difficulty": "easy"},
+  {"id": "disc_001", "text": "虽然他很努力，但是结果并不理想。", "expected": {"discourse_marker": "转折"}, "category": "discourse", "difficulty": "easy"},
+  {"id": "vague_001", "text": "这个问题基本上大概可能需要进一步研究。", "expected": {"has_vague_words": true}, "category": "vocabulary", "difficulty": "medium"}
+]
