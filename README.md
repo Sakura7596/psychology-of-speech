@@ -48,7 +48,12 @@ src/
 │   └── rhetoric.py      # 修辞识别
 ├── agents/
 │   └── text_analyst.py  # 文本解析 Agent（5 维分析）
-├── knowledge/           # RAG 知识引擎（待实现）
+├── knowledge/
+│   ├── embedding.py     # text2vec Embedding 模型
+│   ├── vector_store.py  # ChromaDB 向量库
+│   ├── knowledge_graph.py # NetworkX 知识图谱
+│   ├── case_library.py  # 案例库（JSON + 关键词检索）
+│   └── retriever.py     # 统一检索接口
 ├── guardrails/          # 安全/伦理防护（待实现）
 ├── evaluation/
 │   ├── schema.py        # 评测数据集结构
@@ -61,7 +66,7 @@ src/
 
 - [x] 阶段一：基础框架（配置、Agent 接口、LLM 客户端、协调器骨架、CLI 入口）
 - [x] 阶段二：NLP 管道 + 文本解析 Agent（HanLP、jieba、transformers、修辞识别、评测框架）
-- [ ] 阶段三：RAG 知识引擎
+- [x] 阶段三：RAG 知识引擎（ChromaDB、知识图谱、理论文献库、案例库、统一检索）
 - [ ] 阶段四：心理分析 + 逻辑推理 Agent
 - [ ] 阶段五：报告生成 + 协调器完善
 - [ ] 阶段六：Web 接口 + 可观测性
