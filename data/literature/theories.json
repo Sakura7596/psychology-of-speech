@@ -1,0 +1,10 @@
+[
+  {"id": "theory_001", "type": "theory", "name": "言语行为理论", "founders": ["Austin", "Searle"], "year": 1962, "description": "语言不仅描述世界，还执行行为。分为言内行为、言外行为、言后行为。", "keywords": ["言语行为", "言外行为", "Austin", "Searle", "施为句"]},
+  {"id": "theory_002", "type": "theory", "name": "会话含义理论", "founders": ["Grice"], "year": 1975, "description": "通过合作原则及其准则推导隐含意义。", "keywords": ["会话含义", "合作原则", "Grice", "隐含意义"]},
+  {"id": "theory_003", "type": "theory", "name": "礼貌策略", "founders": ["Brown", "Levinson"], "year": 1987, "description": "面子理论，分析威胁面子的行为和补偿策略。", "keywords": ["礼貌", "面子", "Brown", "Levinson", "面子威胁"]},
+  {"id": "theory_004", "type": "theory", "name": "儒家面子理论", "founders": ["胡先缙", "黄光国"], "year": 1944, "description": "中国本土面子观：脸（道德面子）vs 面子（社会面子）。", "keywords": ["面子", "脸", "胡先缙", "黄光国", "儒家"]},
+  {"id": "theory_005", "type": "theory", "name": "高语境沟通", "founders": ["Hall"], "year": 1976, "description": "中国文化语境下，大量信息通过语境而非语言本身传递。", "keywords": ["高语境", "Hall", "中国文化", "隐含信息"]},
+  {"id": "theory_006", "type": "theory", "name": "权力距离", "founders": ["Hofstede"], "year": 1980, "description": "语言中的敬语、称呼策略反映权力关系认知。", "keywords": ["权力距离", "Hofstede", "敬语", "称呼"]},
+  {"id": "theory_007", "type": "theory", "name": "批判性话语分析", "founders": ["van Dijk", "Fairclough"], "year": 1993, "description": "分析话语中的权力关系、意识形态和社会结构。", "keywords": ["批判性话语", "van Dijk", "Fairclough", "权力", "意识形态"]},
+  {"id": "theory_008", "type": "theory", "name": "系统功能语言学", "founders": ["Halliday"], "year": 1994, "description": "语言的三大元功能：概念功能、人际功能、语篇功能。", "keywords": ["系统功能", "Halliday", "元功能", "概念", "人际"]}
+]

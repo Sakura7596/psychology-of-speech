@@ -188,3 +188,32 @@ def test_case_library_filter_by_type():
     rhetoric_cases = lib.get_by_type("rhetoric")
     assert len(rhetoric_cases) > 0
     assert all(c["type"] == "rhetoric" for c in rhetoric_cases)
+
+
+def test_theory_library_load():
+    """测试加载理论库"""
+    lib = CaseLibrary("data/literature")
+    assert lib.count() > 0
+
+
+def test_theory_search_speech_act():
+    """测试搜索言语行为理论"""
+    lib = CaseLibrary("data/literature")
+    results = lib.search("言语行为")
+    assert len(results) > 0
+
+
+def test_knowledge_graph_load_data():
+    """测试加载知识图谱数据"""
+    kg = KnowledgeGraph()
+    kg.load("data/graph/psychology_graph.json")
+    assert kg.has_entity("言语行为理论")
+    assert kg.has_entity("会话含义理论")
+
+
+def test_knowledge_graph_relations():
+    """测试图谱关系"""
+    kg = KnowledgeGraph()
+    kg.load("data/graph/psychology_graph.json")
+    neighbors = kg.get_neighbors("言语行为理论")
+    assert len(neighbors) > 0
