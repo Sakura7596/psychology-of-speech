@@ -1349,13 +1349,16 @@ git commit -m "docs: add README with quick start guide"
 - [ ] Task 22: 统一检索接口（向量 + 图谱 + 案例融合）
 - [ ] Task 23: 阶段三总结
 
-## 阶段四：心理分析 + 逻辑推理 Agent（2-3 周）
+## 阶段四：心理分析 + 逻辑推理 Agent + Guardrails（2-3 周）
 
-- [ ] Task 24: 心理分析 Agent 实现（含中西方理论框架）
-- [ ] Task 25: 逻辑推理 Agent 实现（含 30+ 种谬误检测）
-- [ ] Task 26: Guardrails 模块 - 幻觉防御
-- [ ] Task 27: Guardrails 模块 - 伦理守则 + 免责声明
-- [ ] Task 28: Guardrails 模块 - 隐私保护
+> **详细计划已生成：** [2026-05-08-phase4-psychology-logic-guardrails.md](./2026-05-08-phase4-psychology-logic-guardrails.md)
+
+- [ ] Task 24: 心理分析 Agent（言语行为、面子理论、高语境）
+- [ ] Task 25: 逻辑推理 Agent（论证结构、谬误检测）
+- [ ] Task 26: Guardrails - 幻觉防御
+- [ ] Task 27: Guardrails - 伦理守则 + 免责声明
+- [ ] Task 28: Guardrails - 隐私保护
+- [ ] Task 29: 阶段四总结
 
 ## 阶段五：报告生成 + 协调器完善（1-2 周）
 
