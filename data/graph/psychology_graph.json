@@ -1,0 +1,31 @@
+{
+  "nodes": [
+    {"name": "言语行为理论", "type": "theory"},
+    {"name": "会话含义理论", "type": "theory"},
+    {"name": "礼貌策略", "type": "theory"},
+    {"name": "儒家面子理论", "type": "theory"},
+    {"name": "高语境沟通", "type": "theory"},
+    {"name": "权力距离", "type": "theory"},
+    {"name": "断言", "type": "speech_act"},
+    {"name": "指令", "type": "speech_act"},
+    {"name": "承诺", "type": "speech_act"},
+    {"name": "表达", "type": "speech_act"},
+    {"name": "比喻", "type": "rhetoric"},
+    {"name": "反问", "type": "rhetoric"},
+    {"name": "面子威胁", "type": "concept"},
+    {"name": "隐含意义", "type": "concept"},
+    {"name": "讽刺", "type": "concept"}
+  ],
+  "edges": [
+    {"source": "言语行为理论", "target": "断言", "relation": "defines"},
+    {"source": "言语行为理论", "target": "指令", "relation": "defines"},
+    {"source": "言语行为理论", "target": "承诺", "relation": "defines"},
+    {"source": "言语行为理论", "target": "表达", "relation": "defines"},
+    {"source": "会话含义理论", "target": "隐含意义", "relation": "explains"},
+    {"source": "会话含义理论", "target": "讽刺", "relation": "explains"},
+    {"source": "礼貌策略", "target": "面子威胁", "relation": "defines"},
+    {"source": "儒家面子理论", "target": "面子威胁", "relation": "extends"},
+    {"source": "高语境沟通", "target": "隐含意义", "relation": "related"},
+    {"source": "权力距离", "target": "礼貌策略", "relation": "related"}
+  ]
+}
