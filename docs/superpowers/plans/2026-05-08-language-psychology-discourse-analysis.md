@@ -1371,9 +1371,9 @@ git commit -m "docs: add README with quick start guide"
 
 ## 阶段六：Web 接口 + 可观测性（1-2 周）
 
-- [ ] Task 33: FastAPI 路由实现（/analyze, /health）
-- [ ] Task 34: 请求验证 + 错误处理
-- [ ] Task 35: LangFuse 可观测性集成
-- [ ] Task 36: Agent 单元测试（mock LLM）
-- [ ] Task 37: API 集成测试
-- [ ] Task 38: 性能优化 + 缓存策略
+> **详细计划已生成：** [2026-05-08-phase6-web-api-observability.md](./2026-05-08-phase6-web-api-observability.md)
+
+- [ ] Task 34: API 请求/响应模型
+- [ ] Task 35: FastAPI 路由（/analyze, /health）
+- [ ] Task 36: 可观测性（日志中间件）
+- [ ] Task 37: CLI 更新 + 阶段六总结
