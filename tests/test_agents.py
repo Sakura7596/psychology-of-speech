@@ -93,3 +93,46 @@ def test_base_agent_is_abstract():
     """测试 BaseAgent 不能直接实例化"""
     with pytest.raises(TypeError):
         BaseAgent()
+
+
+from src.agents.orchestrator import Orchestrator, AnalysisPlan
+
+
+def test_orchestrator_short_text_routing():
+    """测试短文本动态路由（<100字）"""
+    orchestrator = Orchestrator()
+    plan = orchestrator.plan_analysis("你好")
+    assert plan.depth == AnalysisDepth.QUICK
+    assert "logic_analyst" not in plan.agents or plan.agent_params.get(
+        "logic_analyst", {}
+    ).get("skip_deep", False)
+
+
+def test_orchestrator_medium_text_routing():
+    """测试中等文本路由（100-500字）"""
+    text = "这" * 150  # 150 字
+    orchestrator = Orchestrator()
+    plan = orchestrator.plan_analysis(text)
+    assert "text_analyst" in plan.agents
+    assert "psychology_analyst" in plan.agents
+    assert "logic_analyst" in plan.agents
+
+
+def test_orchestrator_long_text_routing():
+    """测试长文本路由（>500字）"""
+    text = "这" * 600  # 600 字
+    orchestrator = Orchestrator()
+    plan = orchestrator.plan_analysis(text)
+    assert plan.depth == AnalysisDepth.DEEP
+    assert plan.segment is True
+
+
+def test_analysis_plan_creation():
+    """测试 AnalysisPlan 创建"""
+    plan = AnalysisPlan(
+        agents=["text_analyst", "psychology_analyst"],
+        depth=AnalysisDepth.STANDARD,
+        agent_params={"text_analyst": {"language": "zh"}},
+    )
+    assert len(plan.agents) == 2
+    assert plan.depth == AnalysisDepth.STANDARD
