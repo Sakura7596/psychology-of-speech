@@ -135,3 +135,46 @@ def test_sentiment_detail_mock():
     assert "negative_score" in result
     assert "dominant_emotion" in result
     assert result["dominant_emotion"] == "positive"
+
+
+from src.nlp.rhetoric import RhetoricDetector
+
+
+def test_detect_metaphor():
+    """测试比喻识别"""
+    detector = RhetoricDetector()
+    results = detector.detect("他的心像冰一样冷")
+    types = [r["type"] for r in results]
+    assert "simile" in types
+
+
+def test_detect_rhetorical_question():
+    """测试反问识别"""
+    detector = RhetoricDetector()
+    results = detector.detect("这难道不是显而易见的吗？")
+    types = [r["type"] for r in results]
+    assert "rhetorical_question" in types
+
+
+def test_detect_exaggeration():
+    """测试夸张识别"""
+    detector = RhetoricDetector()
+    results = detector.detect("我等了一万年")
+    types = [r["type"] for r in results]
+    assert "exaggeration" in types
+
+
+def test_detect_parallelism():
+    """测试排比识别"""
+    detector = RhetoricDetector()
+    text = "学习使人进步，学习使人聪明，学习使人强大"
+    results = detector.detect(text)
+    types = [r["type"] for r in results]
+    assert "parallelism" in types
+
+
+def test_no_rhetoric():
+    """测试无修辞的普通文本"""
+    detector = RhetoricDetector()
+    results = detector.detect("今天是2026年5月8日")
+    assert len(results) == 0 or all(r["confidence"] < 0.5 for r in results)
