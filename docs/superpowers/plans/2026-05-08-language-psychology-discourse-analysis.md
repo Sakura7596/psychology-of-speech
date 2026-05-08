@@ -1338,12 +1338,16 @@ git commit -m "docs: add README with quick start guide"
 
 ## 阶段三：RAG 知识引擎（2-3 周）
 
-- [ ] Task 18: ChromaDB 向量库搭建（含元数据过滤）
-- [ ] Task 19: text2vec-base-chinese Embedding 集成
-- [ ] Task 20: 理论文献库构建（分块、向量化、导入）
-- [ ] Task 21: 案例库构建（结构化 JSON + 向量化）
-- [ ] Task 22: 知识图谱构建（NetworkX）
-- [ ] Task 23: 统一检索接口（向量 + 关键词 + 图谱融合）
+> **详细计划已生成：** [2026-05-08-phase3-rag-knowledge-engine.md](./2026-05-08-phase3-rag-knowledge-engine.md)
+
+- [ ] Task 16: Embedding 模型封装（text2vec-base-chinese）
+- [ ] Task 17: ChromaDB 向量库（含元数据过滤）
+- [ ] Task 18: 知识图谱（NetworkX）
+- [ ] Task 19: 案例库（JSON + 关键词检索）
+- [ ] Task 20: 理论文献库（8 条核心理论）
+- [ ] Task 21: 知识图谱数据填充
+- [ ] Task 22: 统一检索接口（向量 + 图谱 + 案例融合）
+- [ ] Task 23: 阶段三总结
 
 ## 阶段四：心理分析 + 逻辑推理 Agent（2-3 周）
 
