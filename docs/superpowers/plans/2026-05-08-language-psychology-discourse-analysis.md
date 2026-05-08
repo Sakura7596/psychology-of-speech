@@ -1362,10 +1362,12 @@ git commit -m "docs: add README with quick start guide"
 
 ## 阶段五：报告生成 + 协调器完善（1-2 周）
 
-- [ ] Task 29: 报告生成 Agent（Markdown/JSON/HTML 多格式）
-- [ ] Task 30: 协调器完善（LangGraph 编排、并行调度）
-- [ ] Task 31: 端到端集成测试
-- [ ] Task 32: A/B 测试框架（DeepSeek vs OpenAI）
+> **详细计划已生成：** [2026-05-08-phase5-report-orchestrator.md](./2026-05-08-phase5-report-orchestrator.md)
+
+- [ ] Task 30: 报告生成 Agent（Markdown/JSON/HTML 多格式）
+- [ ] Task 31: 协调器升级（并行调度 + 报告生成集成）
+- [ ] Task 32: 端到端集成测试
+- [ ] Task 33: 阶段五总结
 
 ## 阶段六：Web 接口 + 可观测性（1-2 周）
 
