@@ -1,6 +1,5 @@
 # src/agents/report_generator.py
 import json
-import asyncio
 
 from src.agents.base import BaseAgent, AnalysisContext, AgentResult, AnalysisDepth
 from src.llm.client import LLMClient
@@ -32,7 +31,7 @@ class ReportGeneratorAgent(BaseAgent):
     def description(self) -> str:
         return "整合所有分析结果，生成结构化分析报告（Markdown/JSON/HTML）"
 
-    def analyze(self, context: AnalysisContext) -> AgentResult:
+    async def analyze(self, context: AnalysisContext) -> AgentResult:
         """执行报告生成"""
         text = context.text
         depth = context.depth
@@ -67,7 +66,7 @@ class ReportGeneratorAgent(BaseAgent):
 重要：报告末尾必须包含免责声明。"""
 
         try:
-            response = asyncio.run(self._llm.generate(prompt, system_prompt))
+            response = await self._llm.generate(prompt, system_prompt)
             report = response.content
         except Exception:
             report = f"报告生成失败。原始文本：{text}"

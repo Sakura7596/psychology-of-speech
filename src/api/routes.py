@@ -45,7 +45,7 @@ async def analyze(request: AnalyzeRequest):
 
     orchestrator = Orchestrator()
     try:
-        result = orchestrator.run_pipeline(context, agents)
+        result = await orchestrator.run_pipeline(context, agents)
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"分析失败: {str(e)}")
 

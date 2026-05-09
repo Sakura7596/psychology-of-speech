@@ -92,7 +92,7 @@ class Orchestrator:
 
         return merged
 
-    def run_pipeline(
+    async def run_pipeline(
         self,
         context: "AnalysisContext",
         agents: dict[str, "BaseAgent"],
@@ -109,7 +109,7 @@ class Orchestrator:
         for agent_name in analysis_agents:
             if agent_name in agents and agent_name in plan.agents:
                 try:
-                    result = agents[agent_name].analyze(context)
+                    result = await agents[agent_name].analyze(context)
                     sibling_results[agent_name] = result
                 except Exception as e:
                     sibling_results[agent_name] = AgentResult(
@@ -126,7 +126,7 @@ class Orchestrator:
         )
 
         if "report_generator" in agents:
-            return agents["report_generator"].analyze(report_context)
+            return await agents["report_generator"].analyze(report_context)
         else:
             merged = self.merge_results({n: r.analysis for n, r in sibling_results.items()})
             return AgentResult(

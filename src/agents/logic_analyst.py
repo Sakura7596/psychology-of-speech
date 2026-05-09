@@ -1,6 +1,5 @@
 # src/agents/logic_analyst.py
 import json
-import asyncio
 from src.agents.base import BaseAgent, AnalysisContext, AgentResult, AnalysisDepth
 from src.llm.client import LLMClient
 from src.llm.deepseek import DeepSeekAdapter
@@ -34,7 +33,7 @@ class LogicAnalystAgent(BaseAgent):
     def description(self) -> str:
         return "分析论证结构，识别逻辑谬误和隐含假设"
 
-    def analyze(self, context: AnalysisContext) -> AgentResult:
+    async def analyze(self, context: AnalysisContext) -> AgentResult:
         text = context.text
         depth = context.depth
         knowledge_context = self._retriever.get_context_string(text, n_results=3)
@@ -60,7 +59,7 @@ class LogicAnalystAgent(BaseAgent):
 请以 JSON 格式输出分析结果，包含 confidence 字段（0.0-1.0）。"""
 
         try:
-            response = asyncio.run(self._llm.generate(prompt, system_prompt))
+            response = await self._llm.generate(prompt, system_prompt)
             raw = response.content
         except Exception:
             raw = '{"error": "LLM 调用失败", "confidence": 0.0}'

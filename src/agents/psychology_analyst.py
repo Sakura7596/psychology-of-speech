@@ -1,6 +1,5 @@
 # src/agents/psychology_analyst.py
 import json
-import asyncio
 
 from src.agents.base import BaseAgent, AnalysisContext, AgentResult, AnalysisDepth
 from src.llm.client import LLMClient
@@ -42,7 +41,7 @@ class PsychologyAnalystAgent(BaseAgent):
     def description(self) -> str:
         return "基于语言心理学理论分析说话者心理状态和潜在动机"
 
-    def analyze(self, context: AnalysisContext) -> AgentResult:
+    async def analyze(self, context: AnalysisContext) -> AgentResult:
         """执行心理分析"""
         text = context.text
         depth = context.depth
@@ -70,7 +69,7 @@ class PsychologyAnalystAgent(BaseAgent):
 请以 JSON 格式输出分析结果，包含 confidence 字段（0.0-1.0）。"""
 
         try:
-            response = asyncio.run(self._llm.generate(prompt, system_prompt))
+            response = await self._llm.generate(prompt, system_prompt)
             raw = response.content
         except Exception:
             raw = '{"error": "LLM 调用失败", "confidence": 0.0}'

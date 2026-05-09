@@ -72,6 +72,6 @@ class BaseAgent(ABC):
         ...
 
     @abstractmethod
-    def analyze(self, context: AnalysisContext) -> AgentResult:
+    async def analyze(self, context: AnalysisContext) -> AgentResult:
         """执行分析，返回结果"""
         ...

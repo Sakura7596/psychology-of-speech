@@ -23,7 +23,7 @@ class TextAnalystAgent(BaseAgent):
     def description(self) -> str:
         return "语言学层面的深度解析：句法、词汇、语气、修辞、话语标记"
 
-    def analyze(self, context: AnalysisContext) -> AgentResult:
+    async def analyze(self, context: AnalysisContext) -> AgentResult:
         """执行文本分析"""
         text = context.text
         depth = context.depth
