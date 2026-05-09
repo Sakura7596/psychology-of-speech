@@ -1,10 +1,342 @@
 [
-  {"id": "theory_001", "type": "theory", "name": "言语行为理论", "founders": ["Austin", "Searle"], "year": 1962, "description": "语言不仅描述世界，还执行行为。分为言内行为、言外行为、言后行为。", "keywords": ["言语行为", "言外行为", "Austin", "Searle", "施为句"]},
-  {"id": "theory_002", "type": "theory", "name": "会话含义理论", "founders": ["Grice"], "year": 1975, "description": "通过合作原则及其准则推导隐含意义。", "keywords": ["会话含义", "合作原则", "Grice", "隐含意义"]},
-  {"id": "theory_003", "type": "theory", "name": "礼貌策略", "founders": ["Brown", "Levinson"], "year": 1987, "description": "面子理论，分析威胁面子的行为和补偿策略。", "keywords": ["礼貌", "面子", "Brown", "Levinson", "面子威胁"]},
-  {"id": "theory_004", "type": "theory", "name": "儒家面子理论", "founders": ["胡先缙", "黄光国"], "year": 1944, "description": "中国本土面子观：脸（道德面子）vs 面子（社会面子）。", "keywords": ["面子", "脸", "胡先缙", "黄光国", "儒家"]},
-  {"id": "theory_005", "type": "theory", "name": "高语境沟通", "founders": ["Hall"], "year": 1976, "description": "中国文化语境下，大量信息通过语境而非语言本身传递。", "keywords": ["高语境", "Hall", "中国文化", "隐含信息"]},
-  {"id": "theory_006", "type": "theory", "name": "权力距离", "founders": ["Hofstede"], "year": 1980, "description": "语言中的敬语、称呼策略反映权力关系认知。", "keywords": ["权力距离", "Hofstede", "敬语", "称呼"]},
-  {"id": "theory_007", "type": "theory", "name": "批判性话语分析", "founders": ["van Dijk", "Fairclough"], "year": 1993, "description": "分析话语中的权力关系、意识形态和社会结构。", "keywords": ["批判性话语", "van Dijk", "Fairclough", "权力", "意识形态"]},
-  {"id": "theory_008", "type": "theory", "name": "系统功能语言学", "founders": ["Halliday"], "year": 1994, "description": "语言的三大元功能：概念功能、人际功能、语篇功能。", "keywords": ["系统功能", "Halliday", "元功能", "概念", "人际"]}
+  {
+    "id": "theory_001",
+    "type": "theory",
+    "name": "言语行为理论",
+    "name_en": "Speech Act Theory",
+    "founders": ["Austin", "Searle"],
+    "year": 1962,
+    "description": "语言不仅描述世界，还执行行为。Austin提出言语行为三分说：言内行为（locutionary act，说出有意义的句子）、言外行为（illocutionary act，通过说话执行的动作，如请求、命令、承诺）、言后行为（perlocutionary act，说话对听者产生的效果，如说服、恐吓、感动）。Searle进一步将言外行为分为五类：断言（assertives）、指令（directives）、承诺（commissives）、表达（expressives）、宣告（declarations）。该理论揭示了语言的施为性——说话即做事。",
+    "key_concepts": ["言内行为", "言外行为", "言后行为", "施为句", "言外之力", "适切条件"],
+    "application_examples": [
+      "分析'我保证明天来'——言外行为是承诺，言后行为是让听者产生期待",
+      "分析'我宣布你们结为夫妻'——宣告类言外行为，说话本身即完成行为",
+      "分析'能不能把窗户打开？'——表面是询问能力，实际言外行为是请求"
+    ],
+    "limitations": "对间接言语行为的解释力有限；难以处理文化差异下的言外之力理解差异；忽略语境对言外行为的动态影响",
+    "related_theories": ["theory_002", "theory_003", "theory_014"]
+  },
+  {
+    "id": "theory_002",
+    "type": "theory",
+    "name": "会话含义理论",
+    "name_en": "Conversational Implicature",
+    "founders": ["Grice"],
+    "year": 1975,
+    "description": "Grice提出合作原则（Cooperative Principle）：人们在会话中默认遵循合作。合作原则包含四条准则：量的准则（提供适量信息）、质的准则（说真话）、关系准则（说相关的话）、方式准则（表达清晰有序）。当说话者有意违反某条准则时，听者会推导出隐含意义（implicature）。例如，故意说少（违反量的准则）可能暗示不想透露更多信息；故意说模糊（违反方式准则）可能暗示不愿明说。该理论解释了为什么人们能理解言外之意。",
+    "key_concepts": ["合作原则", "量的准则", "质的准则", "关系准则", "方式准则", "会话含义", "一般会话含义", "特殊会话含义", "准则违反"],
+    "application_examples": [
+      "A问'小王工作怎么样？'B答'他从不迟到'——违反量的准则（信息不足），隐含小王工作能力一般",
+      "A问'你喜欢我新发型吗？'B答'你的衣服很好看'——违反关系准则，隐含对发型不满意",
+      "写推荐信只说'该生按时上课'——违反量的准则，隐含该生无其他突出优点"
+    ],
+    "limitations": "合作原则是否具有普遍性存在争议；未充分考虑非合作性会话（如欺骗、讽刺）；难以处理模糊隐含意义的精确推导",
+    "related_theories": ["theory_001", "theory_004", "theory_019"]
+  },
+  {
+    "id": "theory_003",
+    "type": "theory",
+    "name": "礼貌策略",
+    "name_en": "Politeness Theory",
+    "founders": ["Brown", "Levinson"],
+    "year": 1987,
+    "description": "Brown和Levinson在Goffman面子理论基础上提出普遍礼貌模型。核心概念是面子（face）：积极面子（希望被认可、喜欢）和消极面子（不希望被强加、保持自主）。面子威胁行为（FTA, Face-Threatening Act）是指可能损害他人面子的言语行为。说话者根据三个因素选择策略：社会距离（D）、权力差（P）、行为的强加程度（R）。策略包括：直接FTA（不加修饰）、积极礼貌（表达认同）、消极礼貌（尊重自主）、隐含FTA（间接暗示）、不执行FTA。该理论认为礼貌是对FTA的补偿机制。",
+    "key_concepts": ["积极面子", "消极面子", "面子威胁行为", "积极礼貌策略", "消极礼貌策略", "间接策略", "社会距离", "权力差", "强加程度"],
+    "application_examples": [
+      "上级对下级说'把这个报告写了'——直接FTA，权力差大时面子威胁成本低",
+      "对陌生人说'不好意思，麻烦您帮我看一下这个好吗？'——消极礼貌策略，用歉意和试探降低强加感",
+      "朋友间说'咱们一起去吧'——积极礼貌策略，用'咱们'表达亲近和认同"
+    ],
+    "limitations": "以西方个体主义文化为基础，对集体主义文化（如中国、日本）解释力不足；未充分考虑面子的文化特殊性；策略选择模型过于理想化",
+    "related_theories": ["theory_004", "theory_007", "theory_016"]
+  },
+  {
+    "id": "theory_004",
+    "type": "theory",
+    "name": "儒家面子理论",
+    "name_en": "Chinese Face Theory",
+    "founders": ["胡先缙", "黄光国"],
+    "year": 1944,
+    "description": "胡先缙（1944）首次系统区分了中国社会中'脸'和'面子'两个概念：'脸'（lian）指社会对个人道德品格的评价，是一种道德面子，丧失则难以挽回；'面子'（mianzi）指社会地位、成就带来的声望，是一种社会面子，可以通过努力获取或通过社会关系运作获得。黄光国进一步发展为'人情与面子'模型，分析中国社会中面子、人情、关系的互动机制。这一理论揭示了中国文化中面子的双重结构，弥补了西方礼貌理论对中国文化解释力的不足。",
+    "key_concepts": ["脸（lian）", "面子（mianzi）", "道德面子", "社会面子", "人情", "关系", "报", "面子功夫"],
+    "application_examples": [
+      "领导在公开场合批评下属——损害下属的面子（mianzi），但下属若认错则保住了脸（lian）",
+      "送礼行为——表面是人情往来，实际是维护和积累面子资本",
+      "某人被曝丑闻后'丢脸'——不仅是社会面子受损，更是道德品质受到质疑，难以修复"
+    ],
+    "limitations": "主要基于中国传统文化背景，对当代城市化、全球化背景下的面子实践解释力有待更新；脸和面子的边界在实际使用中有时模糊",
+    "related_theories": ["theory_003", "theory_005", "theory_010"]
+  },
+  {
+    "id": "theory_005",
+    "type": "theory",
+    "name": "高语境沟通",
+    "name_en": "High-Context Communication",
+    "founders": ["Hall"],
+    "year": 1976,
+    "description": "Edward Hall提出高语境-低语境文化维度。在高语境文化（如中国、日本、阿拉伯国家）中，大量信息通过语境、关系、非言语线索传递，言语表达含蓄委婉，需要听者主动推断言外之意。在低语境文化（如美国、德国）中，信息主要通过明确的语言编码传递，表达直接明确。高语境沟通的特征包括：重含蓄轻直白、重关系轻契约、重整体轻分析、善用沉默和非言语信号。理解这一差异对跨文化沟通至关重要。",
+    "key_concepts": ["高语境", "低语境", "隐含信息", "非言语线索", "含蓄表达", "跨文化沟通", "沉默", "语境依赖"],
+    "application_examples": [
+      "中国人说'我再考虑考虑'——高语境下往往意味着拒绝，而非真的要考虑",
+      "日本商务谈判中的沉默——不是无话可说，而是在高语境中传递不满或需要时间思考",
+      "美国人直说'No'vs中国人说'这个可能有点困难'——同一拒绝意图的不同语境表达"
+    ],
+    "limitations": "高低语境是一个连续体而非二元对立；同一文化内部也存在差异；全球化时代文化边界日趋模糊",
+    "related_theories": ["theory_004", "theory_006", "theory_009"]
+  },
+  {
+    "id": "theory_006",
+    "type": "theory",
+    "name": "权力距离",
+    "name_en": "Power Distance",
+    "founders": ["Hofstede"],
+    "year": 1980,
+    "description": "Hofstede在文化维度理论中提出权力距离概念，指一个社会中权力较弱的成员对权力分配不平等的接受程度。高权力距离文化（如中国、印度、马来西亚）中，等级分明、尊卑有序在语言中体现为丰富的敬语系统、称呼策略、委婉语使用。低权力距离文化（如北欧、以色列）中，语言使用趋于平等、直呼其名。权力距离深刻影响语言策略选择：下属对上级使用敬语、委婉语、被动语态；上级对下属使用直接命令、省略敬语。",
+    "key_concepts": ["权力距离指数", "敬语系统", "称呼策略", "等级语言", "委婉语", "语体选择", "权力不对称"],
+    "application_examples": [
+      "中文中'您'vs'你'的选择——反映对权力距离的认知和尊重",
+      "日语中的敬语体系（尊敬语、谦让语、丁宁语）——高度编码化的权力距离语言标记",
+      "职场邮件中下属用'请审阅'vs上级用'请知悉'——同一信息传递但语言策略因权力关系而异"
+    ],
+    "limitations": "文化维度过于宏观，忽略个体差异和情境因素；权力距离指数基于问卷调查，可能受社会期望偏差影响；对动态权力关系解释力不足",
+    "related_theories": ["theory_004", "theory_005", "theory_007"]
+  },
+  {
+    "id": "theory_007",
+    "type": "theory",
+    "name": "批判性话语分析",
+    "name_en": "Critical Discourse Analysis",
+    "founders": ["Fairclough", "van Dijk"],
+    "year": 1993,
+    "description": "批判性话语分析（CDA）关注话语与权力、意识形态、社会结构之间的关系。Fairclough提出三维分析框架：文本（text，语言特征）、话语实践（discursive practice，文本的生产与消费）、社会实践（social practice，更广泛的社会权力关系）。van Dijk强调意识形态通过话语自然化，使权力关系看似理所当然。CDA揭示语言不是中立的工具，而是权力运作的场域——谁在说话、怎么说、说什么都反映了社会权力结构。",
+    "key_concepts": ["权力", "意识形态", "话语秩序", "三维框架", "自然化", "霸权", "互文性", "社会实践"],
+    "application_examples": [
+      "新闻报道中'恐怖分子'vs'自由战士'——同一事件的不同话语框架反映不同意识形态立场",
+      "官方文件中被动语态的频繁使用——模糊责任主体，弱化权力关系",
+      "社交媒体中'专家说'的引用模式——通过话语策略构建权威和可信度"
+    ],
+    "limitations": "被批评带有预设立场（预设权力批判视角）；分析主观性较强，可重复性存疑；对受众的主动解读能力关注不足",
+    "related_theories": ["theory_008", "theory_011", "theory_018"]
+  },
+  {
+    "id": "theory_008",
+    "type": "theory",
+    "name": "系统功能语言学",
+    "name_en": "Systemic Functional Linguistics",
+    "founders": ["Halliday"],
+    "year": 1994,
+    "description": "Halliday的系统功能语言学认为语言是一个社会符号系统，所有语言选择都是意义选择。语言具有三大元功能（metafunctions）：概念功能（ideational，表征经验世界）、人际功能（interpersonal，建立和维持社会关系）、语篇功能（textual，组织信息流）。每个功能对应不同的语法系统：概念功能对应及物性系统（transitivity），人际功能对应语气和情态系统（mood and modality），语篇功能对应主位-述位结构（theme-rheme）。该理论为话语分析提供了系统的语法分析工具。",
+    "key_concepts": ["元功能", "概念功能", "人际功能", "语篇功能", "及物性", "语气系统", "情态", "主位结构", "语域"],
+    "application_examples": [
+      "分析'公司决定裁员'vs'裁员被决定'——及物性分析揭示不同的话语策略和责任归属",
+      "分析'你应该/必须/可以这样做'——情态系统反映说话者的权力和态度",
+      "分析新闻标题的主位选择——主位前置什么信息反映了编辑的意识形态倾向"
+    ],
+    "limitations": "语法分析框架较为复杂，学习曲线陡峭；对口语和非标准语言的分析不够灵活；有时过于关注形式而忽略语境",
+    "related_theories": ["theory_007", "theory_013", "theory_015"]
+  },
+  {
+    "id": "theory_009",
+    "type": "theory",
+    "name": "关联理论",
+    "name_en": "Relevance Theory",
+    "founders": ["Sperber", "Wilson"],
+    "year": 1986,
+    "description": "Sperber和Wilson提出关联理论，认为人类认知倾向于以最小加工成本获得最大认知效果。明示-推理交际（ostensive-inferential communication）模型取代了传统的编码-解码模型：说话者通过明示行为（ostension）提供刺激，听者根据关联原则推导说话者的交际意图。关联的两个条件：认知效果大（产生新信息、修正旧信息、增强已有信息）且加工努力小。该理论解释了为什么人们能理解隐喻、反讽等非字面意义——因为在特定语境下，非字面解读比字面解读更具关联性。",
+    "key_concepts": ["关联原则", "明示-推理交际", "认知效果", "加工努力", "最优关联", "显义", "隐义", "非字面意义"],
+    "application_examples": [
+      "理解反讽'天气真好啊'（在暴风雨中）——字面解读无关联，反讽解读产生认知效果（表达不满）",
+      "理解隐喻'人生是一场旅行'——隐喻解读比字面解读更具认知效果且加工成本合理",
+      "理解间接回答：问'你考得怎么样？'答'我需要更努力'——关联推理得出考得不好"
+    ],
+    "limitations": "对'关联'的定义仍存在争议；难以精确量化认知效果和加工努力；对跨文化语境中的关联差异解释不足",
+    "related_theories": ["theory_002", "theory_011", "theory_019"]
+  },
+  {
+    "id": "theory_010",
+    "type": "theory",
+    "name": "面子理论",
+    "name_en": "Face Theory (Goffman)",
+    "founders": ["Goffman"],
+    "year": 1967,
+    "description": "Erving Goffman提出面子理论，将社会互动比作戏剧表演。面子（face）是个人在特定社会交往中为自己塑造的正面社会价值形象。面子功夫（facework）包括维护自己面子和照顾他人面子两个方面。Goffman区分了防御性面子功夫（protecting one's own face）和保护性面子功夫（protecting others' face）。互动仪式（interaction ritual）是维持面子秩序的社会机制，包括问候、道歉、感谢等常规化互动行为。当面子被威胁时，会出现尴尬（embarrassment）和补救仪式（remedial interchanges）。",
+    "key_concepts": ["面子", "面子功夫", "互动仪式", "戏剧表演隐喻", "前台后台", "补救仪式", "尴尬", "角色距离"],
+    "application_examples": [
+      "公开场合被人指出错误后，用幽默化解尴尬——补救仪式维护面子",
+      "社交场合互相寒暄——互动仪式确认彼此面子",
+      "领导在下属面前维护权威形象——前台行为的面子管理"
+    ],
+    "limitations": "面子概念较为宽泛，缺乏精确的操作化定义；对不同文化中面子内涵差异关注不足；理论框架偏向描述性，预测力有限",
+    "related_theories": ["theory_003", "theory_004", "theory_014"]
+  },
+  {
+    "id": "theory_011",
+    "type": "theory",
+    "name": "框架理论",
+    "name_en": "Framing Theory",
+    "founders": ["Lakoff", "Entman"],
+    "year": 1980,
+    "description": "Lakoff从认知语言学角度提出概念框架（conceptual frames）理论：框架是人们理解世界的认知结构，语言通过激活特定框架来影响思维和判断。一旦框架被激活，相关的情感、价值观和推理模式都会被触发。Entman将框架分析引入传播学，定义为'选择感知现实的某些方面，使之在传播文本中更加突出'。框架效应说明：同一事实用不同语言框架表达，会导致截然不同的理解和判断。",
+    "key_concepts": ["概念框架", "隐喻框架", "框架效应", "突显", "框架设置", "反框架", "认知模式", "原型"],
+    "application_examples": [
+      "'税收'vs'投资'——同一政府支出，框架不同导致公众态度不同",
+      "'非法移民'vs'无证工人'——框架选择塑造对移民群体的态度",
+      "'战争'框架vs'公共卫生'框架来描述疫情防控——影响政策接受度"
+    ],
+    "limitations": "框架效应的强度和持久性仍需更多实证研究；不同个体对同一框架的反应可能不同；框架分析有时带有分析者的主观判断",
+    "related_theories": ["theory_007", "theory_012", "theory_019"]
+  },
+  {
+    "id": "theory_012",
+    "type": "theory",
+    "name": "叙事分析",
+    "name_en": "Narrative Analysis",
+    "founders": ["Labov", "Waletzky"],
+    "year": 1967,
+    "description": "Labov和Waletzky提出个人经验叙事的经典结构模型，包含六个组成部分：摘要（abstract，概述故事）、定向（orientation，交代时间地点人物）、复杂化行动（complicating action，核心事件）、评价（evaluation，叙述者的态度和意义）、解决（resolution，事件结果）、回应（coda，回到当下）。评价部分是叙事的核心，揭示叙述者如何赋予经历以心理和社会意义。Labov后来扩展为'叙事作为论证'（narrative as argument），揭示叙事如何被用来构建论证和说服。",
+    "key_concepts": ["叙事结构", "摘要", "定向", "复杂化行动", "评价", "解决", "叙事身份", "叙事建构"],
+    "application_examples": [
+      "面试中'请讲一个你解决困难的经历'——定向→复杂化行动→评价→解决的标准叙事结构",
+      "心理治疗中的叙事重构——通过重新组织叙事结构来重新理解创伤经历",
+      "政治演讲中的个人故事——通过叙事评价引导听众的情感和判断"
+    ],
+    "limitations": "结构模型主要适用于西方个人经验叙事；对集体叙事、文化叙事的适用性有限；叙事结构分析可能过度简化复杂的叙事实践",
+    "related_theories": ["theory_011", "theory_013", "theory_018"]
+  },
+  {
+    "id": "theory_013",
+    "type": "theory",
+    "name": "评价理论",
+    "name_en": "Appraisal Theory",
+    "founders": ["Martin", "White"],
+    "year": 2005,
+    "description": "Martin和White在系统功能语言学基础上发展出评价理论（Appraisal Theory），系统分析话语中的态度、情感和价值观。评价系统包含三个子系统：态度（attitude，对事物的评价，分为情感affect、判断judgment、鉴赏appreciation）、介入（engagement，对不同声音和立场的协商，分为单声monogloss和多声heterogloss）、级差（graduation，评价力度的调节，分为语势force和聚焦focus）。该理论为分析话语中的评价性语言提供了精细的分析框架。",
+    "key_concepts": ["态度", "情感", "判断", "鉴赏", "介入", "单声", "多声", "级差", "语势", "聚焦"],
+    "application_examples": [
+      "分析'这部电影真是太棒了'——态度系统中的鉴赏（正面评价）+ 级差中的语势提升（'太...了'）",
+      "分析'据说他不太靠谱'——介入系统中的借言（'据说'）降低说话者责任 + 态度系统中的负面判断",
+      "分析产品评价中的情感表达——从'满意→惊喜→推荐'的情感递进路径"
+    ],
+    "limitations": "评价类别的边界有时模糊（情感、判断、鉴赏可能重叠）；对口语中评价的分析不如书面语成熟；文化差异对评价标准的影响有待深入研究",
+    "related_theories": ["theory_008", "theory_012", "theory_016"]
+  },
+  {
+    "id": "theory_014",
+    "type": "theory",
+    "name": "会话分析",
+    "name_en": "Conversation Analysis",
+    "founders": ["Sacks", "Schegloff", "Jefferson"],
+    "year": 1974,
+    "description": "会话分析（CA）源于民族方法学，系统研究日常会话的组织结构。核心发现包括：话轮转换系统（turn-taking system，一套有序的话轮分配规则）、相邻对（adjacency pairs，如问-答、邀请-接受/拒绝）、偏好组织（preference organization，接受是无标记的偏好回应，拒绝是有标记的）、修复机制（repair，处理理解问题的方式，包括自我修复和他人修复）、序列组织（sequential organization，话轮之间的有序结构）。CA强调对实际语料的细致分析，揭示了看似随意的日常对话背后有精密的组织秩序。",
+    "key_concepts": ["话轮转换", "相邻对", "偏好组织", "修复机制", "序列组织", "话题管理", "沉默", "重叠"],
+    "application_examples": [
+      "分析对话中的打断和重叠——揭示权力关系和参与度",
+      "分析拒绝的延迟和预示语（如'嗯...'）——偏好组织中拒绝是有标记行为",
+      "分析电话对话的开头和结尾——揭示对话的结构化组织"
+    ],
+    "limitations": "对宏观社会结构关注不足；分析过程高度依赖研究者的解读；对非面对面交流（如网络对话）的适用性有待探索",
+    "related_theories": ["theory_001", "theory_010", "theory_015"]
+  },
+  {
+    "id": "theory_015",
+    "type": "theory",
+    "name": "语域理论",
+    "name_en": "Register Theory",
+    "founders": ["Halliday"],
+    "year": 1978,
+    "description": "Halliday提出语域（register）理论，认为语言使用随使用情境而变化，语域是与特定情境类型相联系的语言变体。语域由三个情境变量决定：语场（field，正在发生的事/谈论的话题，决定概念功能的语言选择）、语旨（tenor，参与者之间的关系，决定人际功能的语言选择）、语式（mode，沟通渠道和修辞方式，决定语篇功能的语言选择）。语域理论揭示了'为什么在这种情境下说这些话'的系统规律。",
+    "key_concepts": ["语场", "语旨", "语式", "情境变量", "语言变体", "正式程度", "专业术语密度", "语篇模式"],
+    "application_examples": [
+      "法律文书——语场（法律事务）、语旨（专业-专业/权威-被约束）、语式（书面正式）→ 产生高密度专业术语、长句、被动语态",
+      "朋友聊天——语场（日常事务）、语旨（亲密平等）、语式（口语非正式）→ 产生省略句、俚语、话轮交替快",
+      "学术论文——语场（学科研究）、语旨（研究者-同行）、语式（书面正式）→ 产生客观化表达、引用、限定语"
+    ],
+    "limitations": "三个变量之间的交互作用难以精确描述；语域边界在实际中经常模糊；对新媒体语境下语域的变化关注不足",
+    "related_theories": ["theory_008", "theory_014", "theory_017"]
+  },
+  {
+    "id": "theory_016",
+    "type": "theory",
+    "name": "适应理论",
+    "name_en": "Accommodation Theory",
+    "founders": ["Giles"],
+    "year": 1973,
+    "description": "Giles的言语适应理论（Speech Accommodation Theory）解释人们在交际中如何调整自己的言语风格以适应对方。趋同（convergence）指说话者调整自己的言语使之更接近对方，目的是获得认同、表达友好、减少社会距离。趋异（divergence）指说话者强调或扩大言语差异，目的是凸显群体身份、表达不满或维护群体优越感。过度适应（over-accommodation）指适应过度，可能被视为居高临下或虚假。该理论揭示了语言选择背后的社会心理动机。",
+    "key_concepts": ["趋同", "趋异", "过度适应", "群体身份", "社会认同", "言语风格调整", "口音转换", "语码选择"],
+    "application_examples": [
+      "对外国朋友说话放慢语速、用简单词汇——趋同，但可能变成过度适应",
+      "在老乡面前故意使用方言——趋异，强调地域身份认同",
+      "下级模仿上级的口头禅和表达方式——趋同，建立关系和获得认可"
+    ],
+    "limitations": "对趋同/趋异的动机判断依赖研究者推断；对多语境、多参与者场景的解释力不足；未充分考虑数字媒体环境下的适应行为",
+    "related_theories": ["theory_017", "theory_005", "theory_006"]
+  },
+  {
+    "id": "theory_017",
+    "type": "theory",
+    "name": "语码转换理论",
+    "name_en": "Code-Switching Theory",
+    "founders": ["Myers-Scotton"],
+    "year": 1993,
+    "description": "Myers-Scotton的标记性模型（Markedness Model）解释语码转换的社会心理机制。核心概念是无标记选择（unmarked choice，符合社会规范预期的语言选择）和有标记选择（marked choice，偏离社会规范的语言选择，用于表达特殊含义）。语码转换的功能包括：引用（用另一语码引述他人话语）、强调（用另一语码强化某信息）、回避（用另一语码表达不便直说的内容）、身份协商（通过语码选择协商社会身份）。该理论揭示了多语者在不同语码之间的策略性选择。",
+    "key_concepts": ["无标记选择", "有标记选择", "语码转换", "语码混合", "权宜语码", "身份协商", "群体成员身份", "推理集"],
+    "application_examples": [
+      "中英夹杂说'这个project的deadline是下周一'——可能反映专业身份认同或工作环境默认语码",
+      "在正式场合突然切换方言讲笑话——有标记选择，营造亲近感或幽默效果",
+      "与同乡用方言交流——无标记选择，表达群体归属感"
+    ],
+    "limitations": "标记性的判断标准有时不够明确；对频繁语码混合（而非转换）的解释力不足；数字时代的网络语码转换现象有待深入研究",
+    "related_theories": ["theory_016", "theory_005", "theory_006"]
+  },
+  {
+    "id": "theory_018",
+    "type": "theory",
+    "name": "话语历史分析法",
+    "name_en": "Discourse-Historical Approach",
+    "founders": ["Wodak"],
+    "year": 1995,
+    "description": "Ruth Wodak发展的话语历史分析法（DHA）强调将话语置于其历史、社会和政治语境中进行分析。DHA的核心理念是：任何话语事件都嵌入在多层语境中——语言文本本身、话语实践（生产、分配、消费的制度性框架）、更广泛的社会政治语境。分析维度包括：主题分析（识别宏观命题）、策略分析（识别话语策略，如指称策略、述谓策略、论证策略）、论证分析（分析topoi，即论证的惯用模式）、语言分析（微观语言特征）。DHA特别适合分析歧视性话语、民族主义话语和政治话语。",
+    "key_concepts": ["历史语境", "话语策略", "指称策略", "述谓策略", "论证策略", "topoi", "互文性", "再语境化"],
+    "application_examples": [
+      "分析关于移民的政治话语——追溯'移民=威胁'这一话语建构的历史演变",
+      "分析历史教科书中的国家叙事——通过指称策略（'我们'vs'他们'）揭示民族认同建构",
+      "分析企业公关话语——通过再语境化策略将危机事件重新框架化"
+    ],
+    "limitations": "历史语境的界定可能过于宽泛；分析过程复杂耗时；对当代实时话语的分析可能缺乏足够的历史距离",
+    "related_theories": ["theory_007", "theory_011", "theory_012"]
+  },
+  {
+    "id": "theory_019",
+    "type": "theory",
+    "name": "认知语言学",
+    "name_en": "Cognitive Linguistics",
+    "founders": ["Langacker", "Lakoff", "Johnson"],
+    "year": 1980,
+    "description": "认知语言学认为语言不是独立的认知模块，而是人类一般认知能力的体现。Lakoff和Johnson提出概念隐喻理论（Conceptual Metaphor Theory）：隐喻不仅是修辞手法，更是人类思维的基本方式——我们用具体的源域理解抽象的目标域（如'时间是金钱'、'争论是战争'）。Langacker的认知语法（Cognitive Grammar）强调语言结构与认知过程的对应关系，如图形-背景（figure-ground）、射体-界标（trajector-landmark）。认知语言学揭示了语言背后的概念结构和认知机制。",
+    "key_concepts": ["概念隐喻", "概念转喻", "意象图式", "原型理论", "认知模型", "框架语义", "构式语法", "具身认知"],
+    "application_examples": [
+      "分析'人生是一场旅行'——时间被概念化为路径，人生被概念化为旅程",
+      "分析'他攻击了我的论点'——争论被概念化为战争（争论是战争隐喻）",
+      "分析'通货膨胀正在吞噬我们的积蓄'——通货膨胀被概念化为有意志的动物（通货膨胀是动物隐喻）"
+    ],
+    "limitations": "概念隐喻的心理现实性仍需更多神经科学和实验支持；对隐喻的文化变异研究不够充分；部分理论主张过于抽象，难以直接应用于话语分析",
+    "related_theories": ["theory_011", "theory_009", "theory_002"]
+  },
+  {
+    "id": "theory_020",
+    "type": "theory",
+    "name": "修辞学",
+    "name_en": "Rhetoric Theory",
+    "founders": ["Aristotle", "Cicero", "Quintilian"],
+    "year": -350,
+    "description": "亚里士多德在《修辞学》中建立的古典修辞学体系，提出说服的三种手段：信誉诉求（ethos，说话者的品格和可信度）、情感诉求（pathos，激发听众情感）、理性诉求（logos，通过逻辑和证据论证）。修辞还包括五项技艺：觅材取材（inventio）、布局安排（dispositio）、文体风格（elocutio）、记忆（memoria）、演讲技巧（pronuntiatio）。古典修辞学系统化了说服的艺术，至今仍是分析政治话语、广告话语、法律话语的基础框架。",
+    "key_concepts": ["ethos", "pathos", "logos", "修辞手法", "说服", "论证", "演说术", "修辞情境", "受众分析"],
+    "application_examples": [
+      "政治演讲中候选人强调自己的经历和品格——构建ethos（信誉诉求）",
+      "公益广告展示受害者的悲惨故事——激发pathos（情感诉求）",
+      "学术论文中引用数据和研究——运用logos（理性诉求）"
+    ],
+    "limitations": "古典修辞学以面对面演说为主要场景，对书面和数字话语的适用需要扩展；说服模型过于理想化，未充分考虑认知偏差和情感因素的复杂互动",
+    "related_theories": ["theory_001", "theory_011", "theory_019"]
+  }
 ]
