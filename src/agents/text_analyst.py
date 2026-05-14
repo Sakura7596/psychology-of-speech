@@ -54,7 +54,10 @@ class TextAnalystAgent(BaseAgent):
         analysis["discourse_markers"] = self._detect_discourse_markers(text)
 
         # 情感
-        analysis["sentiment"] = self._sentiment.analyze(text)
+        try:
+            analysis["sentiment"] = self._sentiment.analyze(text)
+        except Exception:
+            analysis["sentiment"] = {"label": "unknown", "score": 0.0, "error": "sentiment module unavailable"}
 
         # 置信度
         confidence = self._calculate_confidence(analysis)

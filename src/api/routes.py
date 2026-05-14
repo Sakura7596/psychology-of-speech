@@ -127,9 +127,10 @@ async def analyze_stream(request: AnalyzeRequest, req: Request):
                 return name, None
 
         # 并行执行三个分析 Agent
-        analysis_task = asyncio.create_task(
-            asyncio.gather(*(run_with_progress(n, agents[n]) for n in ANALYSIS_AGENTS))
-        )
+        async def _run_all():
+            return await asyncio.gather(*(run_with_progress(n, agents[n]) for n in ANALYSIS_AGENTS))
+
+        analysis_task = asyncio.create_task(_run_all())
 
         # 持续 drain 进度队列，直到分析任务完成
         while not analysis_task.done():
