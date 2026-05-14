@@ -1,0 +1,122 @@
+[
+  {
+    "id": "sc_001", "type": "social", "subtype": "humble_brag",
+    "text": "今天又有人夸我好看，好烦啊，都不好意思了。",
+    "keywords": ["又有人夸", "好烦", "不好意思"],
+    "analysis": "凡尔赛式炫耀：表面抱怨（好烦）实际炫耀（又有人夸我好看）。不好意思增加虚假的谦虚感。",
+    "psychological_state": "希望获得关注和认可但用抱怨包装",
+    "theories": ["自我呈现理论", "印象管理理论"]
+  },
+  {
+    "id": "sc_002", "type": "social", "subtype": "vague_invitation",
+    "text": "改天一起吃饭啊！最近怎么样？",
+    "keywords": ["改天", "一起吃饭", "最近怎么样"],
+    "analysis": "社交寒暄：改天是典型的模糊邀请，不表示真正的约定。最近怎么样是开启话题的客套话。",
+    "psychological_state": "维持社交联系但不想承担具体承诺",
+    "theories": ["会话含义理论", "社交仪式理论"]
+  },
+  {
+    "id": "sc_003", "type": "social", "subtype": "social_comparison",
+    "text": "你看人家小王，年纪轻轻就买房了。你看看你，还在租房。",
+    "keywords": ["你看人家", "年纪轻轻", "你看看你"],
+    "analysis": "社会比较施压：通过对比他人成就来贬低对方。你看人家是引入比较对象，你看看你是直接贬低。",
+    "psychological_state": "可能出于关心但用了伤害性的表达方式",
+    "theories": ["社会比较理论", "归因理论"]
+  },
+  {
+    "id": "sc_004", "type": "social", "subtype": "rejection_politeness",
+    "text": "你人真的很好，但是我现在不想谈恋爱。我们可以做朋友。",
+    "keywords": ["人真的很好", "不想谈恋爱", "做朋友"],
+    "analysis": "委婉拒绝模板：先肯定人格（人很好）再拒绝（不想谈恋爱）最后给替代方案（做朋友）。好人卡。",
+    "psychological_state": "不想伤害对方但需要明确拒绝",
+    "theories": ["礼貌策略", "面子理论"]
+  },
+  {
+    "id": "sc_005", "type": "social", "subtype": "showing_off",
+    "text": "唉，又要出差去巴黎了，真不想去，倒时差好累。",
+    "keywords": ["巴黎", "真不想去", "倒时差"],
+    "analysis": "炫耀式抱怨：用抱怨包装炫耀。巴黎是高价值地点，倒时差暗示频繁国际旅行。",
+    "psychological_state": "希望展示社会地位但不想显得太张扬",
+    "theories": ["自我呈现理论", "凡尔赛文学"]
+  },
+  {
+    "id": "sc_006", "type": "social", "subtype": "group_belonging",
+    "text": "我们这群人就是不一样，跟那些普通人没法比。",
+    "keywords": ["我们这群人", "不一样", "普通人", "没法比"],
+    "analysis": "群体认同强化：通过内群体（我们）和外群体（普通人）的对比建立优越感。",
+    "psychological_state": "寻求群体归属和优越感",
+    "theories": ["社会认同理论", "群体动力学"]
+  },
+  {
+    "id": "sc_007", "type": "social", "subtype": "concern_trolling",
+    "text": "我不是说你不好，只是担心你这样下去身体会出问题。",
+    "keywords": ["不是说你不好", "担心", "身体会出问题"],
+    "analysis": "关心式批评：先声明不是批评再用关心包装批评。担心是借口，实质是不赞同对方的生活方式。",
+    "psychological_state": "想表达不满但用关心作为掩护",
+    "theories": ["被动攻击理论", "面子理论"]
+  },
+  {
+    "id": "sc_008", "type": "social", "subtype": "one_upmanship",
+    "text": "你这算什么，我上次更惨，连续加班一个月。",
+    "keywords": ["你这算什么", "我上次更惨", "连续加班"],
+    "analysis": "竞争性共情：不真正共情而是用更惨的经历压过对方。你这算什么是否定对方经历的独特性。",
+    "psychological_state": "需要成为关注中心，将他人的痛苦转化为自己的故事",
+    "theories": ["自恋理论", "社会比较理论"]
+  },
+  {
+    "id": "sc_009", "type": "social", "subtype": "backhanded_compliment",
+    "text": "你今天看起来好精神啊，跟平时完全不一样。",
+    "keywords": ["好精神", "跟平时不一样"],
+    "analysis": "暗讽式赞美：表面夸你今天好看，实际暗示平时不好看。跟平时不一样是关键的贬低信息。",
+    "psychological_state": "可能出于嫉妒或想贬低对方",
+    "theories": ["会话含义理论", "面子威胁理论"]
+  },
+  {
+    "id": "sc_010", "type": "social", "subtype": "guilt_tripping_parent",
+    "text": "我这辈子都是为了你，你就这样报答我？",
+    "keywords": ["这辈子", "为了你", "报答"],
+    "analysis": "内疚诱导：通过强调牺牲（这辈子为了你）来让对方感到亏欠。报答暗示亲子关系被工具化。",
+    "psychological_state": "可能感到被忽视或失去控制",
+    "theories": ["情感操控理论", "依恋理论"]
+  },
+  {
+    "id": "sc_011", "type": "social", "subtype": "boundary_testing",
+    "text": "你不会这么小气吧？开个玩笑而已，别当真。",
+    "keywords": ["不会这么小气", "开玩笑", "别当真"],
+    "analysis": "边界测试：先质疑对方的承受力（不会这么小气）再用开玩笑逃避责任。别当真是否定对方感受的合理性。",
+    "psychological_state": "试探对方底线，用玩笑掩护真实的攻击",
+    "theories": ["边界理论", "被动攻击理论"]
+  },
+  {
+    "id": "sc_012", "type": "social", "subtype": "virtue_signaling",
+    "text": "我从来不看那些低俗的东西，我只看有深度的内容。",
+    "keywords": ["从来不看", "低俗", "有深度"],
+    "analysis": "道德信号：通过贬低他人喜好（低俗）来标榜自己的品味（有深度）。从来是绝对化表达。",
+    "psychological_state": "需要通过道德优越感来建立自我价值",
+    "theories": ["社会认同理论", "自我呈现理论"]
+  },
+  {
+    "id": "sc_013", "type": "social", "subtype": "emotional_blackmail",
+    "text": "如果你真的在乎我，你就不会这样做。",
+    "keywords": ["真的在乎", "就不会"],
+    "analysis": "情感勒索：用条件句将行为与感情绑定。如果不这样做=不在乎，迫使对方在行为和感情之间选择。",
+    "psychological_state": "试图通过情感压力控制对方行为",
+    "theories": ["情感操控理论", "认知扭曲理论"]
+  },
+  {
+    "id": "sc_014", "type": "social", "subtype": "false_modesty",
+    "text": "我也没什么了不起的，就是运气好而已。",
+    "keywords": ["没什么了不起", "运气好"],
+    "analysis": "虚假谦虚：表面否认自己的能力（没什么了不起）实际暗示成就（运气好暗示有成就）。",
+    "psychological_state": "想展示成就但用谦虚包装",
+    "theories": ["自我呈现理论", "文化心理学"]
+  },
+  {
+    "id": "sc_015", "type": "social", "subtype": "gossip_cloaking",
+    "text": "我听说她最近过得不太好，不过我不八卦，就是有点担心她。",
+    "keywords": ["听说", "不太好", "不八卦", "担心"],
+    "analysis": "八卦伪装：先分享八卦内容（过得不太好）再声明自己不八卦。担心是合理化八卦行为的借口。",
+    "psychological_state": "想传播信息但维护自己的道德形象",
+    "theories": ["印象管理理论", "社会交换理论"]
+  }
+]

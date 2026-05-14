@@ -6,7 +6,6 @@ from src.agents.logic_analyst import LogicAnalystAgent
 
 
 def _make_agent():
-    """Helper to create a LogicAnalystAgent with mocked constructor deps."""
     with patch("src.agents.logic_analyst.get_settings") as mock_settings, \
          patch("src.agents.logic_analyst.DeepSeekAdapter"), \
          patch("src.agents.logic_analyst.CaseLibrary"), \
@@ -31,7 +30,7 @@ def test_logic_analyst_description():
     assert len(agent.description) > 10
 
 
-def test_analyze_argument_structure():
+async def test_analyze_argument_structure():
     """测试论证结构分析"""
     agent = _make_agent()
     mock_llm = AsyncMock()
@@ -43,12 +42,12 @@ def test_analyze_argument_structure():
     agent._retriever.get_context_string.return_value = ""
 
     ctx = AnalysisContext(text="所有人都会死，苏格拉底是人，所以苏格拉底会死", depth=AnalysisDepth.STANDARD)
-    result = agent.analyze(ctx)
+    result = await agent.analyze(ctx)
     assert result.agent_name == "logic_analyst"
     assert result.confidence > 0
 
 
-def test_analyze_fallacy_detection():
+async def test_analyze_fallacy_detection():
     """测试逻辑谬误检测"""
     agent = _make_agent()
     mock_llm = AsyncMock()
@@ -60,5 +59,5 @@ def test_analyze_fallacy_detection():
     agent._retriever.get_context_string.return_value = "稻草人谬误"
 
     ctx = AnalysisContext(text="你支持环保？那你想回到原始社会？", depth=AnalysisDepth.STANDARD)
-    result = agent.analyze(ctx)
+    result = await agent.analyze(ctx)
     assert result.confidence > 0

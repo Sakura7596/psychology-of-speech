@@ -41,10 +41,17 @@ class SentimentAnalyzer:
         positive_score = scores.get("positive", 0.0)
         negative_score = scores.get("negative", 0.0)
 
+        if positive_score > negative_score:
+            dominant = "positive"
+        elif negative_score > positive_score:
+            dominant = "negative"
+        else:
+            dominant = "neutral"
+
         return {
             "positive_score": positive_score,
             "negative_score": negative_score,
             "neutral_score": scores.get("neutral", 0.0),
-            "dominant_emotion": "positive" if positive_score > negative_score else "negative",
+            "dominant_emotion": dominant,
             "all_scores": scores,
         }

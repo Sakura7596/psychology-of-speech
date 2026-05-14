@@ -1,0 +1,82 @@
+[
+  {
+    "id": "th_001", "type": "therapy", "subtype": "cognitive_distortion",
+    "text": "我什么都做不好，我就是个废物。",
+    "keywords": ["什么都做不好", "废物"],
+    "analysis": "灾难化+过度概括：什么都做不好是过度概括。废物是贴标签。将单一失败泛化为全面否定。",
+    "psychological_state": "低自尊，可能存在抑郁症状",
+    "theories": ["认知扭曲理论", "认知行为理论"]
+  },
+  {
+    "id": "th_002", "type": "therapy", "subtype": "catastrophizing",
+    "text": "如果我这次考试失败了，我的人生就完了。",
+    "keywords": ["如果失败", "人生完了"],
+    "analysis": "灾难化思维：将单一事件（考试失败）灾难化为人生完了。缺乏对未来的合理预期。",
+    "psychological_state": "焦虑，对失败有极端恐惧",
+    "theories": ["灾难化理论", "认知行为理论"]
+  },
+  {
+    "id": "th_003", "type": "therapy", "subtype": "mind_reading",
+    "text": "他肯定觉得我很蠢。所有人都在笑我。",
+    "keywords": ["肯定觉得", "所有人", "笑我"],
+    "analysis": "读心术+过度概括：未经证实就断定他人想法（肯定觉得）。所有人是过度概括。",
+    "psychological_state": "社交焦虑，过度在意他人评价",
+    "theories": ["读心术谬误", "社交焦虑理论"]
+  },
+  {
+    "id": "th_004", "type": "therapy", "subtype": "should_statements",
+    "text": "我应该更努力。我不应该犯这种错误。",
+    "keywords": ["应该", "不应该"],
+    "analysis": "应该思维：对自己施加不切实际的标准。应该和不应该创造不必要的内疚和压力。",
+    "psychological_state": "完美主义倾向，自我要求过高",
+    "theories": ["应该思维理论", "完美主义理论"]
+  },
+  {
+    "id": "th_005", "type": "therapy", "subtype": "emotional_reasoning",
+    "text": "我感觉自己很没用，所以我一定是真的很没用。",
+    "keywords": ["感觉", "一定是"],
+    "analysis": "情绪推理：将感觉等同于事实。感觉没用不等于真的没用。",
+    "psychological_state": "将情绪误认为事实",
+    "theories": ["情绪推理谬误", "认知行为理论"]
+  },
+  {
+    "id": "th_006", "type": "therapy", "subtype": "labeling",
+    "text": "我就是个失败者。我永远都不会成功。",
+    "keywords": ["失败者", "永远不会"],
+    "analysis": "贴标签+绝对化：用失败者定义自己。永远不会是绝对化思维。",
+    "psychological_state": "低自尊，全或无思维",
+    "theories": ["贴标签理论", "认知扭曲理论"]
+  },
+  {
+    "id": "th_007", "type": "therapy", "subtype": "personalization",
+    "text": "都是我的错。如果我当时做得更好，就不会这样了。",
+    "keywords": ["都是我的错", "如果当时"],
+    "analysis": "个人化：将所有责任归于自己。如果是反事实思维，过度自责。",
+    "psychological_state": "过度自责，缺乏自我同情",
+    "theories": ["个人化谬误", "归因理论"]
+  },
+  {
+    "id": "th_008", "type": "therapy", "subtype": "disqualifying_positive",
+    "text": "这次考得好只是运气好而已。下次肯定就不行了。",
+    "keywords": ["运气好", "肯定不行"],
+    "analysis": "否定正面：将成功归因于外部因素（运气）而非自己的能力。肯定不行是预设失败。",
+    "psychological_state": "低自尊，无法内化成功",
+    "theories": ["否定正面理论", "归因理论"]
+  },
+  {
+    "id": "th_009", "type": "therapy", "subtype": "all_or_nothing",
+    "text": "如果不是完美的，那就是垃圾。",
+    "keywords": ["完美", "垃圾"],
+    "analysis": "全或无思维：没有中间地带。要么完美要么垃圾。极端化的二元思维。",
+    "psychological_state": "完美主义，缺乏灰色地带认知",
+    "theories": ["全或无思维", "完美主义理论"]
+  },
+  {
+    "id": "th_010", "type": "therapy", "subtype": "mental_filter",
+    "text": "虽然他夸了我，但最后那句批评才是真正重要的。",
+    "keywords": ["虽然夸了", "批评", "真正重要"],
+    "analysis": "心理过滤：只关注负面信息（批评）忽略正面信息（夸奖）。选择性注意。",
+    "psychological_state": "消极偏向，只看到负面",
+    "theories": ["心理过滤理论", "消极偏向理论"]
+  }
+]

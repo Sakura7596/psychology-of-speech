@@ -27,6 +27,15 @@ class Settings(BaseSettings):
         default="./data/embeddings", alias="CHROMA_PERSIST_DIR"
     )
 
+    # 爬虫配置
+    scraper_respect_robots: bool = Field(default=True, alias="SCRAPER_RESPECT_ROBOTS")
+    scraper_max_retries: int = Field(default=3, alias="SCRAPER_MAX_RETRIES")
+    scraper_rate_limit_delay: float = Field(default=2.0, alias="SCRAPER_RATE_LIMIT_DELAY")
+    scraper_cases_dir: str = Field(default="data/cases", alias="SCRAPER_CASES_DIR")
+    scraper_graph_path: str = Field(
+        default="data/graph/psychology_graph.json", alias="SCRAPER_GRAPH_PATH"
+    )
+
     # 日志
     log_level: str = Field(default="INFO", alias="LOG_LEVEL")
 

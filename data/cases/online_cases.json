@@ -1,0 +1,162 @@
+[
+  {
+    "id": "on_001", "type": "online", "subtype": "keyboard_warrior",
+    "text": "就这？这也叫设计？我上我也行。",
+    "keywords": ["就这", "我也行", "这也叫"],
+    "analysis": "键盘侠式贬低：就这是否定价值。我也行是虚张声势。通过贬低他人来获得优越感。",
+    "psychological_state": "匿名环境下释放攻击性，寻求存在感",
+    "theories": ["去个体化理论", "在线去抑制效应"]
+  },
+  {
+    "id": "on_002", "type": "online", "subtype": "humble_brag_online",
+    "text": "随手拍的，没想到这么多人点赞。谢谢大家！",
+    "keywords": ["随手拍", "没想到", "这么多人"],
+    "analysis": "网络凡尔赛：随手拍暗示不在意。没想到这么多人点赞暗示效果很好。谢谢大家增加亲和力。",
+    "psychological_state": "希望获得认可但用不在意包装",
+    "theories": ["自我呈现理论", "社交媒体心理学"]
+  },
+  {
+    "id": "on_003", "type": "online", "subtype": "pile_on",
+    "text": "大家都在骂他，我也来说两句。这种人就应该被封号。",
+    "keywords": ["大家都在骂", "我也来说", "封号"],
+    "analysis": "网络跟风批判：大家是权威来源。我也来说是加入群体。封号是极端化建议。群体极化的典型表现。",
+    "psychological_state": "从众心理加上去个体化的攻击性",
+    "theories": ["群体极化理论", "从众理论"]
+  },
+  {
+    "id": "on_004", "type": "online", "subtype": "concern_trolling",
+    "text": "我不是喷子，但是你这个观点真的有问题。建议你多读读书。",
+    "keywords": ["不是喷子", "真的有问题", "多读书"],
+    "analysis": "关心式攻击：先声明不是喷子再攻击观点。多读书是居高临下的建议。用理性包装攻击。",
+    "psychological_state": "想攻击但维护理性形象",
+    "theories": ["印象管理理论", "在线话语分析"]
+  },
+  {
+    "id": "on_005", "type": "online", "subtype": "virtue_signaling",
+    "text": "作为一个有良知的人，我必须站出来说：这种行为是不对的。",
+    "keywords": ["有良知", "必须站出来", "不对的"],
+    "analysis": "道德信号：通过标榜自己有良知来建立道德高地。必须站出来暗示自己在做正义之事。",
+    "psychological_state": "通过道德立场获得社会认同",
+    "theories": ["道德信号理论", "社会认同理论"]
+  },
+  {
+    "id": "on_006", "type": "online", "subtype": "sea_lioning",
+    "text": "我只是想理性讨论而已。你能提供证据吗？来源是什么？数据在哪？",
+    "keywords": ["理性讨论", "证据", "来源", "数据"],
+    "analysis": "海狮策略：用理性外包装持续追问。看似合理的要求但实际是消耗对方精力的骚扰策略。",
+    "psychological_state": "用伪理性方式消耗对手",
+    "theories": ["在线骚扰策略", "批判话语分析"]
+  },
+  {
+    "id": "on_007", "type": "online", "subtype": "meme_argument",
+    "text": "你说的都对.jpg",
+    "keywords": ["你说的都对", "jpg"],
+    "analysis": "表情包式回应：表面同意实际是讽刺。用图片格式暗示不想继续讨论。是网络文化中的讽刺表达。",
+    "psychological_state": "不想继续讨论但想表达不满",
+    "theories": ["网络语言学", "讽刺理论"]
+  },
+  {
+    "id": "on_008", "type": "online", "subtype": "cancel_culture",
+    "text": "他十年前说过一句不当言论，这种人不配做公众人物。建议全网封杀。",
+    "keywords": ["十年前", "不当言论", "不配", "封杀"],
+    "analysis": "取消文化话语：翻旧账（十年前）+ 道德审判（不配）+ 极端惩罚（全网封杀）。零容忍逻辑。",
+    "psychological_state": "道德绝对主义，缺乏宽容",
+    "theories": ["道德心理学", "在线群体行为"]
+  },
+  {
+    "id": "on_009", "type": "online", "subtype": "appeal_to_authority",
+    "text": "某某专家都说了，这个方法有效。你比专家还懂？",
+    "keywords": ["专家都说了", "有效", "你比专家"],
+    "analysis": "诉诸权威：引用专家观点作为论据。你比专家还是反问式权威压制。",
+    "psychological_state": "缺乏独立论证能力，依赖权威",
+    "theories": ["诉诸权威谬误", "说服理论"]
+  },
+  {
+    "id": "on_010", "type": "online", "subtype": "whataboutism",
+    "text": "你说我不好？那XX呢？你怎么不说他？",
+    "keywords": ["你说我", "那XX呢", "你怎么不说"],
+    "analysis": "转移焦点：不回应批评而是指向他人。典型的whataboutism策略，回避自身问题。",
+    "psychological_state": "拒绝接受批评，转移注意力",
+    "theories": ["红鲱鱼谬误", "政治话语分析"]
+  },
+  {
+    "id": "on_011", "type": "online", "subtype": "passive_aggressive_emoji",
+    "text": "好的呢😊。随便你吧🙂。你开心就好🙃。",
+    "keywords": ["好的呢", "随便你", "开心就好", "emoji"],
+    "analysis": "被动攻击性表情包：文字表面顺从（好的呢、随便你）但配合微笑表情形成讽刺。网络语境中，正面文字加特定emoji构成反讽。对方无法直接反驳，因为字面意思是同意。",
+    "psychological_state": "压抑不满，用隐晦方式表达敌意",
+    "theories": ["被动攻击理论", "计算机中介传播理论"]
+  },
+  {
+    "id": "on_012", "type": "online", "subtype": "vague_posting",
+    "text": "有些人真的是……算了不说了。懂的都懂。",
+    "keywords": ["有些人", "不说了", "懂的都懂"],
+    "analysis": "模糊发帖：故意不说清楚（有些人）制造悬念。算了不说是欲擒故纵。懂的都懂是筛选受众，让所有人都代入。通过模糊性最大化关注度。",
+    "psychological_state": "渴望关注但不想直接表达，享受被追问的感觉",
+    "theories": ["注意力经济理论", "模糊语言学"]
+  },
+  {
+    "id": "on_013", "type": "online", "subtype": "subtweeting",
+    "text": "有的人啊，当面一套背后一套，迟早会被人看清真面目的。",
+    "keywords": ["有的人", "当面一套", "背后一套", "真面目"],
+    "analysis": "暗指式发帖：不点名批评（有的人）但目标对象会认出自己。当面一套背后一套是道德指控。制造一种公开审判的氛围，让被暗指者无法直接回应。",
+    "psychological_state": "想攻击但不敢正面冲突，用间接方式施压",
+    "theories": ["间接攻击理论", "社交媒体权力动态"]
+  },
+  {
+    "id": "on_014", "type": "online", "subtype": "performative_vulnerability",
+    "text": "今天又是崩溃的一天。我知道发出来会被说矫情，但我真的撑不住了……",
+    "keywords": ["崩溃", "矫情", "撑不住"],
+    "analysis": "表演性脆弱：公开表达痛苦但预设被批评（会被说矫情），这样任何安慰都会被视为支持。撑不住暗示需要帮助。将真实的情绪困扰转化为社交资本。",
+    "psychological_state": "真实痛苦与表演性展示混合，寻求社交支持",
+    "theories": ["脆弱性展示理论", "社交媒体自我呈现"]
+  },
+  {
+    "id": "on_015", "type": "online", "subtype": "humble_brag_post",
+    "text": "好烦啊，又有人找我帮忙，我都不知道怎么拒绝了。太受欢迎也是一种负担。",
+    "keywords": ["好烦", "帮不了拒绝", "太受欢迎", "负担"],
+    "analysis": "网络凡尔赛升级版：表面抱怨（好烦）实则炫耀受欢迎程度（太受欢迎）。负担是虚假的烦恼。将社交资本转化为优越感。",
+    "psychological_state": "渴望被羡慕，用抱怨包装炫耀",
+    "theories": ["自我呈现理论", "凡尔赛文学心理学"]
+  },
+  {
+    "id": "on_016", "type": "online", "subtype": "cancel_culture_rhetoric",
+    "text": "这个人居然敢这么说？大家一起抵制！绝不给这种人流量！",
+    "keywords": ["居然敢", "一起抵制", "不给流量"],
+    "analysis": "取消文化话术：居然敢是道德震惊。一起抵制是动员群体。不给流量是经济惩罚。将复杂议题简化为善恶二元对立，用群体力量施压。",
+    "psychological_state": "道德义愤加上群体力量感，缺乏宽容空间",
+    "theories": ["取消文化社会学", "道德情感理论"]
+  },
+  {
+    "id": "on_017", "type": "online", "subtype": "parasocial_reference",
+    "text": "XX老师肯定不会这样做的。我关注他三年了，我了解他。",
+    "keywords": ["老师", "不会这样", "关注三年", "了解他"],
+    "analysis": "准社会关系引用：将单向关注等同于深入了解（了解他）。关注三年是经验佐证。混淆准社会关系与真实关系，为偶像辩护。",
+    "psychological_state": "与网络人物建立单向情感联结，维护理想化形象",
+    "theories": ["准社会关系理论", "粉丝心理学"]
+  },
+  {
+    "id": "on_018", "type": "online", "subtype": "virtue_signaling_post",
+    "text": "刚刚在地铁上给老人让座了。不是为了发朋友圈，就是觉得这是应该做的。",
+    "keywords": ["让座", "不是为了朋友圈", "应该做的"],
+    "analysis": "道德信号发帖：先展示善行（让座）再声明不是为了炫耀。但发出来本身就是炫耀。这种否定式声明反而强化了道德展示的效果。",
+    "psychological_state": "渴望道德认可但维持谦虚形象",
+    "theories": ["道德信号理论", "印象管理理论"]
+  },
+  {
+    "id": "on_019", "type": "online", "subtype": "concern_trolling_online",
+    "text": "我就是担心你啊。你这样天天加班，身体迟早会出问题的。到时候后悔都来不及。",
+    "keywords": ["担心你", "天天加班", "后悔来不及"],
+    "analysis": "网络关心式攻击：以关心为名（担心你）进行施压。后悔来不及是灾难化预言。表面善意实则传递焦虑，让对方感到自己的选择是错误的。",
+    "psychological_state": "用关心包装批评，维护好人形象",
+    "theories": ["关心式攻击理论", "在线话语分析"]
+  },
+  {
+    "id": "on_020", "type": "online", "subtype": "screenshot_threat",
+    "text": "你确定要这么说？我可截图了哦。万一哪天你需要解释呢。",
+    "keywords": ["确定", "截图", "解释"],
+    "analysis": "截图威胁：你确定是警告。我可截图了是暗示证据保留。万一哪天是模糊威胁。制造一种被监控和随时可能被曝光的压力，限制对方言论自由。",
+    "psychological_state": "用信息不对称施加权力，制造恐惧",
+    "theories": ["数字权力理论", "在线监控心理学"]
+  }
+]

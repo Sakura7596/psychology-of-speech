@@ -1,0 +1,122 @@
+[
+  {
+    "id": "fn_001", "type": "financial", "subtype": "loss_aversion",
+    "text": "这只股票跌了20%了，我不能卖。卖了就真的亏了。",
+    "keywords": ["跌了", "不能卖", "真的亏"],
+    "analysis": "损失厌恶：持有亏损股票等待回本。卖了就真的亏是心理账户效应。",
+    "psychological_state": "害怕实现损失，过度持有亏损资产",
+    "theories": ["损失厌恶理论", "前景理论"]
+  },
+  {
+    "id": "fn_002", "type": "financial", "subtype": "sunk_cost",
+    "text": "我已经在这个项目上投了100万了，不能现在放弃。",
+    "keywords": ["已经投了", "不能放弃"],
+    "analysis": "沉没成本谬误：因为已经投入（100万）而继续投入。过去的投入不应影响未来决策。",
+    "psychological_state": "被过去的投入绑架，无法理性决策",
+    "theories": ["沉没成本谬误", "决策心理学"]
+  },
+  {
+    "id": "fn_003", "type": "financial", "subtype": "overconfidence",
+    "text": "我炒股从来没亏过。这次肯定也能赚。",
+    "keywords": ["从来没亏", "肯定能赚"],
+    "analysis": "过度自信：将过去的成功归因于能力（从来没亏）。肯定是过度自信。",
+    "psychological_state": "过度自信，忽视风险",
+    "theories": ["过度自信理论", "自利偏误"]
+  },
+  {
+    "id": "fn_004", "type": "financial", "subtype": "herd_behavior",
+    "text": "大家都在买这个基金，我也买点。",
+    "keywords": ["大家都在买", "我也买"],
+    "analysis": "从众行为：大家是权威来源。我也买是从众。缺乏独立判断。",
+    "psychological_state": "跟随群体，缺乏独立分析",
+    "theories": ["从众理论", "羊群效应"]
+  },
+  {
+    "id": "fn_005", "type": "financial", "subtype": "mental_accounting",
+    "text": "这个钱是意外之财，花了也不心疼。",
+    "keywords": ["意外之财", "不心疼"],
+    "analysis": "心理账户：将意外之财归入不同账户。同样的钱来源不同对待不同。",
+    "psychological_state": "非理性地对待不同来源的钱",
+    "theories": ["心理账户理论", "行为经济学"]
+  },
+  {
+    "id": "fn_006", "type": "financial", "subtype": "present_bias",
+    "text": "我知道应该存钱，但现在先享受一下。以后再说。",
+    "keywords": ["应该存钱", "先享受", "以后再说"],
+    "analysis": "现时偏见：过度重视即时满足（先享受）忽视长期利益（存钱）。以后再说是拖延。",
+    "psychological_state": "即时满足优先，缺乏延迟满足能力",
+    "theories": ["现时偏见", "跨期选择理论"]
+  },
+  {
+    "id": "fn_007", "type": "financial", "subtype": "anchoring",
+    "text": "这件衣服原价3000，现在只要500。太划算了！",
+    "keywords": ["原价3000", "只要500", "划算"],
+    "analysis": "价格锚定：原价是锚点。500相对于3000显得便宜。但实际价值可能远低于500。",
+    "psychological_state": "被锚定价格影响价值判断",
+    "theories": ["锚定效应", "价格心理学"]
+  },
+  {
+    "id": "fn_008", "type": "financial", "subtype": "disposition_effect",
+    "text": "赚了10%我就卖。亏了就拿着等回本。",
+    "keywords": ["赚了卖", "亏了等"],
+    "analysis": "处置效应：过早卖出盈利资产，过久持有亏损资产。风险偏好不一致。",
+    "psychological_state": "非理性的资产处置行为",
+    "theories": ["处置效应", "前景理论"]
+  },
+  {
+    "id": "fn_009", "type": "financial", "subtype": "scam_susceptibility",
+    "text": "这个投资保证年化收益30%。我朋友已经赚了不少了。",
+    "keywords": ["保证", "30%", "朋友赚了"],
+    "analysis": "诈骗易感性：保证高收益是典型诈骗信号。朋友赚了是社会认同。",
+    "psychological_state": "贪婪加上轻信",
+    "theories": ["诈骗心理学", "社会认同理论"]
+  },
+  {
+    "id": "fn_010", "type": "financial", "subtype": "financial_anxiety",
+    "text": "虽然存款够用，但总担心钱不够。每天都看银行余额。",
+    "keywords": ["够用", "担心不够", "看余额"],
+    "analysis": "财务焦虑：实际够用但主观担心不够。每天看余额是焦虑行为。",
+    "psychological_state": "财务不安全感，即使客观条件良好",
+    "theories": ["焦虑理论", "财务心理学"]
+  },
+  {
+    "id": "fn_011", "type": "financial", "subtype": "financial_gaslighting",
+    "text": "我什么时候说过给你生活费了？你自己记错了吧。你总是这样乱花钱还怪我。",
+    "keywords": ["什么时候说过", "记错", "乱花钱"],
+    "analysis": "财务煤气灯：什么时候说过是否认事实。记错是篡改记忆。乱花钱是反向指责。通过否定对方的认知来维持财务控制权。让对方怀疑自己的记忆和判断。",
+    "psychological_state": "通过否认和扭曲事实来控制财务话语权",
+    "theories": ["煤气灯效应", "经济虐待理论"]
+  },
+  {
+    "id": "fn_012", "type": "financial", "subtype": "spending_guilt",
+    "text": "又买了件衣服，我是不是太浪费了？但是真的很喜欢。算了，退货吧。不，留着吧。好纠结。",
+    "keywords": ["太浪费", "很喜欢", "退货", "纠结"],
+    "analysis": "消费内疚：太浪费是自我批评。很喜欢是真实需求。退货留着的反复体现内心冲突。将正常消费道德化为浪费，导致决策瘫痪和情绪消耗。",
+    "psychological_state": "对消费行为产生道德化评判，内心冲突",
+    "theories": ["消费心理学", "道德化消费理论"]
+  },
+  {
+    "id": "fn_013", "type": "financial", "subtype": "money_as_control",
+    "text": "你要是不听话，下个月的零花钱就别想要了。这个家我说了算。",
+    "keywords": ["不听话", "零花钱", "我说了算"],
+    "analysis": "金钱作为控制工具：不听话是条件设定。零花钱是控制杠杆。我说了算是权力宣示。将经济资源武器化，用金钱惩罚来强制服从。这是一种经济控制形式。",
+    "psychological_state": "用经济权力维持家庭等级秩序",
+    "theories": ["经济虐待理论", "权力控制理论"]
+  },
+  {
+    "id": "fn_014", "type": "financial", "subtype": "lifestyle_inflation_rationalization",
+    "text": "工资涨了当然要改善生活嘛。人就活一辈子，不对自己好点对不起自己。",
+    "keywords": ["涨了", "改善生活", "一辈子", "对不起自己"],
+    "analysis": "生活方式膨胀合理化：涨了是触发条件。改善生活是升级需求。一辈子是时间有限性论证。对不起自己是自我关怀包装。为不断升级的消费寻找合理借口。",
+    "psychological_state": "用享乐主义合理化消费膨胀",
+    "theories": ["生活方式膨胀理论", "享乐适应理论"]
+  },
+  {
+    "id": "fn_015", "type": "financial", "subtype": "financial_infidelity",
+    "text": "这笔钱你别问我花哪了。我有我的自由，你管好你自己的就行了。",
+    "keywords": ["别问", "我的自由", "管好自己"],
+    "analysis": "财务不忠：别问是信息封锁。我的自由是权利边界化。管好自己是划清界限。在亲密关系中隐藏财务行为，拒绝财务透明。破坏伴侣间的信任基础。",
+    "psychological_state": "在财务问题上回避透明和沟通",
+    "theories": ["财务不忠理论", "亲密关系信任理论"]
+  }
+]

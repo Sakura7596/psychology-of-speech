@@ -1,0 +1,82 @@
+[
+  {
+    "id": "lg_001", "type": "legal", "subtype": "false_confession",
+    "text": "是我做的，都是我做的。求你们别问了。",
+    "keywords": ["是我做的", "别问了"],
+    "analysis": "虚假供述：重复承认（是我做的）加上请求停止（别问了）暗示可能是被迫供述。",
+    "psychological_state": "可能在压力下做出虚假供述",
+    "theories": ["虚假供述理论", "审讯心理学"]
+  },
+  {
+    "id": "lg_002", "type": "legal", "subtype": "victim_blaming",
+    "text": "她穿成那样，不就是想引人注意吗？",
+    "keywords": ["穿成那样", "引人注意"],
+    "analysis": "受害者指责：将责任归于受害者（穿成那样）。引人注意暗示受害者有责任。",
+    "psychological_state": "通过指责受害者来合理化加害行为",
+    "theories": ["受害者指责理论", "归因理论"]
+  },
+  {
+    "id": "lg_003", "type": "legal", "subtype": "plea_bargaining",
+    "text": "我认罪。但我有特殊情况，请法庭从轻处罚。",
+    "keywords": ["认罪", "特殊情况", "从轻"],
+    "analysis": "认罪协商：先认罪再请求从轻。特殊情况是减轻处罚的理由。",
+    "psychological_state": "权衡利弊后的策略性选择",
+    "theories": ["认罪协商理论", "法律话语分析"]
+  },
+  {
+    "id": "lg_004", "type": "legal", "subtype": "witness_coaching",
+    "text": "你就说你当时看到了他打人。其他的不用说。",
+    "keywords": ["你就说", "看到了", "不用说"],
+    "analysis": "证人教唆：指示证人说什么（你就说）。不用说是限制信息。",
+    "psychological_state": "试图影响司法程序",
+    "theories": ["证人可靠性理论", "法律心理学"]
+  },
+  {
+    "id": "lg_005", "type": "legal", "subtype": "character_assassination",
+    "text": "他以前就撒过谎。这次的证词也不能信。",
+    "keywords": ["以前撒谎", "不能信"],
+    "analysis": "人格攻击：用过去的行为（撒谎）否定当前证词。人身攻击而非讨论证据。",
+    "psychological_state": "通过攻击人格来削弱对方可信度",
+    "theories": ["人身攻击谬误", "法律修辞"]
+  },
+  {
+    "id": "lg_006", "type": "legal", "subtype": "mitigation",
+    "text": "他是初犯，平时表现良好。请法庭给他一个改过自新的机会。",
+    "keywords": ["初犯", "表现良好", "改过自新"],
+    "analysis": "减轻情节：强调初犯和良好表现。改过自新是请求宽大处理。",
+    "psychological_state": "试图获得同情和宽大处理",
+    "theories": ["法律修辞", "减轻情节理论"]
+  },
+  {
+    "id": "lg_007", "type": "legal", "subtype": "aggravation",
+    "text": "他不仅没有悔意，还在庭上威胁受害者。必须严惩。",
+    "keywords": ["没有悔意", "威胁", "严惩"],
+    "analysis": "加重情节：强调缺乏悔意和继续威胁。严惩是请求加重处罚。",
+    "psychological_state": "试图获得更严厉的处罚",
+    "theories": ["加重情节理论", "法律修辞"]
+  },
+  {
+    "id": "lg_008", "type": "legal", "subtype": "expert_testimony",
+    "text": "根据我的专业判断，被告在作案时处于精神失常状态。",
+    "keywords": ["专业判断", "精神失常"],
+    "analysis": "专家证词：用专业身份（专业判断）增加可信度。精神失常是法律辩护策略。",
+    "psychological_state": "利用专业权威影响判决",
+    "theories": ["专家证词理论", "法律心理学"]
+  },
+  {
+    "id": "lg_009", "type": "legal", "subtype": "jury_persuasion",
+    "text": "各位陪审团成员，请想象一下如果这是你们的孩子。",
+    "keywords": ["陪审团", "想象", "你们的孩子"],
+    "analysis": "情感诉求：通过让陪审团想象自己的孩子来引发情感共鸣。",
+    "psychological_state": "利用情感影响理性判断",
+    "theories": ["情感诉求", "法律修辞"]
+  },
+  {
+    "id": "lg_010", "type": "legal", "subtype": "plea_for_mercy",
+    "text": "我知道我错了。我愿意赔偿。请给我一个重新做人的机会。",
+    "keywords": ["错了", "赔偿", "重新做人"],
+    "analysis": "请求宽恕：承认错误（错了）+ 表示补偿意愿（赔偿）+ 请求机会（重新做人）。",
+    "psychological_state": "真诚悔过或策略性请求",
+    "theories": ["悔过理论", "法律话语分析"]
+  }
+]

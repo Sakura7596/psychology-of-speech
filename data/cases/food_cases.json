@@ -1,0 +1,82 @@
+[
+  {
+    "id": "fd_001", "type": "food", "subtype": "diet_culture",
+    "text": "这个蛋糕好好吃。算了，明天再减肥。",
+    "keywords": ["好好吃", "算了", "明天减肥"],
+    "analysis": "即时满足vs延迟目标：好吃触发即时满足。明天再减是拖延。",
+    "psychological_state": "即时满足优先，减肥目标被推迟",
+    "theories": ["现时偏见", "自我控制理论"]
+  },
+  {
+    "id": "fd_002", "type": "food", "subtype": "food_shaming",
+    "text": "你怎么吃这么多？你不胖吗？",
+    "keywords": ["吃这么多", "不胖吗"],
+    "analysis": "食物羞耻：通过质疑食量来羞辱他人。不胖吗是身体羞辱。",
+    "psychological_state": "用食物评论来评判他人",
+    "theories": ["身体意象理论", "食物羞耻"]
+  },
+  {
+    "id": "fd_003", "type": "food", "subtype": "comfort_eating",
+    "text": "心情不好的时候就想吃东西。吃完了又后悔。",
+    "keywords": ["心情不好", "吃东西", "后悔"],
+    "analysis": "情绪性进食：用食物应对负面情绪。吃完后悔是内疚循环。",
+    "psychological_state": "将食物作为情绪调节工具",
+    "theories": ["情绪性进食理论", "应对策略"]
+  },
+  {
+    "id": "fd_004", "type": "food", "subtype": "food_moralizing",
+    "text": "吃沙拉是健康的。吃垃圾食品是堕落的。",
+    "keywords": ["健康的", "堕落的"],
+    "analysis": "食物道德化：将食物选择与道德品质挂钩。堕落是道德判断。",
+    "psychological_state": "将饮食选择道德化",
+    "theories": ["食物道德化理论", "健康心理学"]
+  },
+  {
+    "id": "fd_005", "type": "food", "subtype": "social_eating",
+    "text": "大家都在吃，我不吃不太好。",
+    "keywords": ["大家", "不吃不好"],
+    "analysis": "社交性进食：从众压力（大家）。不吃不好是社交焦虑。",
+    "psychological_state": "为了融入群体而进食",
+    "theories": ["社会影响理论", "社交焦虑"]
+  },
+  {
+    "id": "fd_006", "type": "food", "subtype": "guilt_pleasure",
+    "text": "这是我偷偷吃的。千万别告诉别人。",
+    "keywords": ["偷偷吃", "千万别告诉"],
+    "analysis": "罪恶快感：偷偷吃暗示这是不该做的事。保密增加羞耻感。",
+    "psychological_state": "享受食物但感到内疚",
+    "theories": ["罪恶快感理论", "内疚心理学"]
+  },
+  {
+    "id": "fd_007", "type": "food", "subtype": "restriction_binge",
+    "text": "我已经三天没吃碳水了。今天实在忍不住了，吃了一整盒蛋糕。",
+    "keywords": ["三天没吃", "忍不住", "一整盒"],
+    "analysis": "限制-暴食循环：过度限制（三天没吃碳水）导致暴食（一整盒蛋糕）。",
+    "psychological_state": "不健康的饮食模式",
+    "theories": ["限制性饮食理论", "暴食行为"]
+  },
+  {
+    "id": "fd_008", "type": "food", "subtype": "food_anxiety",
+    "text": "这个有添加剂吗？是不是转基因的？我不敢吃。",
+    "keywords": ["添加剂", "转基因", "不敢吃"],
+    "analysis": "食物焦虑：对食品安全过度担忧。不敢吃是恐惧驱动。",
+    "psychological_state": "对食品安全有过度焦虑",
+    "theories": ["健康焦虑理论", "风险感知"]
+  },
+  {
+    "id": "fd_009", "type": "food", "subtype": "cooking_pride",
+    "text": "这道菜是我自己做的。比外面卖的好吃多了。",
+    "keywords": ["自己做的", "比外面好"],
+    "analysis": "烹饪自豪：强调自己做的增加价值感。比外面好是自我肯定。",
+    "psychological_state": "通过烹饪展示能力和创造力",
+    "theories": ["自我效能理论", "创造性表达"]
+  },
+  {
+    "id": "fd_010", "type": "food", "subtype": "food_memory",
+    "text": "小时候奶奶做的红烧肉。现在再也吃不到那个味道了。",
+    "keywords": ["小时候", "奶奶", "再也吃不到"],
+    "analysis": "食物记忆：食物与情感记忆绑定。再也吃不到暗示失去的时光。",
+    "psychological_state": "通过食物怀念过去和亲人",
+    "theories": ["怀旧理论", "食物记忆"]
+  }
+]

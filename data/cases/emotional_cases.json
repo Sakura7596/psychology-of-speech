@@ -1,0 +1,82 @@
+[
+  {
+    "id": "em_001", "type": "emotional", "subtype": "breakup_rhetoric",
+    "text": "我们不合适，你值得更好的人。希望你能找到真正爱你的人。",
+    "keywords": ["不合适", "值得更好的", "真正爱你"],
+    "analysis": "分手委婉话术：不合适是模糊归因。值得更好的是虚假安慰，实际是我不想要你。希望你能找到是结束语。",
+    "psychological_state": "想结束关系但不想承担伤害的责任",
+    "theories": ["礼貌策略", "归因理论"]
+  },
+  {
+    "id": "em_002", "type": "emotional", "subtype": "jealousy_expression",
+    "text": "你跟她关系真好啊。我没什么，就是随便问问。",
+    "keywords": ["关系真好", "没什么", "随便问问"],
+    "analysis": "嫉妒表达：表面随便问问实际在质问。关系真好是试探。我没什么是否认嫉妒。",
+    "psychological_state": "感到嫉妒但不想直接表达",
+    "theories": ["情绪理论", "防御机制理论"]
+  },
+  {
+    "id": "em_003", "type": "emotional", "subtype": "seeking_validation",
+    "text": "我是不是太敏感了？可能是我想多了吧。你不用在意。",
+    "keywords": ["太敏感", "想多了", "不用在意"],
+    "analysis": "寻求确认：通过自我贬低（太敏感、想多了）来测试对方是否在意。你不用在意是反话。",
+    "psychological_state": "需要情感确认但害怕被拒绝",
+    "theories": ["依恋理论", "情绪确认理论"]
+  },
+  {
+    "id": "em_004", "type": "emotional", "subtype": "silent_treatment",
+    "text": "我没事。你想多了。我就是不想说话而已。",
+    "keywords": ["没事", "不想说话", "你想多了"],
+    "analysis": "冷暴力：声称没事但不想说话是矛盾信号。你想多了是否认对方的感知。实际上是通过沉默施压。",
+    "psychological_state": "通过被动攻击表达不满",
+    "theories": ["冷暴力理论", "被动攻击理论"]
+  },
+  {
+    "id": "em_005", "type": "emotional", "subtype": "apology_deflection",
+    "text": "好好好，都是我的错行了吧？你满意了吗？",
+    "keywords": ["都是我的错", "行了吧", "满意了吗"],
+    "analysis": "伪道歉：表面认错实际是反讽。行了吧和满意了吗暗示对方在无理取闹。这是防御性道歉。",
+    "psychological_state": "感到被指责但不想真正认错",
+    "theories": ["防御机制理论", "面子理论"]
+  },
+  {
+    "id": "em_006", "type": "emotional", "subtype": "longing_expression",
+    "text": "有时候会突然想起以前的日子，那时候多简单啊。算了，不说了。",
+    "keywords": ["突然想起", "以前", "多简单", "不说了"],
+    "analysis": "怀旧表达：通过回忆过去（以前的日子）表达对现状的不满。算了不说了是压抑情感的信号。",
+    "psychological_state": "对现状感到失落，怀念过去",
+    "theories": ["情绪理论", "怀旧心理学"]
+  },
+  {
+    "id": "em_007", "type": "emotional", "subtype": "overthinking",
+    "text": "他那句话是什么意思？是不是我哪里做得不好？还是他根本就不在乎我？",
+    "keywords": ["什么意思", "做得不好", "不在乎"],
+    "analysis": "过度解读：对一句话进行多层负面解读。从具体行为（那句话）推导到自我否定（做得不好）再到灾难化（不在乎）。",
+    "psychological_state": "焦虑型依恋，过度关注关系信号",
+    "theories": ["认知扭曲理论", "依恋理论"]
+  },
+  {
+    "id": "em_008", "type": "emotional", "subtype": "emotional_exhaustion",
+    "text": "我真的好累。不是身体累，是心累。什么都不想做了。",
+    "keywords": ["好累", "心累", "不想做"],
+    "analysis": "情感耗竭：区分身体累和心累说明是情感层面的疲惫。什么都不想做是习得性无助的表现。",
+    "psychological_state": "情感耗竭，可能存在职业倦怠或抑郁倾向",
+    "theories": ["职业倦怠理论", "习得性无助理论"]
+  },
+  {
+    "id": "em_009", "type": "emotional", "subtype": "people_pleasing_fatigue",
+    "text": "我总是为别人想，但谁为我想过？算了，反正我也习惯了。",
+    "keywords": ["为别人想", "谁为我想", "习惯了"],
+    "analysis": "讨好型疲惫：表达付出不对等（为别人想但没人为我想）。算了和习惯了是自我安慰和压抑。",
+    "psychological_state": "讨好型人格的疲惫和失落",
+    "theories": ["讨好型人格理论", "社会交换理论"]
+  },
+  {
+    "id": "em_010", "type": "emotional", "subtype": "conditional_love",
+    "text": "你要是能瘦到100斤，我就带你去旅游。",
+    "keywords": ["要是能", "就带你"],
+    "analysis": "有条件的爱：将爱和奖励与条件绑定。暗示对方目前不够好（需要瘦到100斤）才值得被爱。",
+    "psychological_state": "可能出于关心但用了控制性的表达",
+    "theories": ["有条件的积极关注理论", "控制理论"]
+  }
+]

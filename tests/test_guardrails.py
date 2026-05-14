@@ -53,7 +53,8 @@ def test_privacy_mask_phone():
 def test_privacy_mask_email():
     guard = PrivacyGuard()
     result = guard.mask_pii("发送到 test@example.com")
-    assert "t***@example.com" in result
+    assert "[邮箱已脱敏]" in result
+    assert "test@example.com" not in result
 
 
 def test_privacy_no_pii():

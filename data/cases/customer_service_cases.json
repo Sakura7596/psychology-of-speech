@@ -1,0 +1,82 @@
+[
+  {
+    "id": "cs_001", "type": "customer_service", "subtype": "sales_pressure",
+    "text": "这个产品今天做活动，明天就恢复原价了。您看，已经有好几百人下单了。",
+    "keywords": ["今天做活动", "恢复原价", "好几百人下单"],
+    "analysis": "销售施压策略：稀缺性（今天最后一天）+ 社会认同（好几百人下单）。制造紧迫感促使决策。",
+    "psychological_state": "利用消费者的损失厌恶和从众心理",
+    "theories": ["说服理论", "稀缺性原理"]
+  },
+  {
+    "id": "cs_002", "type": "customer_service", "subtype": "complaint_deflection",
+    "text": "非常抱歉给您带来不便。我们已经记录了您的问题，会有专人跟进处理。",
+    "keywords": ["非常抱歉", "记录了", "专人跟进"],
+    "analysis": "客服标准话术：道歉（非常抱歉）+ 表示行动（记录了）+ 推迟处理（专人跟进）。实际上是拖延策略。",
+    "psychological_state": "标准化的情绪安抚，不解决实质问题",
+    "theories": ["情绪管理理论", "服务话语分析"]
+  },
+  {
+    "id": "cs_003", "type": "customer_service", "subtype": "upselling",
+    "text": "您选的这个基础版其实功能比较有限，很多客户后来都升级到专业版了。要不我帮您介绍一下？",
+    "keywords": ["比较有限", "很多客户", "升级", "介绍一下"],
+    "analysis": "追加销售策略：先贬低已选产品（比较有限）再用社会认同（很多客户升级）引导升级。",
+    "psychological_state": "引导消费升级，利用不安全感",
+    "theories": ["说服理论", "社会认同原理"]
+  },
+  {
+    "id": "cs_004", "type": "customer_service", "subtype": "refund_resistance",
+    "text": "理解您的心情。不过按照我们的政策，超过7天就不能退了。要不我帮您换个方案？",
+    "keywords": ["理解", "按照政策", "不能退", "换个方案"],
+    "analysis": "退款抵制策略：先共情（理解）再用政策挡箭（按照政策）最后给替代方案（换个方案）。",
+    "psychological_state": "在客户满意度和公司利益之间平衡",
+    "theories": ["谈判理论", "政策话语分析"]
+  },
+  {
+    "id": "cs_005", "type": "customer_service", "subtype": "testimonial_use",
+    "text": "之前有个客户跟您情况一样，用了我们的产品之后效果特别好。我给您看看他的反馈。",
+    "keywords": ["之前有个客户", "跟您一样", "效果特别好"],
+    "analysis": "案例证明策略：用类似案例（跟您一样）建立共鸣，用正面反馈（效果特别好）增加可信度。",
+    "psychological_state": "利用社会认同和类比推理来说服",
+    "theories": ["社会认同理论", "说服理论"]
+  },
+  {
+    "id": "cs_006", "type": "customer_service", "subtype": "price_anchor",
+    "text": "这款原价3999，现在只要1999，相当于打了五折。这个价格真的非常划算了。",
+    "keywords": ["原价", "只要", "五折", "非常划算"],
+    "analysis": "价格锚定策略：先给出高价锚点（原价3999）再展示折扣价（只要1999）。五折强化优惠感知。",
+    "psychological_state": "利用锚定效应和损失厌恶",
+    "theories": ["锚定效应", "价格心理学"]
+  },
+  {
+    "id": "cs_007", "type": "customer_service", "subtype": "cold_calling",
+    "text": "您好，请问是张先生吗？我是XX公司的小李。耽误您一分钟，有个事情想跟您说一下。",
+    "keywords": ["请问是", "耽误您一分钟", "想跟您说"],
+    "analysis": "电话销售开场：确认身份（建立信任）+ 最小化打扰（一分钟）+ 悬念（有个事情）。降低拒绝概率。",
+    "psychological_state": "试图突破初始拒绝防线",
+    "theories": ["脚在门槛内效应", "礼貌策略"]
+  },
+  {
+    "id": "cs_008", "type": "customer_service", "subtype": "objection_handling",
+    "text": "您说的确实有道理。不过换个角度想，如果现在不买，以后涨价了就亏了。",
+    "keywords": ["确实有道理", "换个角度", "不买", "亏了"],
+    "analysis": "异议处理：先认可客户观点（确实有道理）再换角度（换个角度想）最后制造损失感（亏了）。",
+    "psychological_state": "引导客户从拒绝转向接受",
+    "theories": ["框架效应", "损失厌恶"]
+  },
+  {
+    "id": "cs_009", "type": "customer_service", "subtype": "scarcity_creation",
+    "text": "这个款只剩最后两件了，仓库已经没有库存了。要不我帮您先留一件？",
+    "keywords": ["最后两件", "没有库存", "先留一件"],
+    "analysis": "稀缺性制造：强调数量有限（最后两件）和不可补充（没有库存）。先留一件是默认成交策略。",
+    "psychological_state": "利用稀缺性压力促使快速决策",
+    "theories": ["稀缺性原理", "紧迫感心理学"]
+  },
+  {
+    "id": "cs_010", "type": "customer_service", "subtype": "refund_rhetoric",
+    "text": "理解您想退款。不过我建议您再试用一周，很多客户一开始不习惯，后来都觉得特别好用。",
+    "keywords": ["理解", "再试用", "一开始不习惯", "特别好用"],
+    "analysis": "退款挽留：先共情（理解）再延期（再试用一周）+ 社会认同（很多客户）。将问题归因于适应期。",
+    "psychological_state": "试图将退款转化为保留客户",
+    "theories": ["归因理论", "社会认同理论"]
+  }
+]

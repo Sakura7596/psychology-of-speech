@@ -1,0 +1,26 @@
+[
+  {
+    "id": "pt_001", "type": "pet", "subtype": "anthropomorphism",
+    "text": "我家猫今天又生我气了。它肯定在怪我没陪它玩。",
+    "keywords": ["生我气", "怪我"],
+    "analysis": "拟人化：将人类情感（生气、责怪）投射到动物身上。",
+    "psychological_state": "通过拟人化建立与宠物的情感联系",
+    "theories": ["拟人化理论", "宠物心理学"]
+  },
+  {
+    "id": "pt_002", "type": "pet", "subtype": "pet_parenting",
+    "text": "我的狗就是我的孩子。它比很多人都懂事。",
+    "keywords": ["我的孩子", "比人懂事"],
+    "analysis": "宠物育儿化：将宠物等同于孩子。比人懂事是贬低人类关系。",
+    "psychological_state": "将情感需求投射到宠物身上",
+    "theories": ["依恋理论", "宠物心理学"]
+  },
+  {
+    "id": "pt_003", "type": "pet", "subtype": "grief",
+    "text": "我的猫去世了。它陪了我十五年。我真的好难过。",
+    "keywords": ["去世", "十五年", "好难过"],
+    "analysis": "宠物丧失：十五年是深厚的情感纽带。好难过是真实的悲伤。",
+    "psychological_state": "经历真实的丧失和悲伤",
+    "theories": ["悲伤理论", "宠物丧失"]
+  }
+]

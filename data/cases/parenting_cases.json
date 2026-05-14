@@ -1,0 +1,82 @@
+[
+  {
+    "id": "par_001", "type": "parenting", "subtype": "conditional_love",
+    "text": "你要是考了第一名，妈妈就最爱你了。",
+    "keywords": ["要是考了", "最爱你"],
+    "analysis": "有条件的爱：将爱与成绩挂钩。最爱你暗示爱是有等级的，取决于表现。孩子会内化为只有表现好才值得被爱。",
+    "psychological_state": "用爱作为奖励机制，忽视孩子内在价值",
+    "theories": ["有条件的积极关注理论", "依恋理论"]
+  },
+  {
+    "id": "par_002", "type": "parenting", "subtype": "guilt_induction",
+    "text": "爸妈每天起早贪黑地工作，还不是为了你？你就这样报答我们？",
+    "keywords": ["起早贪黑", "为了你", "报答"],
+    "analysis": "内疚诱导：通过强调牺牲（起早贪黑）来制造亏欠感。报答将亲子关系工具化为债务关系。孩子被迫背负情感债务。",
+    "psychological_state": "将养育之恩作为控制工具",
+    "theories": ["情感操控理论", "内疚诱导心理学"]
+  },
+  {
+    "id": "par_003", "type": "parenting", "subtype": "comparison_shaming",
+    "text": "你看看隔壁的小丽，人家又乖成绩又好。你怎么就这么不争气？",
+    "keywords": ["小丽", "又乖又好", "不争气"],
+    "analysis": "比较羞耻：引入理想化的他人（小丽）来贬低孩子。不争气是全盘否定。长期比较会摧毁孩子的自我价值感。",
+    "psychological_state": "用羞耻感驱动改变，适得其反",
+    "theories": ["社会比较理论", "羞耻感心理学"]
+  },
+  {
+    "id": "par_004", "type": "parenting", "subtype": "emotional_parentification",
+    "text": "妈妈心情不好，你乖一点好不好？你是妈妈唯一的依靠了。",
+    "keywords": ["心情不好", "乖一点", "唯一的依靠"],
+    "analysis": "情感角色倒置：让孩子承担父母的情绪调节功能。唯一的依靠将成人的情感重担压在孩子身上。孩子被迫成为父母的情绪容器。",
+    "psychological_state": "将孩子当作情绪支柱，颠倒亲子角色",
+    "theories": ["角色倒置理论", "情感parentification理论"]
+  },
+  {
+    "id": "par_005", "type": "parenting", "subtype": "boundary_violation",
+    "text": "我是你爸，你的手机我当然可以看。你有什么不能让我知道的？",
+    "keywords": ["我是你爸", "可以看", "不能让知道"],
+    "analysis": "边界侵犯合理化：用父权身份（我是你爸）合理化监控行为。有什么不能让知道否定了孩子的隐私权和自主空间。",
+    "psychological_state": "以爱之名行使控制，缺乏边界意识",
+    "theories": ["边界理论", "控制型教养理论"]
+  },
+  {
+    "id": "par_006", "type": "parenting", "subtype": "overprotection_rationalization",
+    "text": "外面社会太复杂了，你什么都不懂。还是听爸妈的安排吧。",
+    "keywords": ["太复杂", "什么都不懂", "听安排"],
+    "analysis": "过度保护合理化：夸大外部危险（太复杂），贬低孩子能力（什么都不懂），剥夺自主权（听安排）。长期如此会削弱孩子的独立能力。",
+    "psychological_state": "焦虑型依恋，将保护变成控制",
+    "theories": ["过度保护理论", "自主性发展理论"]
+  },
+  {
+    "id": "par_007", "type": "parenting", "subtype": "projection_on_child",
+    "text": "我小时候没条件读书，你一定要替我考上好大学。这是我的遗憾。",
+    "keywords": ["我小时候", "替我考上", "我的遗憾"],
+    "analysis": "投射：将自己未实现的愿望（考上好大学）投射到孩子身上。替我考上暴露了将孩子视为自我延伸的心理。孩子被迫承担父母的人生遗憾。",
+    "psychological_state": "将孩子视为自我延伸，忽视孩子独立人格",
+    "theories": ["投射理论", "自我延伸理论"]
+  },
+  {
+    "id": "par_008", "type": "parenting", "subtype": "invalidation",
+    "text": "小孩子家家的，有什么好烦的？等你长大就知道什么是真正的苦了。",
+    "keywords": ["小孩子家家", "有什么好烦", "真正的苦"],
+    "analysis": "情感否定：否定孩子的情绪体验（有什么好烦）。等你长大暗示当前痛苦不值一提。这种否定会让孩子学会压抑情绪。",
+    "psychological_state": "不认可孩子的情绪是真实且重要的",
+    "theories": ["情感无效化理论", "情绪发展理论"]
+  },
+  {
+    "id": "par_009", "type": "parenting", "subtype": "enmeshment",
+    "text": "你是我生的，你有什么想法我最清楚。你不用说我也知道。",
+    "keywords": ["我生的", "最清楚", "不用说也知道"],
+    "analysis": "共生纠缠：用血缘关系（我生的）主张完全了解权。不用说也是否定孩子的独立思想。这种纠缠模糊了自我与他人的边界。",
+    "psychological_state": "模糊亲子边界，将孩子视为自我的一部分",
+    "theories": ["共生纠缠理论", "家庭系统理论"]
+  },
+  {
+    "id": "par_010", "type": "parenting", "subtype": "conditional_praise",
+    "text": "这次考得不错嘛，继续保持啊。要是每次都这样就好了。",
+    "keywords": ["不错嘛", "继续保持", "每次都这样"],
+    "analysis": "有条件的表扬：表面肯定（不错嘛）但附加条件（继续保持、每次都这样）。暗示这次只是侥幸，需要持续证明自己。孩子永远无法安心接受认可。",
+    "psychological_state": "表扬中隐含期望压力，孩子难以内化成就感",
+    "theories": ["条件性正强化", "成就动机理论"]
+  }
+]

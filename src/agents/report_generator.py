@@ -12,15 +12,17 @@ from src.guardrails.ethics import EthicsGuard
 class ReportGeneratorAgent(BaseAgent):
     """报告生成 Agent - 整合所有分析结果，生成结构化分析报告"""
 
-    def __init__(self):
-        settings = get_settings()
-        adapter = DeepSeekAdapter(
-            api_key=settings.deepseek_api_key,
-            base_url=settings.deepseek_base_url,
-            model=settings.llm_model,
-            temperature=settings.llm_temperature,
-        )
-        self._llm = LLMClient(adapter=adapter)
+    def __init__(self, llm_client: LLMClient | None = None):
+        if llm_client is None:
+            settings = get_settings()
+            adapter = DeepSeekAdapter(
+                api_key=settings.deepseek_api_key,
+                base_url=settings.deepseek_base_url,
+                model=settings.llm_model,
+                temperature=settings.llm_temperature,
+            )
+            llm_client = LLMClient(adapter=adapter)
+        self._llm = llm_client
         self._ethics = EthicsGuard()
 
     @property

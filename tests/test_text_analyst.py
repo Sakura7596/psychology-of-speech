@@ -17,10 +17,9 @@ def test_text_analyst_description():
     assert len(agent.description) > 10
 
 
-def test_analyze_sentence_structure():
+async def test_analyze_sentence_structure():
     """测试句法结构分析"""
     agent = TextAnalystAgent()
-    # Mock NLP components to avoid model downloads
     agent._tokenizer = MagicMock()
     agent._tokenizer.tokenize.return_value = ["小明", "吃", "了", "一个", "苹果"]
     agent._tokenizer.tokenize_with_pos.return_value = [
@@ -40,13 +39,13 @@ def test_analyze_sentence_structure():
     agent._rhetoric.detect.return_value = []
 
     ctx = AnalysisContext(text="小明吃了一个苹果。", depth=AnalysisDepth.STANDARD)
-    result = agent.analyze(ctx)
+    result = await agent.analyze(ctx)
     assert result.agent_name == "text_analyst"
     assert "sentence_types" in result.analysis
     assert result.confidence > 0
 
 
-def test_analyze_discourse_markers():
+async def test_analyze_discourse_markers():
     """测试话语标记检测"""
     agent = TextAnalystAgent()
     agent._tokenizer = MagicMock()
@@ -64,13 +63,13 @@ def test_analyze_discourse_markers():
     agent._rhetoric.detect.return_value = []
 
     ctx = AnalysisContext(text="虽然他很努力，但是结果并不理想。", depth=AnalysisDepth.STANDARD)
-    result = agent.analyze(ctx)
+    result = await agent.analyze(ctx)
     markers = result.analysis.get("discourse_markers", [])
     marker_texts = [m["marker"] for m in markers]
     assert "虽然" in marker_texts or "但是" in marker_texts
 
 
-def test_analyze_modality():
+async def test_analyze_modality():
     """测试语气分析"""
     agent = TextAnalystAgent()
     agent._tokenizer = MagicMock()
@@ -88,13 +87,13 @@ def test_analyze_modality():
     agent._rhetoric.detect.return_value = []
 
     ctx = AnalysisContext(text="你必须完成这个任务", depth=AnalysisDepth.STANDARD)
-    result = agent.analyze(ctx)
+    result = await agent.analyze(ctx)
     modality = result.analysis.get("modality", {})
     modal_words = [m["word"] for m in modality.get("modal_verbs", [])]
     assert "必须" in modal_words
 
 
-def test_analyze_with_rhetoric():
+async def test_analyze_with_rhetoric():
     """测试修辞识别集成"""
     agent = TextAnalystAgent()
     agent._tokenizer = MagicMock()
@@ -114,5 +113,5 @@ def test_analyze_with_rhetoric():
     ]
 
     ctx = AnalysisContext(text="他的心像冰一样冷", depth=AnalysisDepth.DEEP)
-    result = agent.analyze(ctx)
+    result = await agent.analyze(ctx)
     assert len(result.analysis.get("rhetorical_devices", [])) > 0

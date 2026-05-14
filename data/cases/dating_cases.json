@@ -1,0 +1,82 @@
+[
+  {
+    "id": "dt_001", "type": "dating", "subtype": "playing_hard_to_get",
+    "text": "我最近比较忙，可能没什么时间。再说吧。",
+    "keywords": ["比较忙", "没时间", "再说吧"],
+    "analysis": "欲擒故纵：通过表现忙碌来增加自身价值感。再说是模糊回应，保持不确定性。",
+    "psychological_state": "想保持主动权，避免显得太急切",
+    "theories": ["游戏理论", "不确定性原理"]
+  },
+  {
+    "id": "dt_002", "type": "dating", "subtype": "breadcrumbing",
+    "text": "在吗？好久没聊了。最近怎么样？",
+    "keywords": ["在吗", "好久没聊", "怎么样"],
+    "analysis": "面包屑策略：偶尔发消息保持联系但不推进关系。在吗是最小化投入的开场。",
+    "psychological_state": "不想认真但想保持对方的兴趣",
+    "theories": ["现代约会心理学", "承诺恐惧"]
+  },
+  {
+    "id": "dt_003", "type": "dating", "subtype": "love_bombing",
+    "text": "你是我见过最特别的人。我觉得我们之间有特别的连接。",
+    "keywords": ["最特别", "特别的连接"],
+    "analysis": "爱情轰炸：过度赞美（最特别）和夸大连接（特别的连接）。过早的强烈表达可能是操控信号。",
+    "psychological_state": "可能是真诚的强烈吸引，也可能是操控策略",
+    "theories": ["爱情轰炸理论", "依恋理论"]
+  },
+  {
+    "id": "dt_004", "type": "dating", "subtype": "ghosting_warning",
+    "text": "最近有点忙，可能回消息比较慢。你别多想啊。",
+    "keywords": ["有点忙", "回消息慢", "别多想"],
+    "analysis": "消失预告：先预告自己会减少联系（忙、回消息慢）再预防性否定对方的感受（别多想）。",
+    "psychological_state": "可能准备减少联系但不想直接说",
+    "theories": ["回避型依恋", "现代约会心理学"]
+  },
+  {
+    "id": "dt_005", "type": "dating", "subtype": "negging",
+    "text": "你挺好看的，就是妆有点浓了。素颜应该更好看。",
+    "keywords": ["挺好看", "妆有点浓", "素颜更好"],
+    "analysis": "打压式赞美：先给正面评价（挺好看）再给负面评价（妆浓）再给建议（素颜更好）。降低对方自信。",
+    "psychological_state": "通过微妙的打压来获得心理优势",
+    "theories": ["打压策略", "PUA理论"]
+  },
+  {
+    "id": "dt_006", "type": "dating", "subtype": "breadcrumbing",
+    "text": "我对你有感觉，但我还没准备好进入一段关系。",
+    "keywords": ["有感觉", "没准备好", "一段关系"],
+    "analysis": "模糊承诺：承认有感觉但拒绝承诺。没准备好是永远有效的借口。",
+    "psychological_state": "想要亲密但害怕承诺",
+    "theories": ["回避型依恋", "承诺恐惧理论"]
+  },
+  {
+    "id": "dt_007", "type": "dating", "subtype": "jealousy_induction",
+    "text": "今天跟一个朋友吃饭了。他对我挺好的。",
+    "keywords": ["朋友", "吃饭", "对我挺好"],
+    "analysis": "嫉妒诱导：分享与他人的亲密互动来引发对方嫉妒。对我挺好暗示有其他选择。",
+    "psychological_state": "想测试对方的在意程度或增加自己的吸引力",
+    "theories": ["嫉妒策略", "社会比较理论"]
+  },
+  {
+    "id": "dt_008", "type": "dating", "subtype": "future_faking",
+    "text": "等我忙完这阵子，我们一起去旅行。我计划了好久了。",
+    "keywords": ["等忙完", "一起旅行", "计划好久"],
+    "analysis": "未来画饼：承诺美好的未来（旅行）但没有具体时间。计划好久增加可信度。",
+    "psychological_state": "可能不想兑现但用未来承诺维持关系",
+    "theories": ["未来画饼理论", "承诺管理"]
+  },
+  {
+    "id": "dt_009", "type": "dating", "subtype": "testing_boundaries",
+    "text": "你不会这么保守吧？现在年轻人都这样的。",
+    "keywords": ["不会这么保守", "年轻人都这样"],
+    "analysis": "边界测试：质疑对方的保守态度。年轻人都这样是从众压力。",
+    "psychological_state": "试图改变对方的行为或态度",
+    "theories": ["边界测试", "从众压力理论"]
+  },
+  {
+    "id": "dt_010", "type": "dating", "subtype": "soft_rejection",
+    "text": "你真的很好，但我现在不想谈恋爱。我们可以做朋友。",
+    "keywords": ["真的很好", "不想谈恋爱", "做朋友"],
+    "analysis": "软拒绝：先赞美（真的很好）再拒绝（不想谈恋爱）再给替代方案（做朋友）。好人卡。",
+    "psychological_state": "不想伤害对方但需要明确拒绝",
+    "theories": ["礼貌策略", "面子理论"]
+  }
+]

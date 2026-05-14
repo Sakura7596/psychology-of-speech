@@ -14,15 +14,17 @@ from src.knowledge.case_library import CaseLibrary
 class PsychologyAnalystAgent(BaseAgent):
     """心理分析 Agent - 基于语言心理学理论"""
 
-    def __init__(self):
-        settings = get_settings()
-        adapter = DeepSeekAdapter(
-            api_key=settings.deepseek_api_key,
-            base_url=settings.deepseek_base_url,
-            model=settings.llm_model,
-            temperature=settings.llm_temperature,
-        )
-        self._llm = LLMClient(adapter=adapter)
+    def __init__(self, llm_client: LLMClient | None = None):
+        if llm_client is None:
+            settings = get_settings()
+            adapter = DeepSeekAdapter(
+                api_key=settings.deepseek_api_key,
+                base_url=settings.deepseek_base_url,
+                model=settings.llm_model,
+                temperature=settings.llm_temperature,
+            )
+            llm_client = LLMClient(adapter=adapter)
+        self._llm = llm_client
         kg = KnowledgeGraph()
         try:
             kg.load("data/graph/psychology_graph.json")

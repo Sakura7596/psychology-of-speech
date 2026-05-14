@@ -1,0 +1,122 @@
+[
+  {
+    "id": "wp_001", "type": "workplace", "subtype": "feedback_sandwich",
+    "text": "你这个方案整体思路不错，但是有几个地方需要改进，不过我相信你改完会更好。",
+    "keywords": ["整体思路不错", "需要改进", "相信你", "改完会更好"],
+    "analysis": "三明治反馈法：肯定-否定-肯定。通过先表扬再批评最后鼓励来软化批评的冲击。",
+    "psychological_state": "管理者试图在维护关系和给出反馈之间平衡",
+    "theories": ["礼貌策略", "面子理论"]
+  },
+  {
+    "id": "wp_002", "type": "workplace", "subtype": "passive_aggression",
+    "text": "哦，你已经决定了啊。那行吧，反正你们也不需要我的意见。",
+    "keywords": ["已经决定了", "行吧", "不需要", "我的意见"],
+    "analysis": "被动攻击：表面顺从（行吧）实际不满。通过反正暗示被忽视的感受。",
+    "psychological_state": "感到被边缘化，用被动攻击表达不满",
+    "theories": ["被动攻击理论", "权力与话语"]
+  },
+  {
+    "id": "wp_003", "type": "workplace", "subtype": "credit_taking",
+    "text": "这个项目能成功，主要是团队的努力，当然我也在关键节点做了一些推动。",
+    "keywords": ["团队的努力", "关键节点", "推动", "当然"],
+    "analysis": "功劳归因策略：先说团队（显得谦虚）再用当然引出自己的贡献。关键节点暗示自己起了决定性作用。",
+    "psychological_state": "希望获得认可但又不想显得太自私",
+    "theories": ["自我呈现理论", "归因理论"]
+  },
+  {
+    "id": "wp_004", "type": "workplace", "subtype": "meeting_dominance",
+    "text": "我补充三点。第一，这个方案的可行性有问题。第二，预算需要重新评估。第三，时间线太紧了。",
+    "keywords": ["补充三点", "第一", "第二", "第三"],
+    "analysis": "会议主导策略：用结构化表达（第一、第二、第三）建立权威感。补充暗示自己有更多见解。",
+    "psychological_state": "试图通过结构化表达展示专业性和控制力",
+    "theories": ["权力与话语", "话轮转换理论"]
+  },
+  {
+    "id": "wp_005", "type": "workplace", "subtype": "email_politeness",
+    "text": "您好，冒昧打扰。想跟您确认一下上次讨论的事情，不知道您方便的时候能否回复一下？非常感谢！",
+    "keywords": ["冒昧打扰", "确认", "方便的时候", "非常感谢"],
+    "analysis": "正式邮件礼貌策略：冒昧打扰（自我贬低降低强加感）+ 方便的时候（给对方选择权）+ 非常感谢（表达感激）。",
+    "psychological_state": "尊重对方时间，希望得到回复但不想显得急迫",
+    "theories": ["礼貌策略", "语域理论"]
+  },
+  {
+    "id": "wp_006", "type": "workplace", "subtype": "deadline_pressure",
+    "text": "领导说这个周五必须交，没有商量的余地。大家辛苦一下。",
+    "keywords": ["必须", "没有商量", "辛苦一下"],
+    "analysis": "权力施压：必须和没有商量余地是绝对性语言。辛苦一下是象征性的关心，实际是要求服从。",
+    "psychological_state": "传达上级压力，用权威语言确保执行",
+    "theories": ["权力与话语", "言语行为理论"]
+  },
+  {
+    "id": "wp_007", "type": "workplace", "subtype": "resignation_subtext",
+    "text": "我觉得自己需要一些新的挑战，想出去看看外面的世界。",
+    "keywords": ["新的挑战", "外面的世界", "出去看看"],
+    "analysis": "离职委婉表达：新的挑战是常见的离职委婉语，避免直接说对公司不满。外面的世界暗示寻求更好的机会。",
+    "psychological_state": "可能对现状不满但不想烧桥",
+    "theories": ["礼貌策略", "面子理论"]
+  },
+  {
+    "id": "wp_008", "type": "workplace", "subtype": "blame_shifting",
+    "text": "这个不是我的问题，是上游给的数据就有问题。我只是按照要求做的。",
+    "keywords": ["不是我的问题", "上游", "按照要求"],
+    "analysis": "责任转移：先否定自己的责任（不是我的问题）再指向他人（上游数据）最后强调自己只是执行（按照要求）。",
+    "psychological_state": "自我保护，避免承担责任",
+    "theories": ["归因理论", "防御机制理论"]
+  },
+  {
+    "id": "wp_009", "type": "workplace", "subtype": "micro_management",
+    "text": "这个报告你先写个初稿给我看看，每个部分都标注一下你的思路，我来帮你把关。",
+    "keywords": ["初稿", "每个部分", "标注思路", "把关"],
+    "analysis": "微管理暗示：每个部分都标注思路暗示需要详细审查。帮你把关表面是帮助实际是控制。",
+    "psychological_state": "可能缺乏信任或对下属能力有疑虑",
+    "theories": ["权力与话语", "控制理论"]
+  },
+  {
+    "id": "wp_010", "type": "workplace", "subtype": "team_morale",
+    "text": "最近大家确实辛苦了，等项目结束我请大家吃饭。现在再坚持一下！",
+    "keywords": ["辛苦了", "请吃饭", "坚持一下"],
+    "analysis": "团队激励策略：先认可辛苦（共情）再许诺奖励（请吃饭）最后要求继续努力（坚持一下）。延迟满足策略。",
+    "psychological_state": "试图在不增加实际回报的情况下维持团队士气",
+    "theories": ["社会交换理论", "期望理论"]
+  },
+  {
+    "id": "wp_011", "type": "workplace", "subtype": "interview_humble_brag",
+    "text": "我最大的缺点就是太认真了，有时候会因为追求完美而加班到很晚。",
+    "keywords": ["最大的缺点", "太认真", "追求完美", "加班"],
+    "analysis": "面试自夸伪装：将优点伪装成缺点（太认真=负责）。追求完美和加班暗示工作投入。",
+    "psychological_state": "自我呈现策略，希望展示正面形象",
+    "theories": ["自我呈现理论", "印象管理理论"]
+  },
+  {
+    "id": "wp_012", "type": "workplace", "subtype": "remote_work_excuse",
+    "text": "不好意思刚才网络不好没听到，能再说一遍吗？",
+    "keywords": ["网络不好", "没听到", "再说一遍"],
+    "analysis": "远程工作回避策略：用技术问题（网络不好）作为没听到的借口。可能是真的没听到也可能是不想参与。",
+    "psychological_state": "可能想回避参与或争取思考时间",
+    "theories": ["回避策略理论", "会话分析"]
+  },
+  {
+    "id": "wp_013", "type": "workplace", "subtype": "promotion_negotiation",
+    "text": "我觉得自己的工作表现大家有目共睹，想跟您聊聊职业发展的事情。",
+    "keywords": ["有目共睹", "职业发展", "聊聊"],
+    "analysis": "升职谈判策略：先暗示自己的贡献（有目共睹）再用职业发展代替直接说升职。委婉但有策略。",
+    "psychological_state": "自信但不想显得太直接或贪婪",
+    "theories": ["谈判理论", "礼貌策略"]
+  },
+  {
+    "id": "wp_014", "type": "workplace", "subtype": "rejection_of_idea",
+    "text": "这个想法很有创意，我们可以先记下来，等以后有机会再探讨。",
+    "keywords": ["很有创意", "先记下来", "以后再探讨"],
+    "analysis": "委婉否定：很有创意是假肯定。先记下来和以后再探讨暗示不会被执行。典型的缓兵之计。",
+    "psychological_state": "不想直接否定以维护关系",
+    "theories": ["会话含义理论", "礼貌策略"]
+  },
+  {
+    "id": "wp_015", "type": "workplace", "subtype": "overtime_rationalization",
+    "text": "加班是福报，能学到东西。你看哪个成功的人不是拼出来的？",
+    "keywords": ["福报", "学到东西", "成功", "拼出来"],
+    "analysis": "加班合理化：将加班美化为福报和学习机会。用成功人士类比建立因果关系。典型的意识形态话语。",
+    "psychological_state": "可能内化了加班文化或试图说服他人接受",
+    "theories": ["批判话语分析", "合理化理论"]
+  }
+]

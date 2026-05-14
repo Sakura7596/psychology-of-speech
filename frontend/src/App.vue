@@ -1,14 +1,17 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import axios from 'axios'
 import { marked } from 'marked'
+import DOMPurify from 'dompurify'
 
 const text = ref('')
 const depth = ref('standard')
 const loading = ref(false)
+const streaming = ref(false)
 const result = ref(null)
 const error = ref('')
 const activeTab = ref('report')
+const streamReport = ref('')
 
 const agents = [
   { name: '文本解析', icon: '📝', key: 'text_analyst' },
@@ -19,40 +22,112 @@ const agents = [
 
 const agentProgress = ref({})
 
+// 保存完整文本用于历史恢复
+let lastFullText = ''
+
+const exampleTexts = [
+  { label: '职场对话', text: '领导说："这个方案还需要再完善一下。"小王回答："好的，我会尽快修改。"但他心里想："每次都是这样，要求不明确就让人改。"' },
+  { label: '情感表达', text: '虽然我们已经分手了，但是我还是会想起那些美好的时光。也许时间会治愈一切，但此刻的我真的很痛苦。' },
+  { label: '辩论观点', text: '你支持环保？那你是想回到原始社会吗？经济发展和环境保护根本不可能兼顾，看看那些发达国家，哪个不是先污染后治理？' },
+  { label: '销售话术', text: '这款产品是我们的爆款，今天是最后一天特价，过了今天就恢复原价了。您看，已经有很多人下单了，机会难得啊。' },
+]
+
+function useExample(example) {
+  text.value = example.text
+}
+
 async function analyze() {
   if (!text.value.trim()) return
   loading.value = true
+  streaming.value = true
   error.value = ''
   result.value = null
+  streamReport.value = ''
   agentProgress.value = {}
-
-  // Simulate agent progress
-  agents.forEach((a, i) => {
-    setTimeout(() => {
-      agentProgress.value[a.key] = 'running'
-    }, i * 800)
-    setTimeout(() => {
-      agentProgress.value[a.key] = 'done'
-    }, (i + 1) * 1500)
-  })
+  lastFullText = text.value
 
   try {
-    const res = await axios.post('/api/analyze', {
-      text: text.value,
-      depth: depth.value,
-      output_format: 'markdown'
+    // 使用 SSE 流式接口
+    const response = await fetch('/api/analyze/stream', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        text: text.value,
+        depth: depth.value,
+        output_format: 'markdown'
+      })
     })
-    result.value = res.data
-    agents.forEach(a => agentProgress.value[a.key] = 'done')
+
+    if (!response.ok) {
+      const errData = await response.json()
+      throw new Error(errData.detail || '分析失败')
+    }
+
+    const reader = response.body.getReader()
+    const decoder = new TextDecoder()
+    let buffer = ''
+
+    while (true) {
+      const { done, value } = await reader.read()
+      if (done) break
+
+      buffer += decoder.decode(value, { stream: true })
+      const lines = buffer.split('\n')
+      buffer = lines.pop() || ''
+
+      for (const line of lines) {
+        if (!line.startsWith('data: ')) continue
+        let data
+        try {
+          data = JSON.parse(line.slice(6))
+        } catch {
+          console.warn('SSE JSON 解析失败:', line)
+          continue
+        }
+
+        if (data.type === 'progress') {
+          agentProgress.value[data.agent] = data.status
+        } else if (data.type === 'chunk') {
+          streamReport.value += data.content
+        } else if (data.type === 'done') {
+          result.value = {
+            report: data.report || streamReport.value,
+            analyses: data.analyses || {},
+            confidence: data.confidence || 0.5,
+            depth: data.depth || depth.value
+          }
+          agents.forEach(a => agentProgress.value[a.key] = 'done')
+        } else if (data.type === 'error') {
+          throw new Error(data.error)
+        }
+      }
+    }
+
+    // 如果没有收到 done 事件但有流式内容
+    if (!result.value && streamReport.value) {
+      result.value = {
+        report: streamReport.value,
+        analyses: {},
+        confidence: 0.5,
+        depth: depth.value
+      }
+    }
   } catch (e) {
-    error.value = e.response?.data?.detail || '分析失败，请重试'
+    error.value = e.message || '分析失败，请重试'
   } finally {
     loading.value = false
+    streaming.value = false
   }
 }
 
+function retry() {
+  error.value = ''
+  analyze()
+}
+
 function renderMarkdown(md) {
-  return marked(md || '')
+  const html = marked(md || '')
+  return DOMPurify.sanitize(html)
 }
 
 function confidenceColor(c) {
@@ -63,6 +138,30 @@ function confidenceColor(c) {
 
 function confidenceWidth(c) {
   return `${Math.round(c * 100)}%`
+}
+
+// 从 localStorage 加载历史
+const history = ref(JSON.parse(localStorage.getItem('analysis_history') || '[]'))
+
+function saveToHistory() {
+  if (!result.value) return
+  const fullText = lastFullText || text.value
+  const entry = {
+    id: Date.now(),
+    text: fullText.slice(0, 50) + (fullText.length > 50 ? '...' : ''),
+    fullText: fullText,
+    depth: depth.value,
+    confidence: result.value.confidence,
+    timestamp: new Date().toLocaleString('zh-CN'),
+  }
+  history.value.unshift(entry)
+  if (history.value.length > 20) history.value.pop()
+  localStorage.setItem('analysis_history', JSON.stringify(history.value))
+}
+
+function loadFromHistory(entry) {
+  text.value = entry.fullText || entry.text
+  depth.value = entry.depth
 }
 </script>
 
@@ -77,7 +176,7 @@ function confidenceWidth(c) {
         </div>
         <div class="flex items-center gap-2 text-xs text-stone-400">
           <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-          v0.1.0
+          v0.2.0
         </div>
       </div>
     </header>
@@ -85,12 +184,30 @@ function confidenceWidth(c) {
     <main class="max-w-4xl mx-auto px-6 py-8 space-y-8">
       <!-- Input Section -->
       <section class="space-y-4">
-        <textarea
-          v-model="text"
-          rows="6"
-          placeholder="在这里输入或粘贴要分析的文本...&#10;&#10;例如：虽然他很努力，但是结果并不理想。说实话，问题可能出在方法上。"
-          class="w-full p-4 rounded-lg border border-stone-200 bg-white text-sm leading-relaxed placeholder:text-stone-300 focus:outline-none focus:ring-2 focus:ring-stone-300 focus:border-transparent resize-none transition"
-        ></textarea>
+        <div class="relative">
+          <textarea
+            v-model="text"
+            rows="6"
+            placeholder="在这里输入或粘贴要分析的文本..."
+            class="w-full p-4 rounded-lg border border-stone-200 bg-white text-sm leading-relaxed placeholder:text-stone-300 focus:outline-none focus:ring-2 focus:ring-stone-300 focus:border-transparent resize-none transition"
+          ></textarea>
+          <div class="absolute bottom-2 right-2 text-xs text-stone-300">
+            {{ text.length }} 字
+          </div>
+        </div>
+
+        <!-- Example Texts -->
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs text-stone-400 self-center">示例：</span>
+          <button
+            v-for="ex in exampleTexts"
+            :key="ex.label"
+            @click="useExample(ex)"
+            class="px-2.5 py-1 rounded-md text-xs bg-white border border-stone-200 text-stone-500 hover:border-stone-400 hover:text-stone-700 transition"
+          >
+            {{ ex.label }}
+          </button>
+        </div>
 
         <div class="flex items-center justify-between">
           <div class="flex gap-2">
@@ -137,6 +254,8 @@ function confidenceWidth(c) {
                 ? 'border-emerald-200 bg-emerald-50'
                 : agentProgress[agent.key] === 'running'
                 ? 'border-amber-200 bg-amber-50'
+                : agentProgress[agent.key] === 'error'
+                ? 'border-red-200 bg-red-50'
                 : 'border-stone-100 bg-white'
             ]"
           >
@@ -152,6 +271,8 @@ function confidenceWidth(c) {
                     ? 'bg-emerald-400 w-full'
                     : agentProgress[agent.key] === 'running'
                     ? 'bg-amber-400 w-3/4 animate-pulse'
+                    : agentProgress[agent.key] === 'error'
+                    ? 'bg-red-400 w-full'
                     : 'bg-stone-200 w-0'
                 ]"
               ></div>
@@ -161,12 +282,26 @@ function confidenceWidth(c) {
       </section>
 
       <!-- Error -->
-      <div v-if="error" class="p-4 rounded-lg bg-red-50 border border-red-200 text-red-600 text-sm">
-        {{ error }}
+      <div v-if="error" class="p-4 rounded-lg bg-red-50 border border-red-200 text-red-600 text-sm flex items-center justify-between">
+        <span>{{ error }}</span>
+        <button @click="retry" class="px-3 py-1 rounded bg-red-100 hover:bg-red-200 text-red-700 text-xs font-medium transition">
+          重试
+        </button>
       </div>
 
+      <!-- Streaming Preview -->
+      <section v-if="streaming && streamReport" class="space-y-3">
+        <h2 class="text-sm font-medium text-stone-500">
+          报告生成中
+          <span class="inline-block animate-pulse">...</span>
+        </h2>
+        <div class="bg-white rounded-lg border border-stone-200 p-6">
+          <div class="prose prose-sm prose-stone max-w-none" v-html="renderMarkdown(streamReport)"></div>
+        </div>
+      </section>
+
       <!-- Results -->
-      <section v-if="result" class="space-y-6">
+      <section v-if="result && !streaming" class="space-y-6">
         <!-- Confidence -->
         <div class="flex items-center gap-4 p-4 bg-white rounded-lg border border-stone-200">
           <div class="flex-1">
@@ -236,6 +371,29 @@ function confidenceWidth(c) {
         <!-- Disclaimer -->
         <div class="text-xs text-stone-400 p-3 bg-stone-50 rounded-lg border border-stone-100">
           ⚠️ 本分析基于语言学特征的辅助分析，仅供参考，不构成专业心理咨询、诊断或治疗建议。
+        </div>
+      </section>
+
+      <!-- History -->
+      <section v-if="history.length > 0 && !loading && !result" class="space-y-3">
+        <h2 class="text-sm font-medium text-stone-500">最近分析</h2>
+        <div class="space-y-2">
+          <button
+            v-for="entry in history.slice(0, 5)"
+            :key="entry.id"
+            @click="loadFromHistory(entry)"
+            class="w-full p-3 rounded-lg border border-stone-200 bg-white text-left hover:border-stone-400 transition"
+          >
+            <div class="flex items-center justify-between">
+              <span class="text-sm text-stone-600 truncate flex-1">{{ entry.text }}</span>
+              <div class="flex items-center gap-2 ml-3">
+                <span :class="['text-xs font-medium', confidenceColor(entry.confidence)]">
+                  {{ (entry.confidence * 100).toFixed(0) }}%
+                </span>
+                <span class="text-xs text-stone-400">{{ entry.timestamp }}</span>
+              </div>
+            </div>
+          </button>
         </div>
       </section>
     </main>

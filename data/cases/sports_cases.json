@@ -1,0 +1,82 @@
+[
+  {
+    "id": "sp_001", "type": "sports", "subtype": "trash_talk",
+    "text": "你们队今年又没戏了。早点回家吧。",
+    "keywords": ["没戏", "回家"],
+    "analysis": "垃圾话：贬低对手（没戏）和羞辱（回家）。体育竞技中的心理战。",
+    "psychological_state": "试图通过语言打击对手信心",
+    "theories": ["竞技心理", "垃圾话理论"]
+  },
+  {
+    "id": "sp_002", "type": "sports", "subtype": "excuse_making",
+    "text": "今天裁判太偏了。不然我们肯定赢。",
+    "keywords": ["裁判偏", "肯定赢"],
+    "analysis": "借口制造：将失败归因于外部因素（裁判）。肯定是假设性胜利。",
+    "psychological_state": "保护自尊，避免承认失败",
+    "theories": ["归因理论", "自利偏误"]
+  },
+  {
+    "id": "sp_003", "type": "sports", "subtype": "bandwagon",
+    "text": "这个队赢了三连冠。我一直是他们的粉丝。",
+    "keywords": ["三连冠", "一直", "粉丝"],
+    "analysis": "从众效应：在成功后声称一直是粉丝。是后见之明偏误。",
+    "psychological_state": "希望与成功者关联",
+    "theories": ["从众理论", "光环效应"]
+  },
+  {
+    "id": "sp_004", "type": "sports", "subtype": "coach_motivation",
+    "text": "你们今天打得像垃圾一样。给我跑十圈！",
+    "keywords": ["垃圾", "跑十圈"],
+    "analysis": "教练激励：通过羞辱（垃圾）和惩罚（跑十圈）来激励。可能是有害的激励方式。",
+    "psychological_state": "试图通过严厉批评激发斗志",
+    "theories": ["教练心理学", "激励理论"]
+  },
+  {
+    "id": "sp_005", "type": "sports", "subtype": "fandom_identity",
+    "text": "我是二十年的老球迷了。你懂什么？",
+    "keywords": ["二十年", "老球迷", "你懂什么"],
+    "analysis": "球迷身份：用资历（二十年）建立权威。你懂什么是否定他人。",
+    "psychological_state": "通过球迷身份建立自我认同",
+    "theories": ["社会认同理论", "球迷心理学"]
+  },
+  {
+    "id": "sp_006", "type": "sports", "subtype": "choking",
+    "text": "关键时刻总是掉链子。压力一大就发挥不出来。",
+    "keywords": ["关键时刻", "掉链子", "压力"],
+    "analysis": "关键时刻失常：压力影响表现。掉链子是自我实现的预言。",
+    "psychological_state": "竞赛焦虑，表现焦虑",
+    "theories": ["竞赛焦虑理论", "自我实现预言"]
+  },
+  {
+    "id": "sp_007", "type": "sports", "subtype": "over_training",
+    "text": "再练一个小时。今天不练到位不回家。",
+    "keywords": ["再练", "不练到位"],
+    "analysis": "过度训练：再练一个小时是强迫行为。不回家是极端承诺。",
+    "psychological_state": "可能有过度训练倾向",
+    "theories": ["运动心理学", "强迫行为"]
+  },
+  {
+    "id": "sp_008", "type": "sports", "subtype": "rivalry",
+    "text": "输给谁都行，就是不能输给那个队。",
+    "keywords": ["输给谁都行", "不能输给"],
+    "analysis": "宿敌意识：特殊化某个对手。不能输给是情感而非理性。",
+    "psychological_state": "将特定对手视为威胁",
+    "theories": ["竞争心理学", "宿敌理论"]
+  },
+  {
+    "id": "sp_009", "type": "sports", "subtype": "post_injury",
+    "text": "医生说我需要休息三个月。但我感觉好多了，可以提前复出。",
+    "keywords": ["休息三个月", "好多了", "提前复出"],
+    "analysis": "伤病后急于复出：感觉好多了是主观判断。提前复出可能有风险。",
+    "psychological_state": "急于回到赛场，低估伤病风险",
+    "theories": ["运动伤病心理学", "风险评估"]
+  },
+  {
+    "id": "sp_010", "type": "sports", "subtype": "retirement",
+    "text": "我觉得自己还能再打几年。退役的事情以后再说。",
+    "keywords": ["还能打", "以后再说"],
+    "analysis": "退役回避：还能打是自我评估。以后再说是回避决策。",
+    "psychological_state": "对退役感到恐惧或不确定",
+    "theories": ["退役心理学", "身份转变理论"]
+  }
+]

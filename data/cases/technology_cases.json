@@ -1,0 +1,82 @@
+[
+  {
+    "id": "tc_001", "type": "technology", "subtype": "tech_support_scam",
+    "text": "您的电脑有严重病毒！请立即拨打我们的技术支持电话。",
+    "keywords": ["严重病毒", "立即拨打", "技术支持"],
+    "analysis": "技术支持诈骗：严重病毒制造恐惧。立即拨打创造紧迫感。",
+    "psychological_state": "利用技术恐惧进行诈骗",
+    "theories": ["诈骗心理学", "恐惧诉求"]
+  },
+  {
+    "id": "tc_002", "type": "technology", "subtype": "privacy_concern",
+    " text": "我不同意你们收集我的数据。这是我的隐私权。",
+    "keywords": ["不同意", "收集数据", "隐私权"],
+    "analysis": "隐私关切：明确表达不同意。隐私权是法律依据。",
+    "psychological_state": "对数据收集感到不安，维护个人权利",
+    "theories": ["隐私心理学", "数字权利"]
+  },
+  {
+    "id": "tc_003", "type": "technology", "subtype": "digital_addiction",
+    "text": "我就再刷五分钟。嗯，再刷五分钟就睡。",
+    "keywords": ["再刷五分钟", "就睡"],
+    "analysis": "数字成瘾：再刷五分钟是典型的拖延。就睡是空头承诺。",
+    "psychological_state": "即时满足优先，缺乏自我控制",
+    "theories": ["成瘾理论", "自我控制理论"]
+  },
+  {
+    "id": "tc_004", "type": "technology", "subtype": "ai_fear",
+    "text": "AI会取代所有工作。我们都会失业的。",
+    "keywords": ["取代", "所有工作", "失业"],
+    "analysis": "技术恐惧：取代所有工作是灾难化思维。忽略AI的辅助作用。",
+    "psychological_state": "对技术变革感到焦虑",
+    "theories": ["技术恐惧理论", "未来焦虑"]
+  },
+  {
+    "id": "tc_005", "type": "technology", "subtype": "online_shopping",
+    "text": "购物车里已经有十件东西了。反正又不贵，都买了吧。",
+    "keywords": ["购物车", "不贵", "都买"],
+    "analysis": "在线购物心理：不贵降低价格感知。都买是冲动消费。",
+    "psychological_state": "价格脱敏，冲动消费",
+    "theories": ["消费心理学", "在线购物行为"]
+  },
+  {
+    "id": "tc_006", "type": "technology", "subtype": "social_media_comparison",
+    "text": "别人的生活都那么精彩。我的生活好无聊。",
+    "keywords": ["别人", "精彩", "无聊"],
+    "analysis": "社交媒体比较：别人的生活是精心筛选的。精彩是表面现象。",
+    "psychological_state": "社交媒体导致的自卑感",
+    "theories": ["社会比较理论", "社交媒体心理学"]
+  },
+  {
+    "id": "tc_007", "type": "technology", "subtype": "notification_anxiety",
+    "text": "手机一响我就紧张。怕是工作消息。",
+    "keywords": ["一响", "紧张", "工作消息"],
+    "analysis": "通知焦虑：手机声音成为压力源。怕是工作消息暗示边界模糊。",
+    "psychological_state": "工作与生活边界模糊导致的焦虑",
+    "theories": ["数字健康", "工作压力理论"]
+  },
+  {
+    "id": "tc_008", "type": "technology", "subtype": "information_overload",
+    "text": "每天信息太多了。根本看不过来。",
+    "keywords": ["太多", "看不过来"],
+    "analysis": "信息过载：信息量超过处理能力。根本看不过来是无力感。",
+    "psychological_state": "信息焦虑，注意力分散",
+    "theories": ["信息过载理论", "注意力经济"]
+  },
+  {
+    "id": "tc_009", "type": "technology", "subtype": "digital_detox",
+    "text": "我要戒掉手机。嗯，先发个朋友圈宣布一下。",
+    "keywords": ["戒掉手机", "发朋友圈"],
+    "analysis": "数字排毒悖论：想戒手机但先发朋友圈。行动与目标矛盾。",
+    "psychological_state": "意识到问题但难以改变行为",
+    "theories": ["行为改变理论", "社交媒体依赖"]
+  },
+  {
+    "id": "tc_010", "type": "technology", "subtype": "password_frustration",
+    "text": "又要求改密码！谁能记得住这么多密码？",
+    "keywords": ["又要求", "记不住"],
+    "analysis": "密码疲劳：频繁改密码带来的挫败感。记不住是认知负担。",
+    "psychological_state": "安全措施带来的用户挫败感",
+    "theories": ["用户体验", "认知负荷理论"]
+  }
+]

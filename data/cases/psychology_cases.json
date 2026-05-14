@@ -1,0 +1,152 @@
+[
+  {
+    "id": "psych_001",
+    "type": "psychology",
+    "subtype": "defense_mechanism",
+    "text": "我根本不在乎她怎么看我，她爱怎么想就怎么想。",
+    "keywords": ["不在乎", "爱怎么想", "随便", "无所谓"],
+    "analysis": "反向形成防御机制：表面声称不在乎，实际可能非常在意对方的看法。使用双重否定强调（根本不在乎）暗示情感强度。",
+    "psychological_state": "可能处于情感矛盾中，通过否认来保护自尊",
+    "theories": ["防御机制理论", "面子理论"]
+  },
+  {
+    "id": "psych_002",
+    "type": "psychology",
+    "subtype": "projection",
+    "text": "他这个人就是自私，从来不考虑别人的感受。",
+    "keywords": ["自私", "不考虑别人", "总是", "从来"],
+    "analysis": "投射机制：使用绝对化词汇（从来、总是）可能暗示说话者自己有类似倾向。将自身不可接受的特质归于他人。",
+    "psychological_state": "可能对关系中的付出不平衡感到不满",
+    "theories": ["投射理论", "归因理论"]
+  },
+  {
+    "id": "psych_003",
+    "type": "psychology",
+    "subtype": "rationalization",
+    "text": "我辞职不是因为受不了压力，是因为我想追求更好的发展机会。",
+    "keywords": ["不是因为", "是因为", "追求", "发展机会"],
+    "analysis": "合理化防御机制：用正面理由（追求发展）替代可能的真实原因（受不了压力）。先否定再肯定的结构暗示存在内在冲突。",
+    "psychological_state": "可能在维护自我形象，避免承认脆弱",
+    "theories": ["合理化理论", "自我呈现理论"]
+  },
+  {
+    "id": "psych_004",
+    "type": "psychology",
+    "subtype": "anxiety",
+    "text": "我总觉得有什么不好的事情要发生，但又说不清楚是什么。",
+    "keywords": ["总觉得", "不好的事情", "说不清楚", "焦虑"],
+    "analysis": "焦虑状态的典型表达：模糊的威胁感（有什么不好的事情）+ 无法具体化（说不清楚）。模糊语（总觉得）表示持续性担忧。",
+    "psychological_state": "弥漫性焦虑，缺乏具体触发因素",
+    "theories": ["焦虑理论", "认知语言学"]
+  },
+  {
+    "id": "psych_005",
+    "type": "psychology",
+    "subtype": "low_self_esteem",
+    "text": "我什么都做不好，别人肯定都比我强。",
+    "keywords": ["什么都做不好", "肯定", "比我强", "别人"],
+    "analysis": "自卑感表达：全称否定（什么都做不好）+ 社会比较（别人肯定都比我强）。使用肯定一词表示这种想法已内化为信念。",
+    "psychological_state": "低自尊，可能存在抑郁倾向",
+    "theories": ["社会比较理论", "归因理论"]
+  },
+  {
+    "id": "psych_006",
+    "type": "psychology",
+    "subtype": "dependency",
+    "text": "没有他我都不知道该怎么办了，我真的离不开他。",
+    "keywords": ["离不开", "不知道怎么办", "没有他", "依赖"],
+    "analysis": "依赖性表达：将自我效能感与特定他人绑定（没有他就不知道怎么办）。使用真的强调这种感受的真实性。",
+    "psychological_state": "可能存在过度依赖，自我效能感低",
+    "theories": ["依恋理论", "自我效能理论"]
+  },
+  {
+    "id": "psych_007",
+    "type": "psychology",
+    "subtype": "anger_suppression",
+    "text": "没事，我没生气。你开心就好。",
+    "keywords": ["没事", "没生气", "你开心就好", "没关系"],
+    "analysis": "压抑愤怒：声称没生气但用你开心就好暗示不满。这种自我牺牲式表达可能隐藏着被动攻击。",
+    "psychological_state": "压抑愤怒，可能通过被动攻击表达不满",
+    "theories": ["情绪压抑理论", "被动攻击理论"]
+  },
+  {
+    "id": "psych_008",
+    "type": "psychology",
+    "subtype": "narcissism",
+    "text": "他们不理解我，我的想法太超前了，普通人跟不上。",
+    "keywords": ["不理解", "太超前", "普通人", "跟不上"],
+    "analysis": "自恋倾向：将他人不理解归因于自己太超前而非沟通问题。将他人标签化为普通人以建立优越感。",
+    "psychological_state": "可能存在自恋特质，用 grandiosity 保护脆弱的自尊",
+    "theories": ["自恋理论", "归因理论"]
+  },
+  {
+    "id": "psych_009",
+    "type": "psychology",
+    "subtype": "people_pleasing",
+    "text": "没关系没关系，都可以的，你们决定就好，我没意见。",
+    "keywords": ["没关系", "都可以", "你们决定", "没意见"],
+    "analysis": "讨好型人格特征：反复使用没关系和都可以表示顺从。将决策权完全让渡给他人，避免表达自己的偏好。",
+    "psychological_state": "可能害怕冲突和被拒绝，自我边界模糊",
+    "theories": ["讨好型人格理论", "自我边界理论"]
+  },
+  {
+    "id": "psych_010",
+    "type": "psychology",
+    "subtype": "emotional_intelligence",
+    "text": "我能理解你现在很生气，换作是我可能也会这样。我们冷静一下再谈好吗？",
+    "keywords": ["理解", "换作是我", "冷静", "再谈"],
+    "analysis": "高情商表达：先共情（理解你很生气）再换位思考（换作是我）最后提出解决方案（冷静一下再谈）。三个步骤结构完整。",
+    "psychological_state": "情绪稳定，具有良好的情绪调节能力",
+    "theories": ["情绪智力理论", "共情理论"]
+  },
+  {
+    "id": "psych_011",
+    "type": "psychology",
+    "subtype": "cognitive_distortion",
+    "text": "这次考试没考好，我的人生完了，这辈子就这样了。",
+    "keywords": ["完了", "这辈子", "就这样", "人生"],
+    "analysis": "灾难化思维：将单一事件（考试没考好）灾难化为人生完了。过度概括（这辈子就这样了）是典型的认知扭曲。",
+    "psychological_state": "可能存在灾难化思维模式，需要认知重构",
+    "theories": ["认知行为理论", "认知扭曲理论"]
+  },
+  {
+    "id": "psych_012",
+    "type": "psychology",
+    "subtype": "gaslighting",
+    "text": "我什么时候说过那种话？你记错了吧。你总是这样，疑神疑鬼的。",
+    "keywords": ["什么时候说过", "记错了", "疑神疑鬼", "总是这样"],
+    "analysis": "煤气灯效应：否认自己说过的话（我什么时候说过）+ 质疑对方记忆（你记错了）+ 反向指责（你疑神疑鬼）。典型的情感操控模式。",
+    "psychological_state": "可能在进行情感操控，转移责任",
+    "theories": ["煤气灯效应理论", "权力与话语"]
+  },
+  {
+    "id": "psych_013",
+    "type": "psychology",
+    "subtype": "guilt_tripping",
+    "text": "我为你付出了这么多，你就这样对我？我真是白养你了。",
+    "keywords": ["付出这么多", "就这样对我", "白养", "为你"],
+    "analysis": "内疚诱导：通过强调自己的付出（付出这么多）来让对方感到内疚。白养一词暗示投资回报的期望，将关系工具化。",
+    "psychological_state": "可能感到被忽视或不被感激，通过内疚来控制",
+    "theories": ["情感操控理论", "社会交换理论"]
+  },
+  {
+    "id": "psych_014",
+    "type": "psychology",
+    "subtype": "avoidance",
+    "text": "这个以后再说吧，现在不想讨论这个问题。我们聊点别的。",
+    "keywords": ["以后再说", "不想讨论", "聊点别的", "回避"],
+    "analysis": "回避型应对：用推迟（以后再说）+ 明确拒绝（不想讨论）+ 话题转移（聊点别的）来回避不适话题。",
+    "psychological_state": "可能对话题感到焦虑或无力应对",
+    "theories": ["回避型依恋理论", "应对策略理论"]
+  },
+  {
+    "id": "psych_015",
+    "type": "psychology",
+    "subtype": "boundary_setting",
+    "text": "我理解你的想法，但这件事我做不到。这是我的底线，请你尊重。",
+    "keywords": ["做不到", "底线", "尊重", "但"],
+    "analysis": "健康的边界设定：先表示理解（我理解）再明确拒绝（做不到）最后强调底线。使用但转折表示立场坚定。",
+    "psychological_state": "自我边界清晰，能够平衡关系和自我需求",
+    "theories": ["自我边界理论", "assertiveness理论"]
+  }
+]

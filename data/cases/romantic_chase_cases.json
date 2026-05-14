@@ -1,0 +1,122 @@
+[
+  {
+    "id": "rc_001", "type": "romantic", "subtype": "ambiguous_flirting",
+    "text": "你今天穿的衣服好好看。很适合你。",
+    "keywords": ["好好看", "很适合你"],
+    "analysis": "暧昧试探：赞美外表（好好看）+ 个人化评价（很适合你）。既可解读为友好也可解读为暧昧。",
+    "psychological_state": "试探对方反应，保留否认空间",
+    "theories": ["言语行为理论", "暧昧沟通理论"]
+  },
+  {
+    "id": "rc_002", "type": "romantic", "subtype": "texting_games",
+    "text": "（已读不回，三小时后才回复）刚看到消息，怎么啦？",
+    "keywords": ["刚看到", "怎么啦"],
+    "analysis": "回复博弈：故意延迟回复以显示不在意。刚看到是常见借口。怎么啦假装不知情。",
+    "psychological_state": "想保持主动权，避免显得太在意",
+    "theories": ["现代约会心理学", "权力动态理论"]
+  },
+  {
+    "id": "rc_003", "type": "romantic", "subtype": "hot_cold",
+    "text": "昨天还聊得好好的，今天突然就不回消息了。",
+    "keywords": ["聊得好好的", "突然不回"],
+    "analysis": "忽冷忽热模式：热情后突然冷淡。这种间歇性强化最容易让人上瘾。",
+    "psychological_state": "对方可能在制造不确定性以增加吸引力",
+    "theories": ["间歇性强化理论", "依恋理论"]
+  },
+  {
+    "id": "rc_004", "type": "romantic", "subtype": "friend_zone_fear",
+    "text": "我对你这么好，你却只把我当朋友。",
+    "keywords": ["对你好", "只当朋友"],
+    "analysis": "友谊区恐惧：付出（对你好）期望回报（不只是朋友）。将关系商品化。",
+    "psychological_state": "感到付出不对等，可能有隐性期待",
+    "theories": ["社会交换理论", "友谊区理论"]
+  },
+  {
+    "id": "rc_005", "type": "romantic", "subtype": "jealousy_manufacturing",
+    "text": "今天跟一个异性朋友吃饭了。他对我挺好的。",
+    "keywords": ["异性朋友", "对我挺好"],
+    "analysis": "制造嫉妒：分享与异性的互动来引发对方嫉妒。对我挺好暗示有其他选择。",
+    "psychological_state": "想测试对方的在意程度或增加自己的价值感",
+    "theories": ["嫉妒策略", "社会比较理论"]
+  },
+  {
+    "id": "rc_006", "type": "romantic", "subtype": "breadcrumbing",
+    "text": "在吗？好久没聊了。最近怎么样？",
+    "keywords": ["在吗", "好久没聊"],
+    "analysis": "面包屑策略：偶尔发消息保持联系但不推进关系。最小化投入。",
+    "psychological_state": "不想认真但想保持对方的兴趣作为备选",
+    "theories": ["面包屑理论", "现代约会心理学"]
+  },
+  {
+    "id": "rc_007", "type": "romantic", "subtype": "love_bombing",
+    "text": "你是我见过最特别的人。我觉得我们之间有特别的连接。我从来没对谁有过这种感觉。",
+    "keywords": ["最特别", "特别的连接", "从来没"],
+    "analysis": "爱情轰炸：过度赞美（最特别）+ 夸大连接（特别的连接）+ 绝对化（从来没）。过早的强烈表达。",
+    "psychological_state": "可能是真诚吸引，也可能是操控策略",
+    "theories": ["爱情轰炸理论", "依恋理论"]
+  },
+  {
+    "id": "rc_008", "type": "romantic", "subtype": "soft_rejection",
+    "text": "你真的很好，但我现在不想谈恋爱。我们可以做朋友。",
+    "keywords": ["真的很好", "不想谈恋爱", "做朋友"],
+    "analysis": "软拒绝：先赞美（真的很好）再拒绝（不想谈恋爱）最后给替代方案（做朋友）。好人卡。",
+    "psychological_state": "不想伤害对方但需要明确拒绝",
+    "theories": ["礼貌策略", "面子理论"]
+  },
+  {
+    "id": "rc_009", "type": "romantic", "subtype": "push_pull",
+    "text": "我好像有点喜欢你。但我们还是做朋友吧。不，其实我也不确定。",
+    "keywords": ["有点喜欢", "做朋友", "不确定"],
+    "analysis": "推拉策略：先推进（有点喜欢）再拉回（做朋友）再模糊化（不确定）。制造情感过山车。",
+    "psychological_state": "矛盾情感或故意制造不确定性",
+    "theories": ["推拉理论", "依恋理论"]
+  },
+  {
+    "id": "rc_010", "type": "romantic", "subtype": "confession_anxiety",
+    "text": "我想表白，但怕被拒绝。万一连朋友都做不成了怎么办？",
+    "keywords": ["表白", "怕被拒绝", "朋友做不成"],
+    "analysis": "表白焦虑：想推进关系但害怕风险。万一是灾难化思维。",
+    "psychological_state": "趋避冲突：既想又怕",
+    "theories": ["趋避冲突理论", "风险评估理论"]
+  },
+  {
+    "id": "rc_011", "type": "romantic", "subtype": "social_media_stalking",
+    "text": "我把他三年前的朋友圈都翻了一遍。他前女友长得挺好看的。",
+    "keywords": ["三年前", "朋友圈", "前女友"],
+    "analysis": "社交媒体追踪：翻三年前的记录是深度调查。关注前女友是比较心理。",
+    "psychological_state": "对对方有强烈兴趣但通过间接方式了解",
+    "theories": ["社交媒体心理学", "嫉妒理论"]
+  },
+  {
+    "id": "rc_012", "type": "romantic", "subtype": "mixed_signals",
+    "text": "他有时候对我特别好，有时候又很冷淡。我搞不懂他到底什么意思。",
+    "keywords": ["特别好", "冷淡", "搞不懂"],
+    "analysis": "混合信号：忽冷忽热让人困惑。搞不懂是认知失调的表现。",
+    "psychological_state": "困惑和焦虑，试图解读不确定的行为",
+    "theories": ["认知失调理论", "依恋理论"]
+  },
+  {
+    "id": "rc_013", "type": "romantic", "subtype": "ghosting_confusion",
+    "text": "我们聊了两个月，突然他就不回消息了。我做错什么了吗？",
+    "keywords": ["两个月", "不回消息", "做错什么"],
+    "analysis": "幽灵化：突然断联让人困惑。我做错什么是自我归因。",
+    "psychological_state": "被拒绝后的困惑和自我怀疑",
+    "theories": ["幽灵化理论", "归因理论"]
+  },
+  {
+    "id": "rc_014", "type": "romantic", "subtype": "situationship",
+    "text": "我们算什么关系？不是朋友，也不算情侣。我不知道该怎么定义。",
+    "keywords": ["算什么", "不知道定义"],
+    "analysis": "暧昧关系：没有明确定义的关系状态。不知道怎么定义是关系模糊。",
+    "psychological_state": "对关系状态感到困惑和不安",
+    "theories": ["关系模糊理论", "现代约会心理学"]
+  },
+  {
+    "id": "rc_015", "type": "romantic", "subtype": "rebound",
+    "text": "分手才一个月就找了新的。他说不是找替代品，但我感觉就是。",
+    "keywords": ["一个月", "新的", "替代品"],
+    "analysis": "反弹关系：分手后快速进入新关系。替代品暗示不是真正的情感连接。",
+    "psychological_state": "可能在用新关系逃避旧伤痛",
+    "theories": ["反弹关系理论", "悲伤理论"]
+  }
+]

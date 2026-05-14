@@ -1,188 +1,4287 @@
 {
   "nodes": [
-    {"name": "言语行为理论", "type": "theory", "id": "theory_001"},
-    {"name": "会话含义理论", "type": "theory", "id": "theory_002"},
-    {"name": "礼貌策略", "type": "theory", "id": "theory_003"},
-    {"name": "儒家面子理论", "type": "theory", "id": "theory_004"},
-    {"name": "高语境沟通", "type": "theory", "id": "theory_005"},
-    {"name": "权力距离", "type": "theory", "id": "theory_006"},
-    {"name": "批判性话语分析", "type": "theory", "id": "theory_007"},
-    {"name": "系统功能语言学", "type": "theory", "id": "theory_008"},
-    {"name": "关联理论", "type": "theory", "id": "theory_009"},
-    {"name": "面子理论（Goffman）", "type": "theory", "id": "theory_010"},
-    {"name": "框架理论", "type": "theory", "id": "theory_011"},
-    {"name": "叙事分析", "type": "theory", "id": "theory_012"},
-    {"name": "评价理论", "type": "theory", "id": "theory_013"},
-    {"name": "会话分析", "type": "theory", "id": "theory_014"},
-    {"name": "语域理论", "type": "theory", "id": "theory_015"},
-    {"name": "适应理论", "type": "theory", "id": "theory_016"},
-    {"name": "语码转换理论", "type": "theory", "id": "theory_017"},
-    {"name": "话语历史分析法", "type": "theory", "id": "theory_018"},
-    {"name": "认知语言学", "type": "theory", "id": "theory_019"},
-    {"name": "修辞学", "type": "theory", "id": "theory_020"},
-
-    {"name": "断言", "type": "speech_act", "id": "sa_assert"},
-    {"name": "指令", "type": "speech_act", "id": "sa_directive"},
-    {"name": "承诺", "type": "speech_act", "id": "sa_commissive"},
-    {"name": "表达", "type": "speech_act", "id": "sa_expressive"},
-    {"name": "宣告", "type": "speech_act", "id": "sa_declaration"},
-
-    {"name": "合作原则", "type": "concept", "id": "c_cp"},
-    {"name": "量的准则", "type": "concept", "id": "c_quantity"},
-    {"name": "质的准则", "type": "concept", "id": "c_quality"},
-    {"name": "关系准则", "type": "concept", "id": "c_relevance"},
-    {"name": "方式准则", "type": "concept", "id": "c_manner"},
-
-    {"name": "积极面子", "type": "concept", "id": "c_positive_face"},
-    {"name": "消极面子", "type": "concept", "id": "c_negative_face"},
-    {"name": "面子威胁行为", "type": "concept", "id": "c_fta"},
-    {"name": "脸（lian）", "type": "concept", "id": "c_lian"},
-    {"name": "面子（mianzi）", "type": "concept", "id": "c_mianzi"},
-
-    {"name": "隐含意义", "type": "concept", "id": "c_implicature"},
-    {"name": "言外之力", "type": "concept", "id": "c_illocutionary_force"},
-    {"name": "言后效果", "type": "concept", "id": "c_perlocutionary_effect"},
-
-    {"name": "概念隐喻", "type": "concept", "id": "c_conceptual_metaphor"},
-    {"name": "框架效应", "type": "concept", "id": "c_framing_effect"},
-    {"name": "认知偏差", "type": "concept", "id": "cognitive_bias"},
-    {"name": "原型理论", "type": "concept", "id": "c_prototype"},
-
-    {"name": "ethos（信誉诉求）", "type": "rhetoric", "id": "r_ethos"},
-    {"name": "pathos（情感诉求）", "type": "rhetoric", "id": "r_pathos"},
-    {"name": "logos（理性诉求）", "type": "rhetoric", "id": "r_logos"},
-    {"name": "明喻", "type": "rhetoric", "id": "r_simile"},
-    {"name": "隐喻", "type": "rhetoric", "id": "r_metaphor"},
-    {"name": "反讽", "type": "rhetoric", "id": "r_irony"},
-    {"name": "夸张", "type": "rhetoric", "id": "r_hyperbole"},
-    {"name": "排比", "type": "rhetoric", "id": "r_parallelism"},
-    {"name": "委婉语", "type": "rhetoric", "id": "r_euphemism"},
-
-    {"name": "焦虑", "type": "psychological_state", "id": "ps_anxiety"},
-    {"name": "防御机制", "type": "psychological_state", "id": "ps_defense"},
-    {"name": "权力欲", "type": "psychological_state", "id": "ps_power"},
-    {"name": "归属需求", "type": "psychological_state", "id": "ps_belonging"},
-    {"name": "自我保护", "type": "psychological_state", "id": "ps_self_protection"},
-    {"name": "认知失调", "type": "psychological_state", "id": "ps_cognitive_dissonance"},
-    {"name": "情感压抑", "type": "psychological_state", "id": "ps_suppression"},
-    {"name": "社会认同", "type": "psychological_state", "id": "ps_social_identity"},
-    {"name": "控制感", "type": "psychological_state", "id": "ps_control"},
-    {"name": "认知负荷", "type": "psychological_state", "id": "ps_cognitive_load"},
-
-    {"name": "敬语使用", "type": "language_feature", "id": "lf_honorific"},
-    {"name": "间接表达", "type": "language_feature", "id": "lf_indirect"},
-    {"name": "情态动词", "type": "language_feature", "id": "lf_modality"},
-    {"name": "被动语态", "type": "language_feature", "id": "lf_passive"},
-    {"name": "称呼策略", "type": "language_feature", "id": "lf_address"},
-    {"name": "模糊语", "type": "language_feature", "id": "lf_hedging"},
-    {"name": "重复强调", "type": "language_feature", "id": "lf_repetition"},
-    {"name": "话题转换", "type": "language_feature", "id": "lf_topic_shift"},
-    {"name": "沉默", "type": "language_feature", "id": "lf_silence"},
-    {"name": "语码转换", "type": "language_feature", "id": "lf_code_switching"}
+    {
+      "name": "言语行为理论",
+      "type": "theory",
+      "id": "theory_001"
+    },
+    {
+      "name": "会话含义理论",
+      "type": "theory",
+      "id": "theory_002"
+    },
+    {
+      "name": "礼貌策略",
+      "type": "theory",
+      "id": "theory_003"
+    },
+    {
+      "name": "儒家面子理论",
+      "type": "theory",
+      "id": "theory_004"
+    },
+    {
+      "name": "高语境沟通",
+      "type": "theory",
+      "id": "theory_005"
+    },
+    {
+      "name": "权力距离",
+      "type": "theory",
+      "id": "theory_006"
+    },
+    {
+      "name": "批判性话语分析",
+      "type": "theory",
+      "id": "theory_007"
+    },
+    {
+      "name": "系统功能语言学",
+      "type": "theory",
+      "id": "theory_008"
+    },
+    {
+      "name": "关联理论",
+      "type": "theory",
+      "id": "theory_009"
+    },
+    {
+      "name": "面子理论（Goffman）",
+      "type": "theory",
+      "id": "theory_010"
+    },
+    {
+      "name": "框架理论",
+      "type": "theory",
+      "id": "theory_011"
+    },
+    {
+      "name": "叙事分析",
+      "type": "theory",
+      "id": "theory_012"
+    },
+    {
+      "name": "评价理论",
+      "type": "theory",
+      "id": "theory_013"
+    },
+    {
+      "name": "会话分析",
+      "type": "theory",
+      "id": "theory_014"
+    },
+    {
+      "name": "语域理论",
+      "type": "theory",
+      "id": "theory_015"
+    },
+    {
+      "name": "适应理论",
+      "type": "theory",
+      "id": "theory_016"
+    },
+    {
+      "name": "语码转换理论",
+      "type": "theory",
+      "id": "theory_017"
+    },
+    {
+      "name": "话语历史分析法",
+      "type": "theory",
+      "id": "theory_018"
+    },
+    {
+      "name": "认知语言学",
+      "type": "theory",
+      "id": "theory_019"
+    },
+    {
+      "name": "修辞学",
+      "type": "theory",
+      "id": "theory_020"
+    },
+    {
+      "name": "断言",
+      "type": "speech_act",
+      "id": "sa_assert"
+    },
+    {
+      "name": "指令",
+      "type": "speech_act",
+      "id": "sa_directive"
+    },
+    {
+      "name": "承诺",
+      "type": "speech_act",
+      "id": "sa_commissive"
+    },
+    {
+      "name": "表达",
+      "type": "speech_act",
+      "id": "sa_expressive"
+    },
+    {
+      "name": "宣告",
+      "type": "speech_act",
+      "id": "sa_declaration"
+    },
+    {
+      "name": "合作原则",
+      "type": "concept",
+      "id": "c_cp"
+    },
+    {
+      "name": "量的准则",
+      "type": "concept",
+      "id": "c_quantity"
+    },
+    {
+      "name": "质的准则",
+      "type": "concept",
+      "id": "c_quality"
+    },
+    {
+      "name": "关系准则",
+      "type": "concept",
+      "id": "c_relevance"
+    },
+    {
+      "name": "方式准则",
+      "type": "concept",
+      "id": "c_manner"
+    },
+    {
+      "name": "积极面子",
+      "type": "concept",
+      "id": "c_positive_face"
+    },
+    {
+      "name": "消极面子",
+      "type": "concept",
+      "id": "c_negative_face"
+    },
+    {
+      "name": "面子威胁行为",
+      "type": "concept",
+      "id": "c_fta"
+    },
+    {
+      "name": "脸（lian）",
+      "type": "concept",
+      "id": "c_lian"
+    },
+    {
+      "name": "面子（mianzi）",
+      "type": "concept",
+      "id": "c_mianzi"
+    },
+    {
+      "name": "隐含意义",
+      "type": "concept",
+      "id": "c_implicature"
+    },
+    {
+      "name": "言外之力",
+      "type": "concept",
+      "id": "c_illocutionary_force"
+    },
+    {
+      "name": "言后效果",
+      "type": "concept",
+      "id": "c_perlocutionary_effect"
+    },
+    {
+      "name": "概念隐喻",
+      "type": "concept",
+      "id": "c_conceptual_metaphor"
+    },
+    {
+      "name": "框架效应",
+      "type": "concept",
+      "id": "c_framing_effect"
+    },
+    {
+      "name": "认知偏差",
+      "type": "concept",
+      "id": "cognitive_bias"
+    },
+    {
+      "name": "原型理论",
+      "type": "concept",
+      "id": "c_prototype"
+    },
+    {
+      "name": "ethos（信誉诉求）",
+      "type": "rhetoric",
+      "id": "r_ethos"
+    },
+    {
+      "name": "pathos（情感诉求）",
+      "type": "rhetoric",
+      "id": "r_pathos"
+    },
+    {
+      "name": "logos（理性诉求）",
+      "type": "rhetoric",
+      "id": "r_logos"
+    },
+    {
+      "name": "明喻",
+      "type": "rhetoric",
+      "id": "r_simile"
+    },
+    {
+      "name": "隐喻",
+      "type": "rhetoric",
+      "id": "r_metaphor"
+    },
+    {
+      "name": "反讽",
+      "type": "rhetoric",
+      "id": "r_irony"
+    },
+    {
+      "name": "夸张",
+      "type": "rhetoric",
+      "id": "r_hyperbole"
+    },
+    {
+      "name": "排比",
+      "type": "rhetoric",
+      "id": "r_parallelism"
+    },
+    {
+      "name": "委婉语",
+      "type": "rhetoric",
+      "id": "r_euphemism"
+    },
+    {
+      "name": "焦虑",
+      "type": "psychological_state",
+      "id": "ps_anxiety"
+    },
+    {
+      "name": "防御机制",
+      "type": "psychological_state",
+      "id": "ps_defense"
+    },
+    {
+      "name": "权力欲",
+      "type": "psychological_state",
+      "id": "ps_power"
+    },
+    {
+      "name": "归属需求",
+      "type": "psychological_state",
+      "id": "ps_belonging"
+    },
+    {
+      "name": "自我保护",
+      "type": "psychological_state",
+      "id": "ps_self_protection"
+    },
+    {
+      "name": "认知失调",
+      "type": "psychological_state",
+      "id": "ps_cognitive_dissonance"
+    },
+    {
+      "name": "情感压抑",
+      "type": "psychological_state",
+      "id": "ps_suppression"
+    },
+    {
+      "name": "社会认同",
+      "type": "psychological_state",
+      "id": "ps_social_identity"
+    },
+    {
+      "name": "控制感",
+      "type": "psychological_state",
+      "id": "ps_control"
+    },
+    {
+      "name": "认知负荷",
+      "type": "psychological_state",
+      "id": "ps_cognitive_load"
+    },
+    {
+      "name": "敬语使用",
+      "type": "language_feature",
+      "id": "lf_honorific"
+    },
+    {
+      "name": "间接表达",
+      "type": "language_feature",
+      "id": "lf_indirect"
+    },
+    {
+      "name": "情态动词",
+      "type": "language_feature",
+      "id": "lf_modality"
+    },
+    {
+      "name": "被动语态",
+      "type": "language_feature",
+      "id": "lf_passive"
+    },
+    {
+      "name": "称呼策略",
+      "type": "language_feature",
+      "id": "lf_address"
+    },
+    {
+      "name": "模糊语",
+      "type": "language_feature",
+      "id": "lf_hedging"
+    },
+    {
+      "name": "重复强调",
+      "type": "language_feature",
+      "id": "lf_repetition"
+    },
+    {
+      "name": "话题转换",
+      "type": "language_feature",
+      "id": "lf_topic_shift"
+    },
+    {
+      "name": "沉默",
+      "type": "language_feature",
+      "id": "lf_silence"
+    },
+    {
+      "name": "语码转换",
+      "type": "language_feature",
+      "id": "lf_code_switching"
+    },
+    {
+      "name": "愤怒",
+      "type": "emotion",
+      "description": "因不公或挫折产生的强烈不满"
+    },
+    {
+      "name": "悲伤",
+      "type": "emotion",
+      "description": "因失去或失望产生的低落情绪"
+    },
+    {
+      "name": "恐惧",
+      "type": "emotion",
+      "description": "对危险或威胁的回避反应"
+    },
+    {
+      "name": "喜悦",
+      "type": "emotion",
+      "description": "因满足或成功产生的积极情绪"
+    },
+    {
+      "name": "厌恶",
+      "type": "emotion",
+      "description": "对不愉快事物的排斥反应"
+    },
+    {
+      "name": "羞耻",
+      "type": "emotion",
+      "description": "因自我评价过低产生的痛苦"
+    },
+    {
+      "name": "内疚",
+      "type": "emotion",
+      "description": "因违反道德标准产生的自责"
+    },
+    {
+      "name": "嫉妒",
+      "type": "emotion",
+      "description": "因他人拥有自己想要的东西而不满"
+    },
+    {
+      "name": "傲慢",
+      "type": "emotion",
+      "description": "过度的自我优越感"
+    },
+    {
+      "name": "自卑",
+      "type": "emotion",
+      "description": "过度的自我贬低感"
+    },
+    {
+      "name": "安全感",
+      "type": "emotion",
+      "description": "感到被保护和稳定的满足"
+    },
+    {
+      "name": "孤独感",
+      "type": "emotion",
+      "description": "缺乏社会联结的痛苦体验"
+    },
+    {
+      "name": "表态",
+      "type": "speech_act",
+      "description": "表达情感态度的言语行为"
+    },
+    {
+      "name": "间接言语行为",
+      "type": "speech_act",
+      "description": "表面意义与实际意图不一致的言语行为"
+    },
+    {
+      "name": "言外之意",
+      "type": "speech_act",
+      "description": "话语的隐含意义"
+    },
+    {
+      "name": "重复",
+      "type": "strategy",
+      "description": "重复话语以强调或拖延"
+    },
+    {
+      "name": "反问",
+      "type": "strategy",
+      "description": "用疑问形式表达确定观点"
+    },
+    {
+      "name": "自嘲",
+      "type": "strategy",
+      "description": "通过贬低自己来缓解紧张"
+    },
+    {
+      "name": "转移话题",
+      "type": "strategy",
+      "description": "故意改变对话方向"
+    },
+    {
+      "name": "附和",
+      "type": "strategy",
+      "description": "表示同意或支持对方"
+    },
+    {
+      "name": "质疑",
+      "type": "strategy",
+      "description": "对对方观点表示怀疑"
+    },
+    {
+      "name": "暗示",
+      "type": "strategy",
+      "description": "间接传达信息"
+    },
+    {
+      "name": "确认偏误",
+      "type": "cognitive_bias",
+      "description": "倾向于寻找支持自己观点的信息"
+    },
+    {
+      "name": "锚定效应",
+      "type": "cognitive_bias",
+      "description": "过度依赖第一个信息"
+    },
+    {
+      "name": "可得性偏误",
+      "type": "cognitive_bias",
+      "description": "根据容易想到的例子判断"
+    },
+    {
+      "name": "后见之明偏误",
+      "type": "cognitive_bias",
+      "description": "事后认为结果是可预见的"
+    },
+    {
+      "name": "光环效应",
+      "type": "cognitive_bias",
+      "description": "对某人某方面好感影响整体评价"
+    },
+    {
+      "name": "投射偏误",
+      "type": "cognitive_bias",
+      "description": "认为他人与自己想法一致"
+    },
+    {
+      "name": "损失厌恶",
+      "type": "cognitive_bias",
+      "description": "对损失的敏感度高于收益"
+    },
+    {
+      "name": "从众",
+      "type": "social_psychology",
+      "description": "受群体影响改变行为或信念"
+    },
+    {
+      "name": "服从",
+      "type": "social_psychology",
+      "description": "遵守权威人物的指令"
+    },
+    {
+      "name": "社会促进",
+      "type": "social_psychology",
+      "description": "他人在场提高个体表现"
+    },
+    {
+      "name": "群体极化",
+      "type": "social_psychology",
+      "description": "群体讨论使观点更极端"
+    },
+    {
+      "name": "群体思维",
+      "type": "social_psychology",
+      "description": "群体追求一致而压制异议"
+    },
+    {
+      "name": "旁观者效应",
+      "type": "social_psychology",
+      "description": "在场人数越多个人越不可能帮助"
+    },
+    {
+      "name": "否认",
+      "type": "defense_mechanism",
+      "description": "拒绝接受现实"
+    },
+    {
+      "name": "合理化",
+      "type": "defense_mechanism",
+      "description": "为不可接受的行为找合理理由"
+    },
+    {
+      "name": "投射",
+      "type": "defense_mechanism",
+      "description": "将自己不可接受的特质归于他人"
+    },
+    {
+      "name": "升华",
+      "type": "defense_mechanism",
+      "description": "将不可接受的冲动转化为社会接受的行为"
+    },
+    {
+      "name": "退行",
+      "type": "defense_mechanism",
+      "description": "退回到早期发展阶段的行为模式"
+    },
+    {
+      "name": "压抑",
+      "type": "defense_mechanism",
+      "description": "将痛苦记忆排除在意识之外"
+    },
+    {
+      "name": "反向形成",
+      "type": "defense_mechanism",
+      "description": "表现出与内心相反的行为"
+    },
+    {
+      "name": "外向性",
+      "type": "personality",
+      "description": "社交活跃、精力充沛"
+    },
+    {
+      "name": "宜人性",
+      "type": "personality",
+      "description": "合作、信任、利他"
+    },
+    {
+      "name": "尽责性",
+      "type": "personality",
+      "description": "自律、有组织、可靠"
+    },
+    {
+      "name": "神经质",
+      "type": "personality",
+      "description": "情绪不稳定、易焦虑"
+    },
+    {
+      "name": "开放性",
+      "type": "personality",
+      "description": "好奇、有创造力、开放"
+    },
+    {
+      "name": "可信度",
+      "type": "persuasion",
+      "description": "说话者的可信程度"
+    },
+    {
+      "name": "情感诉求",
+      "type": "persuasion",
+      "description": "通过情感影响他人"
+    },
+    {
+      "name": "逻辑诉求",
+      "type": "persuasion",
+      "description": "通过逻辑论证影响他人"
+    },
+    {
+      "name": "权威诉求",
+      "type": "persuasion",
+      "description": "借助权威增加说服力"
+    },
+    {
+      "name": "稀缺性",
+      "type": "persuasion",
+      "description": "强调稀缺以增加吸引力"
+    },
+    {
+      "name": "互惠原则",
+      "type": "persuasion",
+      "description": "给予以获得回报"
+    },
+    {
+      "name": "开场白",
+      "type": "discourse_structure",
+      "description": "对话的开始阶段"
+    },
+    {
+      "name": "话题展开",
+      "type": "discourse_structure",
+      "description": "对话的主题发展"
+    },
+    {
+      "name": "总结",
+      "type": "discourse_structure",
+      "description": "对话的结束或概括"
+    },
+    {
+      "name": "修正",
+      "type": "discourse_structure",
+      "description": "对之前话语的纠正"
+    },
+    {
+      "name": "澄清",
+      "type": "discourse_structure",
+      "description": "对模糊信息的说明"
+    },
+    {
+      "name": "亲密关系",
+      "type": "relationship",
+      "description": "情感亲近的人际关系"
+    },
+    {
+      "name": "权力关系",
+      "type": "relationship",
+      "description": "存在权力差异的关系"
+    },
+    {
+      "name": "冲突",
+      "type": "relationship",
+      "description": "利益或观点的对立"
+    },
+    {
+      "name": "和解",
+      "type": "relationship",
+      "description": "冲突后的修复"
+    },
+    {
+      "name": "信任",
+      "type": "relationship",
+      "description": "对他人的可靠性有信心"
+    },
+    {
+      "name": "依赖",
+      "type": "relationship",
+      "description": "过度依赖他人"
+    },
+    {
+      "name": "正式语体",
+      "type": "language_style",
+      "description": "用于正式场合的语言风格"
+    },
+    {
+      "name": "非正式语体",
+      "type": "language_style",
+      "description": "用于日常交流的语言风格"
+    },
+    {
+      "name": "书面语",
+      "type": "language_style",
+      "description": "书面表达的语言特征"
+    },
+    {
+      "name": "口语",
+      "type": "language_style",
+      "description": "口头表达的语言特征"
+    },
+    {
+      "name": "网络语言",
+      "type": "language_style",
+      "description": "网络交流中的特殊语言形式"
+    },
+    {
+      "name": "方言",
+      "type": "language_style",
+      "description": "地域性语言变体"
+    },
+    {
+      "name": "行话",
+      "type": "language_style",
+      "description": "特定行业的专业术语"
+    },
+    {
+      "name": "俚语",
+      "type": "language_style",
+      "description": "非正式的口语表达"
+    },
+    {
+      "name": "暗喻",
+      "type": "rhetoric",
+      "description": "直接将A说成B"
+    },
+    {
+      "name": "拟人",
+      "type": "rhetoric",
+      "description": "赋予非人事物人的特征"
+    },
+    {
+      "name": "反语",
+      "type": "rhetoric",
+      "description": "字面意义与实际意义相反"
+    },
+    {
+      "name": "对偶",
+      "type": "rhetoric",
+      "description": "两个结构相似的句子对称排列"
+    },
+    {
+      "name": "设问",
+      "type": "rhetoric",
+      "description": "自问自答"
+    },
+    {
+      "name": "引用",
+      "type": "rhetoric",
+      "description": "引用他人的话"
+    },
+    {
+      "name": "借代",
+      "type": "rhetoric",
+      "description": "用部分代整体或用特征代事物"
+    },
+    {
+      "name": "双关",
+      "type": "rhetoric",
+      "description": "一语双关"
+    },
+    {
+      "name": "讽刺",
+      "type": "rhetoric",
+      "description": "用幽默或夸张进行批评"
+    },
+    {
+      "name": "积极情感",
+      "type": "emotion_dimension",
+      "description": "正面的情感状态"
+    },
+    {
+      "name": "消极情感",
+      "type": "emotion_dimension",
+      "description": "负面的情感状态"
+    },
+    {
+      "name": "中性情感",
+      "type": "emotion_dimension",
+      "description": "无明显情感倾向"
+    },
+    {
+      "name": "混合情感",
+      "type": "emotion_dimension",
+      "description": "同时包含正面和负面情感"
+    },
+    {
+      "name": "情感强度高",
+      "type": "emotion_dimension",
+      "description": "强烈的情感表达"
+    },
+    {
+      "name": "情感强度低",
+      "type": "emotion_dimension",
+      "description": "温和的情感表达"
+    },
+    {
+      "name": "情感抑制",
+      "type": "emotion_dimension",
+      "description": "故意压抑情感表达"
+    },
+    {
+      "name": "情感放大",
+      "type": "emotion_dimension",
+      "description": "故意夸大情感表达"
+    },
+    {
+      "name": "注意力",
+      "type": "cognitive_process",
+      "description": "选择性关注特定信息"
+    },
+    {
+      "name": "记忆",
+      "type": "cognitive_process",
+      "description": "信息的存储和提取"
+    },
+    {
+      "name": "推理",
+      "type": "cognitive_process",
+      "description": "从已知推导未知"
+    },
+    {
+      "name": "判断",
+      "type": "cognitive_process",
+      "description": "对信息的评估和决策"
+    },
+    {
+      "name": "归因",
+      "type": "cognitive_process",
+      "description": "对行为原因的推断"
+    },
+    {
+      "name": "范畴化",
+      "type": "cognitive_process",
+      "description": "将事物归入类别"
+    },
+    {
+      "name": "图式",
+      "type": "cognitive_process",
+      "description": "知识的心理组织结构"
+    },
+    {
+      "name": "启发式",
+      "type": "cognitive_process",
+      "description": "简化的判断策略"
+    },
+    {
+      "name": "亲属关系",
+      "type": "social_relation",
+      "description": "血缘或婚姻关系"
+    },
+    {
+      "name": "友谊",
+      "type": "social_relation",
+      "description": "非亲属的亲密关系"
+    },
+    {
+      "name": "同事关系",
+      "type": "social_relation",
+      "description": "工作中的合作关系"
+    },
+    {
+      "name": "上下级关系",
+      "type": "social_relation",
+      "description": "权力不对等的关系"
+    },
+    {
+      "name": "陌生关系",
+      "type": "social_relation",
+      "description": "不熟悉的人际关系"
+    },
+    {
+      "name": "竞争关系",
+      "type": "social_relation",
+      "description": "利益对立的关系"
+    },
+    {
+      "name": "合作关系",
+      "type": "social_relation",
+      "description": "利益一致的关系"
+    },
+    {
+      "name": "依赖关系",
+      "type": "social_relation",
+      "description": "一方依赖另一方"
+    },
+    {
+      "name": "误解",
+      "type": "communication_barrier",
+      "description": "信息传递中的理解偏差"
+    },
+    {
+      "name": "偏见",
+      "type": "communication_barrier",
+      "description": "预先形成的负面判断"
+    },
+    {
+      "name": "刻板印象",
+      "type": "communication_barrier",
+      "description": "对群体的固定看法"
+    },
+    {
+      "name": "选择性倾听",
+      "type": "communication_barrier",
+      "description": "只听想听的信息"
+    },
+    {
+      "name": "情绪干扰",
+      "type": "communication_barrier",
+      "description": "情绪影响信息处理"
+    },
+    {
+      "name": "文化差异",
+      "type": "communication_barrier",
+      "description": "不同文化背景的沟通障碍"
+    },
+    {
+      "name": "语言障碍",
+      "type": "communication_barrier",
+      "description": "语言能力不足导致的障碍"
+    },
+    {
+      "name": "显性权力",
+      "type": "power_dynamic",
+      "description": "明确的权力行使"
+    },
+    {
+      "name": "隐性权力",
+      "type": "power_dynamic",
+      "description": "不明显的权力影响"
+    },
+    {
+      "name": "软实力",
+      "type": "power_dynamic",
+      "description": "通过吸引力而非强制力影响"
+    },
+    {
+      "name": "硬实力",
+      "type": "power_dynamic",
+      "description": "通过强制力影响"
+    },
+    {
+      "name": "话语权",
+      "type": "power_dynamic",
+      "description": "控制话语的能力"
+    },
+    {
+      "name": "议程设置",
+      "type": "power_dynamic",
+      "description": "决定讨论什么话题"
+    },
+    {
+      "name": "诉诸理性",
+      "type": "persuasion_strategy",
+      "description": "通过逻辑论证说服"
+    },
+    {
+      "name": "诉诸情感",
+      "type": "persuasion_strategy",
+      "description": "通过情感影响说服"
+    },
+    {
+      "name": "诉诸人格",
+      "type": "persuasion_strategy",
+      "description": "通过说话者人格说服"
+    },
+    {
+      "name": "诉诸恐惧",
+      "type": "persuasion_strategy",
+      "description": "通过恐惧诉求说服"
+    },
+    {
+      "name": "诉诸希望",
+      "type": "persuasion_strategy",
+      "description": "通过希望诉求说服"
+    },
+    {
+      "name": "诉诸传统",
+      "type": "persuasion_strategy",
+      "description": "通过传统价值观说服"
+    },
+    {
+      "name": "诉诸新奇",
+      "type": "persuasion_strategy",
+      "description": "通过创新和进步说服"
+    },
+    {
+      "name": "开场",
+      "type": "conversation_structure",
+      "description": "对话的开始阶段"
+    },
+    {
+      "name": "主体",
+      "type": "conversation_structure",
+      "description": "对话的主要内容"
+    },
+    {
+      "name": "结束",
+      "type": "conversation_structure",
+      "description": "对话的结束阶段"
+    },
+    {
+      "name": "修复",
+      "type": "conversation_structure",
+      "description": "对沟通问题的修复"
+    },
+    {
+      "name": "反馈",
+      "type": "conversation_structure",
+      "description": "对信息的回应"
+    },
+    {
+      "name": "确认",
+      "type": "conversation_structure",
+      "description": "对理解的确认"
+    },
+    {
+      "name": "集体主义",
+      "type": "cultural_dimension",
+      "description": "重视群体利益的文化倾向"
+    },
+    {
+      "name": "个人主义",
+      "type": "cultural_dimension",
+      "description": "重视个人利益的文化倾向"
+    },
+    {
+      "name": "高权力距离",
+      "type": "cultural_dimension",
+      "description": "接受权力不平等的文化"
+    },
+    {
+      "name": "低权力距离",
+      "type": "cultural_dimension",
+      "description": "追求权力平等的文化"
+    },
+    {
+      "name": "不确定性规避",
+      "type": "cultural_dimension",
+      "description": "对不确定性的容忍程度"
+    },
+    {
+      "name": "长期导向",
+      "type": "cultural_dimension",
+      "description": "重视长期回报的文化倾向"
+    },
+    {
+      "name": "短期导向",
+      "type": "cultural_dimension",
+      "description": "重视即时回报的文化倾向"
+    },
+    {
+      "name": "归属感",
+      "type": "psychological_need",
+      "description": "被群体接纳的需要"
+    },
+    {
+      "name": "自尊",
+      "type": "psychological_need",
+      "description": "对自己价值的肯定"
+    },
+    {
+      "name": "自我实现",
+      "type": "psychological_need",
+      "description": "发挥潜能的需要"
+    },
+    {
+      "name": "自主感",
+      "type": "psychological_need",
+      "description": "控制自己生活的需要"
+    },
+    {
+      "name": "能力感",
+      "type": "psychological_need",
+      "description": "感到自己有能力的需要"
+    },
+    {
+      "name": "预设",
+      "type": "discourse_strategy",
+      "description": "将信息作为前提隐含"
+    },
+    {
+      "name": "蕴含",
+      "type": "discourse_strategy",
+      "description": "话语中隐含的意义"
+    },
+    {
+      "name": "暗指",
+      "type": "discourse_strategy",
+      "description": "间接指向某事物"
+    },
+    {
+      "name": "回避",
+      "type": "discourse_strategy",
+      "description": "故意不回答或转移话题"
+    },
+    {
+      "name": "模糊化",
+      "type": "discourse_strategy",
+      "description": "故意使用不确定的表达"
+    },
+    {
+      "name": "具体化",
+      "type": "discourse_strategy",
+      "description": "提供详细的细节"
+    },
+    {
+      "name": "概括化",
+      "type": "discourse_strategy",
+      "description": "用抽象语言表达"
+    },
+    {
+      "name": "认知重评",
+      "type": "emotion_regulation",
+      "description": "改变对事件的解读"
+    },
+    {
+      "name": "表达抑制",
+      "type": "emotion_regulation",
+      "description": "抑制情感表达"
+    },
+    {
+      "name": "情境选择",
+      "type": "emotion_regulation",
+      "description": "选择进入或回避特定情境"
+    },
+    {
+      "name": "情境修正",
+      "type": "emotion_regulation",
+      "description": "改变情境以调节情绪"
+    },
+    {
+      "name": "注意部署",
+      "type": "emotion_regulation",
+      "description": "将注意力转移到其他事物"
+    },
+    {
+      "name": "大五人格",
+      "type": "personality_theory",
+      "description": "开放性、尽责性、外向性、宜人性、神经质"
+    },
+    {
+      "name": "MBTI",
+      "type": "personality_theory",
+      "description": "迈尔斯-布里格斯类型指标"
+    },
+    {
+      "name": "九型人格",
+      "type": "personality_theory",
+      "description": "九种人格类型"
+    },
+    {
+      "name": "依恋类型",
+      "type": "personality_theory",
+      "description": "安全型、焦虑型、回避型、混乱型"
+    },
+    {
+      "name": "自利偏误",
+      "type": "cognitive_bias",
+      "description": "将成功归因于自己，失败归因于他人"
+    },
+    {
+      "name": "聚光灯效应",
+      "type": "cognitive_bias",
+      "description": "高估他人对自己的关注"
+    },
+    {
+      "name": "透明度错觉",
+      "type": "cognitive_bias",
+      "description": "高估他人理解自己内心状态的能力"
+    },
+    {
+      "name": "虚假共识",
+      "type": "cognitive_bias",
+      "description": "高估他人与自己观点一致的程度"
+    },
+    {
+      "name": "现状偏误",
+      "type": "cognitive_bias",
+      "description": "偏好维持现状"
+    },
+    {
+      "name": "沉没成本",
+      "type": "cognitive_bias",
+      "description": "因已投入成本而继续投入"
+    },
+    {
+      "name": "峰终定律",
+      "type": "cognitive_bias",
+      "description": "记忆由高峰和结尾决定"
+    },
+    {
+      "name": "可得性",
+      "type": "cognitive_bias",
+      "description": "根据容易想到的例子判断"
+    },
+    {
+      "name": "代表性",
+      "type": "cognitive_bias",
+      "description": "根据典型性判断概率"
+    },
+    {
+      "name": "权威服从",
+      "type": "social_influence",
+      "description": "服从权威人物的指令"
+    },
+    {
+      "name": "信息性影响",
+      "type": "social_influence",
+      "description": "将他人作为信息来源"
+    },
+    {
+      "name": "规范性影响",
+      "type": "social_influence",
+      "description": "为了被接纳而从众"
+    },
+    {
+      "name": "社会比较",
+      "type": "social_influence",
+      "description": "与他人比较来评估自己"
+    },
+    {
+      "name": "社会抑制",
+      "type": "social_influence",
+      "description": "他人在场降低表现"
+    },
+    {
+      "name": "去个体化",
+      "type": "social_influence",
+      "description": "群体中失去个体责任感"
+    },
+    {
+      "name": "暧昧期",
+      "type": "relationship_stage",
+      "description": "双方互相试探但未明确关系的阶段"
+    },
+    {
+      "name": "热恋期",
+      "type": "relationship_stage",
+      "description": "关系初期的强烈吸引和激情"
+    },
+    {
+      "name": "磨合期",
+      "type": "relationship_stage",
+      "description": "开始发现差异并学习相处"
+    },
+    {
+      "name": "稳定期",
+      "type": "relationship_stage",
+      "description": "关系趋于平稳和深入"
+    },
+    {
+      "name": "倦怠期",
+      "type": "relationship_stage",
+      "description": "激情减退，关系变得平淡"
+    },
+    {
+      "name": "危机期",
+      "type": "relationship_stage",
+      "description": "关系面临重大挑战"
+    },
+    {
+      "name": "分手",
+      "type": "relationship_stage",
+      "description": "关系结束"
+    },
+    {
+      "name": "复合",
+      "type": "relationship_stage",
+      "description": "分手后重新在一起"
+    },
+    {
+      "name": "心动",
+      "type": "romantic_emotion",
+      "description": "对某人产生强烈好感"
+    },
+    {
+      "name": "暗恋",
+      "type": "romantic_emotion",
+      "description": "单方面的爱慕"
+    },
+    {
+      "name": "吃醋",
+      "type": "romantic_emotion",
+      "description": "因伴侣与他人亲近而不安"
+    },
+    {
+      "name": "不安全感",
+      "type": "romantic_emotion",
+      "description": "担心被抛弃或不被爱"
+    },
+    {
+      "name": "思念",
+      "type": "romantic_emotion",
+      "description": "对不在身边的伴侣的想念"
+    },
+    {
+      "name": "失望",
+      "type": "romantic_emotion",
+      "description": "期望未被满足的失落"
+    },
+    {
+      "name": "心碎",
+      "type": "romantic_emotion",
+      "description": "因分手或背叛感到的深度痛苦"
+    },
+    {
+      "name": "释怀",
+      "type": "romantic_emotion",
+      "description": "放下过去的伤痛"
+    },
+    {
+      "name": "独占欲",
+      "type": "romantic_emotion",
+      "description": "希望伴侣只属于自己"
+    },
+    {
+      "name": "怀疑",
+      "type": "romantic_emotion",
+      "description": "对伴侣的忠诚或意图产生不信任"
+    },
+    {
+      "name": "冷暴力",
+      "type": "romantic_communication",
+      "description": "通过沉默和忽视来惩罚伴侣"
+    },
+    {
+      "name": "热暴力",
+      "type": "romantic_communication",
+      "description": "通过大声争吵来表达不满"
+    },
+    {
+      "name": "有效沟通",
+      "type": "romantic_communication",
+      "description": "坦诚表达感受和需求"
+    },
+    {
+      "name": "无效沟通",
+      "type": "romantic_communication",
+      "description": "指责、防御、蔑视、石墙"
+    },
+    {
+      "name": "被动攻击",
+      "type": "romantic_communication",
+      "description": "用间接方式表达不满"
+    },
+    {
+      "name": "情感勒索",
+      "type": "romantic_communication",
+      "description": "用情感压力控制伴侣"
+    },
+    {
+      "name": "煤气灯效应",
+      "type": "romantic_communication",
+      "description": "扭曲现实让伴侣怀疑自己"
+    },
+    {
+      "name": "回避冲突",
+      "type": "romantic_communication",
+      "description": "避免讨论问题"
+    },
+    {
+      "name": "过度解读",
+      "type": "romantic_communication",
+      "description": "对伴侣言行进行负面解读"
+    },
+    {
+      "name": "查手机",
+      "type": "romantic_behavior",
+      "description": "查看伴侣的手机内容"
+    },
+    {
+      "name": "翻旧账",
+      "type": "romantic_behavior",
+      "description": "提起过去的问题来攻击伴侣"
+    },
+    {
+      "name": "作",
+      "type": "romantic_behavior",
+      "description": "故意制造麻烦来测试伴侣"
+    },
+    {
+      "name": "撒娇",
+      "type": "romantic_behavior",
+      "description": "用可爱方式表达需求"
+    },
+    {
+      "name": "仪式感",
+      "type": "romantic_behavior",
+      "description": "通过特殊行为增强关系意义"
+    },
+    {
+      "name": "安全感测试",
+      "type": "romantic_behavior",
+      "description": "通过行为测试伴侣的爱"
+    },
+    {
+      "name": "付出不对等",
+      "type": "romantic_behavior",
+      "description": "关系中一方付出明显多于另一方"
+    },
+    {
+      "name": "边界设定",
+      "type": "romantic_behavior",
+      "description": "明确自己的底线和需求"
+    },
+    {
+      "name": "断联",
+      "type": "breakup_behavior",
+      "description": "分手后完全不联系"
+    },
+    {
+      "name": "挽回",
+      "type": "breakup_behavior",
+      "description": "试图重新建立关系"
+    },
+    {
+      "name": "反弹关系",
+      "type": "breakup_behavior",
+      "description": "分手后快速进入新关系"
+    },
+    {
+      "name": "前任回头",
+      "type": "breakup_behavior",
+      "description": "前任在分手后重新联系"
+    },
+    {
+      "name": "心碎综合症",
+      "type": "breakup_behavior",
+      "description": "分手后的身体和心理症状"
+    },
+    {
+      "name": "断舍离",
+      "type": "breakup_behavior",
+      "description": "清理与前任相关的物品和记忆"
+    },
+    {
+      "name": "自我成长",
+      "type": "breakup_behavior",
+      "description": "通过分手经历获得个人成长"
+    },
+    {
+      "name": "左滑右滑",
+      "type": "dating_app",
+      "description": "通过滑动选择或拒绝潜在对象"
+    },
+    {
+      "name": "照骗",
+      "type": "dating_app",
+      "description": "照片与本人差距大"
+    },
+    {
+      "name": "幽灵化",
+      "type": "dating_app",
+      "description": "突然断联不回复"
+    },
+    {
+      "name": "面包屑",
+      "type": "dating_app",
+      "description": "偶尔发消息保持联系但不推进"
+    },
+    {
+      "name": "养鱼",
+      "type": "dating_app",
+      "description": "同时与多人保持暧昧"
+    },
+    {
+      "name": "杀猪盘",
+      "type": "dating_app",
+      "description": "以恋爱为名的诈骗"
+    },
+    {
+      "name": "焦虑型依恋",
+      "type": "attachment_style",
+      "description": "高度需要安全感，害怕被抛弃"
+    },
+    {
+      "name": "回避型依恋",
+      "type": "attachment_style",
+      "description": "强调独立，回避亲密"
+    },
+    {
+      "name": "安全型依恋",
+      "type": "attachment_style",
+      "description": "平衡亲密和独立"
+    },
+    {
+      "name": "混乱型依恋",
+      "type": "attachment_style",
+      "description": "既渴望又恐惧亲密"
+    },
+    {
+      "name": "理想化",
+      "type": "romantic_cognition",
+      "description": "过度美化伴侣"
+    },
+    {
+      "name": "去理想化",
+      "type": "romantic_cognition",
+      "description": "发现伴侣的缺点后失望"
+    },
+    {
+      "name": "选择性注意",
+      "type": "romantic_cognition",
+      "description": "只关注支持自己观点的信息"
+    },
+    {
+      "name": "灾难化思维",
+      "type": "romantic_cognition",
+      "description": "将小问题放大为关系危机"
+    },
+    {
+      "name": "读心术",
+      "type": "romantic_cognition",
+      "description": "认为自己知道伴侣在想什么"
+    },
+    {
+      "name": "男性沟通模式",
+      "type": "gender_difference",
+      "description": "倾向于解决问题而非情感表达"
+    },
+    {
+      "name": "女性沟通模式",
+      "type": "gender_difference",
+      "description": "倾向于情感表达和寻求共鸣"
+    },
+    {
+      "name": "性别刻板印象",
+      "type": "gender_difference",
+      "description": "对男女行为的固定期望"
+    },
+    {
+      "name": "性别角色压力",
+      "type": "gender_difference",
+      "description": "因不符合性别期望而感到压力"
+    },
+    {
+      "name": "关系主导权",
+      "type": "romantic_power",
+      "description": "谁在关系中拥有更多决策权"
+    },
+    {
+      "name": "情感劳动",
+      "type": "romantic_power",
+      "description": "维护关系的情感付出"
+    },
+    {
+      "name": "经济权力",
+      "type": "romantic_power",
+      "description": "经济能力带来的关系权力"
+    },
+    {
+      "name": "社会支持",
+      "type": "romantic_power",
+      "description": "朋友和家人对关系的影响"
+    },
+    {
+      "name": "theory_001",
+      "type": "unknown"
+    },
+    {
+      "name": "sa_assert",
+      "type": "unknown"
+    },
+    {
+      "name": "sa_directive",
+      "type": "unknown"
+    },
+    {
+      "name": "sa_commissive",
+      "type": "unknown"
+    },
+    {
+      "name": "sa_expressive",
+      "type": "unknown"
+    },
+    {
+      "name": "sa_declaration",
+      "type": "unknown"
+    },
+    {
+      "name": "c_illocutionary_force",
+      "type": "unknown"
+    },
+    {
+      "name": "c_perlocutionary_effect",
+      "type": "unknown"
+    },
+    {
+      "name": "theory_002",
+      "type": "unknown"
+    },
+    {
+      "name": "c_cp",
+      "type": "unknown"
+    },
+    {
+      "name": "c_quantity",
+      "type": "unknown"
+    },
+    {
+      "name": "c_quality",
+      "type": "unknown"
+    },
+    {
+      "name": "c_relevance",
+      "type": "unknown"
+    },
+    {
+      "name": "c_manner",
+      "type": "unknown"
+    },
+    {
+      "name": "c_implicature",
+      "type": "unknown"
+    },
+    {
+      "name": "theory_003",
+      "type": "unknown"
+    },
+    {
+      "name": "c_positive_face",
+      "type": "unknown"
+    },
+    {
+      "name": "c_negative_face",
+      "type": "unknown"
+    },
+    {
+      "name": "c_fta",
+      "type": "unknown"
+    },
+    {
+      "name": "theory_004",
+      "type": "unknown"
+    },
+    {
+      "name": "c_lian",
+      "type": "unknown"
+    },
+    {
+      "name": "c_mianzi",
+      "type": "unknown"
+    },
+    {
+      "name": "theory_010",
+      "type": "unknown"
+    },
+    {
+      "name": "theory_005",
+      "type": "unknown"
+    },
+    {
+      "name": "lf_indirect",
+      "type": "unknown"
+    },
+    {
+      "name": "lf_silence",
+      "type": "unknown"
+    },
+    {
+      "name": "theory_006",
+      "type": "unknown"
+    },
+    {
+      "name": "lf_honorific",
+      "type": "unknown"
+    },
+    {
+      "name": "lf_address",
+      "type": "unknown"
+    },
+    {
+      "name": "lf_passive",
+      "type": "unknown"
+    },
+    {
+      "name": "theory_007",
+      "type": "unknown"
+    },
+    {
+      "name": "c_framing_effect",
+      "type": "unknown"
+    },
+    {
+      "name": "ps_power",
+      "type": "unknown"
+    },
+    {
+      "name": "theory_008",
+      "type": "unknown"
+    },
+    {
+      "name": "lf_modality",
+      "type": "unknown"
+    },
+    {
+      "name": "theory_009",
+      "type": "unknown"
+    },
+    {
+      "name": "r_irony",
+      "type": "unknown"
+    },
+    {
+      "name": "cognitive_bias",
+      "type": "unknown"
+    },
+    {
+      "name": "theory_011",
+      "type": "unknown"
+    },
+    {
+      "name": "c_conceptual_metaphor",
+      "type": "unknown"
+    },
+    {
+      "name": "theory_012",
+      "type": "unknown"
+    },
+    {
+      "name": "ps_social_identity",
+      "type": "unknown"
+    },
+    {
+      "name": "theory_013",
+      "type": "unknown"
+    },
+    {
+      "name": "r_pathos",
+      "type": "unknown"
+    },
+    {
+      "name": "ps_anxiety",
+      "type": "unknown"
+    },
+    {
+      "name": "theory_014",
+      "type": "unknown"
+    },
+    {
+      "name": "lf_topic_shift",
+      "type": "unknown"
+    },
+    {
+      "name": "theory_015",
+      "type": "unknown"
+    },
+    {
+      "name": "theory_016",
+      "type": "unknown"
+    },
+    {
+      "name": "lf_code_switching",
+      "type": "unknown"
+    },
+    {
+      "name": "ps_belonging",
+      "type": "unknown"
+    },
+    {
+      "name": "theory_017",
+      "type": "unknown"
+    },
+    {
+      "name": "theory_018",
+      "type": "unknown"
+    },
+    {
+      "name": "theory_019",
+      "type": "unknown"
+    },
+    {
+      "name": "c_prototype",
+      "type": "unknown"
+    },
+    {
+      "name": "r_metaphor",
+      "type": "unknown"
+    },
+    {
+      "name": "r_simile",
+      "type": "unknown"
+    },
+    {
+      "name": "theory_020",
+      "type": "unknown"
+    },
+    {
+      "name": "r_ethos",
+      "type": "unknown"
+    },
+    {
+      "name": "r_logos",
+      "type": "unknown"
+    },
+    {
+      "name": "r_hyperbole",
+      "type": "unknown"
+    },
+    {
+      "name": "r_euphemism",
+      "type": "unknown"
+    },
+    {
+      "name": "r_parallelism",
+      "type": "unknown"
+    },
+    {
+      "name": "ps_self_protection",
+      "type": "unknown"
+    },
+    {
+      "name": "lf_hedging",
+      "type": "unknown"
+    },
+    {
+      "name": "ps_defense",
+      "type": "unknown"
+    },
+    {
+      "name": "lf_repetition",
+      "type": "unknown"
+    },
+    {
+      "name": "ps_cognitive_load",
+      "type": "unknown"
+    },
+    {
+      "name": "ps_suppression",
+      "type": "unknown"
+    },
+    {
+      "name": "面子理论",
+      "type": "unknown"
+    },
+    {
+      "name": "情绪感染理论",
+      "type": "unknown"
+    },
+    {
+      "name": "论证结构",
+      "type": "unknown"
+    },
+    {
+      "name": "权力与话语",
+      "type": "unknown"
+    },
+    {
+      "name": "社会认同理论",
+      "type": "unknown"
+    },
+    {
+      "name": "话轮转换理论",
+      "type": "unknown"
+    },
+    {
+      "name": "话语标记",
+      "type": "unknown"
+    },
+    {
+      "name": "态度",
+      "type": "unknown"
+    },
+    {
+      "name": "批判话语分析",
+      "type": "unknown"
+    },
+    {
+      "name": "隐喻理论",
+      "type": "unknown"
+    },
+    {
+      "name": "言语适应理论",
+      "type": "unknown"
+    },
+    {
+      "name": "期望违反理论",
+      "type": "unknown"
+    },
+    {
+      "name": "归因理论",
+      "type": "unknown"
+    },
+    {
+      "name": "认知偏误",
+      "type": "unknown"
+    },
+    {
+      "name": "语言相对论",
+      "type": "unknown"
+    },
+    {
+      "name": "情感",
+      "type": "unknown"
+    },
+    {
+      "name": "惊讶",
+      "type": "unknown"
+    },
+    {
+      "name": "社会心理",
+      "type": "unknown"
+    },
+    {
+      "name": "说服与影响",
+      "type": "unknown"
+    },
+    {
+      "name": "幽默理论",
+      "type": "unknown"
+    },
+    {
+      "name": "强调",
+      "type": "unknown"
+    },
+    {
+      "name": "语用学",
+      "type": "unknown"
+    },
+    {
+      "name": "自恋",
+      "type": "unknown"
+    },
+    {
+      "name": "情绪感染",
+      "type": "unknown"
+    },
+    {
+      "name": "权力断言",
+      "type": "unknown"
+    },
+    {
+      "name": "诉诸情感谬误",
+      "type": "unknown"
+    },
+    {
+      "name": "恐惧诉求",
+      "type": "unknown"
+    },
+    {
+      "name": "自我效能",
+      "type": "unknown"
+    },
+    {
+      "name": "认知行为理论",
+      "type": "unknown"
+    },
+    {
+      "name": "情绪抑制",
+      "type": "unknown"
+    },
+    {
+      "name": "回避型应对",
+      "type": "unknown"
+    },
+    {
+      "name": "键盘侠",
+      "type": "unknown"
+    },
+    {
+      "name": "共生依赖",
+      "type": "unknown"
+    },
+    {
+      "name": "情绪调节困难",
+      "type": "unknown"
+    },
+    {
+      "name": "选择过载",
+      "type": "unknown"
+    },
+    {
+      "name": "推拉",
+      "type": "unknown"
+    },
+    {
+      "name": "情感表达",
+      "type": "unknown"
+    },
+    {
+      "name": "情感操控",
+      "type": "unknown"
+    },
+    {
+      "name": "认知扭曲",
+      "type": "unknown"
+    },
+    {
+      "name": "依恋理论",
+      "type": "theory"
+    },
+    {
+      "name": "防御机制理论",
+      "type": "theory"
+    },
+    {
+      "name": "认知扭曲理论",
+      "type": "theory"
+    },
+    {
+      "name": "anxious_attachment",
+      "type": "romantic_behavior"
+    },
+    {
+      "name": "社会交换理论",
+      "type": "theory"
+    },
+    {
+      "name": "情感操控理论",
+      "type": "theory"
+    },
+    {
+      "name": "煤气灯效应理论",
+      "type": "theory"
+    },
+    {
+      "name": "conflict_escalation",
+      "type": "romantic_behavior"
+    },
+    {
+      "name": "jealousy_conflict",
+      "type": "romantic_behavior"
+    },
+    {
+      "name": "push_pull",
+      "type": "romantic_behavior"
+    },
+    {
+      "name": "间歇性强化理论",
+      "type": "theory"
+    },
+    {
+      "name": "欺骗检测理论",
+      "type": "theory",
+      "id": "theory_021"
+    },
+    {
+      "name": "说服知识模型",
+      "type": "theory",
+      "id": "theory_022"
+    },
+    {
+      "name": "自我决定理论",
+      "type": "theory",
+      "id": "theory_023"
+    },
+    {
+      "name": "认知失调理论",
+      "type": "theory",
+      "id": "theory_024"
+    },
+    {
+      "name": "戈特曼四骑士",
+      "type": "theory",
+      "id": "theory_026"
+    },
+    {
+      "name": "面子协商理论",
+      "type": "theory",
+      "id": "theory_028"
+    },
+    {
+      "name": "期望违背理论",
+      "type": "theory",
+      "id": "theory_029"
+    },
+    {
+      "name": "社会渗透理论",
+      "type": "theory",
+      "id": "theory_030"
+    },
+    {
+      "name": "距离化语言",
+      "type": "communication_strategy"
+    },
+    {
+      "name": "细节缺失",
+      "type": "deception_cue"
+    },
+    {
+      "name": "过度否认",
+      "type": "deception_cue"
+    },
+    {
+      "name": "线索泄露",
+      "type": "deception_cue"
+    },
+    {
+      "name": "故事不一致",
+      "type": "deception_cue"
+    },
+    {
+      "name": "社会证明",
+      "type": "persuasion_strategy"
+    },
+    {
+      "name": "承诺一致性",
+      "type": "persuasion_strategy"
+    },
+    {
+      "name": "认知防御",
+      "type": "psychological_state"
+    },
+    {
+      "name": "自主性需求",
+      "type": "psychological_need"
+    },
+    {
+      "name": "胜任感需求",
+      "type": "psychological_need"
+    },
+    {
+      "name": "关系性需求",
+      "type": "psychological_need"
+    },
+    {
+      "name": "控制性语言",
+      "type": "language_style"
+    },
+    {
+      "name": "自主支持性语言",
+      "type": "language_style"
+    },
+    {
+      "name": "内在动机",
+      "type": "motivation"
+    },
+    {
+      "name": "外在动机",
+      "type": "motivation"
+    },
+    {
+      "name": "失调减少策略",
+      "type": "psychological_state"
+    },
+    {
+      "name": "事后合理化",
+      "type": "defense_mechanism"
+    },
+    {
+      "name": "酸葡萄效应",
+      "type": "defense_mechanism"
+    },
+    {
+      "name": "承诺升级",
+      "type": "cognitive_bias"
+    },
+    {
+      "name": "成本收益分析",
+      "type": "cognitive_process"
+    },
+    {
+      "name": "公平感",
+      "type": "psychological_state"
+    },
+    {
+      "name": "比较水平",
+      "type": "cognitive_process"
+    },
+    {
+      "name": "互惠规范",
+      "type": "social_norm"
+    },
+    {
+      "name": "批评模式",
+      "type": "destructive_communication"
+    },
+    {
+      "name": "蔑视模式",
+      "type": "destructive_communication"
+    },
+    {
+      "name": "防御模式",
+      "type": "destructive_communication"
+    },
+    {
+      "name": "冷战模式",
+      "type": "destructive_communication"
+    },
+    {
+      "name": "关系修复尝试",
+      "type": "relationship_behavior"
+    },
+    {
+      "name": "情感淹没",
+      "type": "emotion_state"
+    },
+    {
+      "name": "恐惧回避型依恋",
+      "type": "attachment_style"
+    },
+    {
+      "name": "内部工作模型",
+      "type": "cognitive_process"
+    },
+    {
+      "name": "安全基地",
+      "type": "psychological_need"
+    },
+    {
+      "name": "自我面子关注",
+      "type": "communication_strategy"
+    },
+    {
+      "name": "他人面子关注",
+      "type": "communication_strategy"
+    },
+    {
+      "name": "共同面子关注",
+      "type": "communication_strategy"
+    },
+    {
+      "name": "冲突风格",
+      "type": "communication_strategy"
+    },
+    {
+      "name": "交际期望",
+      "type": "cognitive_process"
+    },
+    {
+      "name": "正面期望违背",
+      "type": "communication_event"
+    },
+    {
+      "name": "负面期望违背",
+      "type": "communication_event"
+    },
+    {
+      "name": "奖励价值",
+      "type": "cognitive_process"
+    },
+    {
+      "name": "自我表露深度",
+      "type": "relationship_behavior"
+    },
+    {
+      "name": "自我表露广度",
+      "type": "relationship_behavior"
+    },
+    {
+      "name": "表露互惠性",
+      "type": "relationship_behavior"
+    },
+    {
+      "name": "关系渗透",
+      "type": "relationship_stage"
+    },
+    {
+      "name": "关系解体",
+      "type": "relationship_stage"
+    }
   ],
   "edges": [
-    {"source": "theory_001", "target": "sa_assert", "relation": "defines"},
-    {"source": "theory_001", "target": "sa_directive", "relation": "defines"},
-    {"source": "theory_001", "target": "sa_commissive", "relation": "defines"},
-    {"source": "theory_001", "target": "sa_expressive", "relation": "defines"},
-    {"source": "theory_001", "target": "sa_declaration", "relation": "defines"},
-    {"source": "theory_001", "target": "c_illocutionary_force", "relation": "explains"},
-    {"source": "theory_001", "target": "c_perlocutionary_effect", "relation": "explains"},
-
-    {"source": "theory_002", "target": "c_cp", "relation": "defines"},
-    {"source": "c_cp", "target": "c_quantity", "relation": "contains"},
-    {"source": "c_cp", "target": "c_quality", "relation": "contains"},
-    {"source": "c_cp", "target": "c_relevance", "relation": "contains"},
-    {"source": "c_cp", "target": "c_manner", "relation": "contains"},
-    {"source": "theory_002", "target": "c_implicature", "relation": "explains"},
-
-    {"source": "theory_003", "target": "c_positive_face", "relation": "defines"},
-    {"source": "theory_003", "target": "c_negative_face", "relation": "defines"},
-    {"source": "theory_003", "target": "c_fta", "relation": "defines"},
-    {"source": "c_fta", "target": "c_positive_face", "relation": "threatens"},
-    {"source": "c_fta", "target": "c_negative_face", "relation": "threatens"},
-
-    {"source": "theory_004", "target": "c_lian", "relation": "defines"},
-    {"source": "theory_004", "target": "c_mianzi", "relation": "defines"},
-    {"source": "theory_004", "target": "c_fta", "relation": "extends"},
-
-    {"source": "theory_010", "target": "c_positive_face", "relation": "precursor_of"},
-    {"source": "theory_010", "target": "c_negative_face", "relation": "precursor_of"},
-
-    {"source": "theory_005", "target": "c_implicature", "relation": "amplifies"},
-    {"source": "theory_005", "target": "lf_indirect", "relation": "explains"},
-    {"source": "theory_005", "target": "lf_silence", "relation": "explains"},
-
-    {"source": "theory_006", "target": "lf_honorific", "relation": "explains"},
-    {"source": "theory_006", "target": "lf_address", "relation": "explains"},
-    {"source": "theory_006", "target": "lf_passive", "relation": "explains"},
-
-    {"source": "theory_007", "target": "c_framing_effect", "relation": "analyzes"},
-    {"source": "theory_007", "target": "ps_power", "relation": "reveals"},
-
-    {"source": "theory_008", "target": "lf_modality", "relation": "analyzes"},
-    {"source": "theory_008", "target": "lf_passive", "relation": "analyzes"},
-
-    {"source": "theory_009", "target": "c_implicature", "relation": "explains"},
-    {"source": "theory_009", "target": "r_irony", "relation": "explains"},
-    {"source": "theory_009", "target": "cognitive_bias", "relation": "mitigates"},
-
-    {"source": "theory_011", "target": "c_conceptual_metaphor", "relation": "builds_on"},
-    {"source": "theory_011", "target": "c_framing_effect", "relation": "defines"},
-    {"source": "c_framing_effect", "target": "cognitive_bias", "relation": "exploits"},
-
-    {"source": "theory_012", "target": "ps_social_identity", "relation": "constructs"},
-
-    {"source": "theory_013", "target": "r_pathos", "relation": "analyzes"},
-    {"source": "theory_013", "target": "ps_anxiety", "relation": "detects"},
-
-    {"source": "theory_014", "target": "lf_topic_shift", "relation": "analyzes"},
-    {"source": "theory_014", "target": "lf_silence", "relation": "analyzes"},
-
-    {"source": "theory_015", "target": "lf_honorific", "relation": "determines"},
-    {"source": "theory_015", "target": "lf_modality", "relation": "determines"},
-
-    {"source": "theory_016", "target": "lf_code_switching", "relation": "explains"},
-    {"source": "theory_016", "target": "ps_belonging", "relation": "motivates"},
-    {"source": "theory_016", "target": "ps_social_identity", "relation": "motivates"},
-
-    {"source": "theory_017", "target": "lf_code_switching", "relation": "explains"},
-    {"source": "theory_017", "target": "ps_social_identity", "relation": "negotiates"},
-
-    {"source": "theory_018", "target": "ps_power", "relation": "reveals"},
-    {"source": "theory_018", "target": "c_framing_effect", "relation": "analyzes"},
-
-    {"source": "theory_019", "target": "c_conceptual_metaphor", "relation": "defines"},
-    {"source": "theory_019", "target": "c_prototype", "relation": "defines"},
-    {"source": "theory_019", "target": "r_metaphor", "relation": "explains"},
-    {"source": "theory_019", "target": "r_simile", "relation": "explains"},
-
-    {"source": "theory_020", "target": "r_ethos", "relation": "defines"},
-    {"source": "theory_020", "target": "r_pathos", "relation": "defines"},
-    {"source": "theory_020", "target": "r_logos", "relation": "defines"},
-
-    {"source": "r_simile", "target": "c_conceptual_metaphor", "relation": "realizes"},
-    {"source": "r_metaphor", "target": "c_conceptual_metaphor", "relation": "realizes"},
-    {"source": "r_irony", "target": "c_implicature", "relation": "generates"},
-    {"source": "r_irony", "target": "c_quality", "relation": "violates"},
-    {"source": "r_hyperbole", "target": "c_quantity", "relation": "violates"},
-    {"source": "r_euphemism", "target": "c_fta", "relation": "mitigates"},
-    {"source": "r_parallelism", "target": "r_pathos", "relation": "strengthens"},
-
-    {"source": "lf_indirect", "target": "ps_self_protection", "relation": "serves"},
-    {"source": "lf_hedging", "target": "ps_anxiety", "relation": "signals"},
-    {"source": "lf_honorific", "target": "ps_power", "relation": "marks"},
-    {"source": "lf_passive", "target": "ps_defense", "relation": "serves"},
-    {"source": "lf_repetition", "target": "ps_cognitive_load", "relation": "reduces"},
-    {"source": "lf_silence", "target": "ps_suppression", "relation": "signals"},
-    {"source": "lf_topic_shift", "target": "ps_self_protection", "relation": "serves"},
-    {"source": "lf_code_switching", "target": "ps_social_identity", "relation": "negotiates"},
-    {"source": "lf_address", "target": "ps_power", "relation": "marks"},
-
-    {"source": "c_fta", "target": "ps_self_protection", "relation": "triggers"},
-    {"source": "c_implicature", "target": "ps_cognitive_load", "relation": "increases"},
-    {"source": "c_conceptual_metaphor", "target": "cognitive_bias", "relation": "shapes"},
-    {"source": "c_lian", "target": "ps_self_protection", "relation": "motivates"},
-    {"source": "c_mianzi", "target": "ps_belonging", "relation": "motivates"}
+    {
+      "source": "言语行为理论",
+      "target": "断言",
+      "relation": "defines"
+    },
+    {
+      "source": "言语行为理论",
+      "target": "指令",
+      "relation": "defines"
+    },
+    {
+      "source": "言语行为理论",
+      "target": "承诺",
+      "relation": "defines"
+    },
+    {
+      "source": "言语行为理论",
+      "target": "面子理论",
+      "relation": "related_to"
+    },
+    {
+      "source": "言语行为理论",
+      "target": "礼貌策略",
+      "relation": "related_to"
+    },
+    {
+      "source": "言语行为理论",
+      "target": "表态",
+      "relation": "defines"
+    },
+    {
+      "source": "言语行为理论",
+      "target": "宣告",
+      "relation": "defines"
+    },
+    {
+      "source": "言语行为理论",
+      "target": "间接言语行为",
+      "relation": "defines"
+    },
+    {
+      "source": "言语行为理论",
+      "target": "言外之意",
+      "relation": "produces"
+    },
+    {
+      "source": "礼貌策略",
+      "target": "面子理论",
+      "relation": "extends"
+    },
+    {
+      "source": "礼貌策略",
+      "target": "间接言语行为",
+      "relation": "motivates"
+    },
+    {
+      "source": "框架理论",
+      "target": "批判话语分析",
+      "relation": "used_by"
+    },
+    {
+      "source": "框架理论",
+      "target": "锚定效应",
+      "relation": "related_to"
+    },
+    {
+      "source": "评价理论",
+      "target": "态度",
+      "relation": "analyzes"
+    },
+    {
+      "source": "评价理论",
+      "target": "情感",
+      "relation": "classifies"
+    },
+    {
+      "source": "认知语言学",
+      "target": "隐喻理论",
+      "relation": "foundational_to"
+    },
+    {
+      "source": "框架效应",
+      "target": "评价理论",
+      "relation": "related_to"
+    },
+    {
+      "source": "明喻",
+      "target": "隐喻理论",
+      "relation": "is_type_of"
+    },
+    {
+      "source": "夸张",
+      "target": "评价理论",
+      "relation": "uses"
+    },
+    {
+      "source": "排比",
+      "target": "系统功能语言学",
+      "relation": "analyzed_by"
+    },
+    {
+      "source": "委婉语",
+      "target": "间接言语行为",
+      "relation": "is_type_of"
+    },
+    {
+      "source": "焦虑",
+      "target": "恐惧",
+      "relation": "related_to"
+    },
+    {
+      "source": "防御机制",
+      "target": "否认",
+      "relation": "includes"
+    },
+    {
+      "source": "防御机制",
+      "target": "合理化",
+      "relation": "includes"
+    },
+    {
+      "source": "防御机制",
+      "target": "投射",
+      "relation": "includes"
+    },
+    {
+      "source": "防御机制",
+      "target": "升华",
+      "relation": "includes"
+    },
+    {
+      "source": "防御机制",
+      "target": "压抑",
+      "relation": "includes"
+    },
+    {
+      "source": "社会认同",
+      "target": "从众",
+      "relation": "leverages"
+    },
+    {
+      "source": "模糊语",
+      "target": "间接言语行为",
+      "relation": "is_type_of"
+    },
+    {
+      "source": "话题转换",
+      "target": "话语标记",
+      "relation": "signaled_by"
+    },
+    {
+      "source": "沉默",
+      "target": "间接言语行为",
+      "relation": "is_type_of"
+    },
+    {
+      "source": "愤怒",
+      "target": "厌恶",
+      "relation": "related_to"
+    },
+    {
+      "source": "悲伤",
+      "target": "内疚",
+      "relation": "related_to"
+    },
+    {
+      "source": "羞耻",
+      "target": "自卑",
+      "relation": "related_to"
+    },
+    {
+      "source": "嫉妒",
+      "target": "自卑",
+      "relation": "triggers"
+    },
+    {
+      "source": "傲慢",
+      "target": "自卑",
+      "relation": "opposite_of"
+    },
+    {
+      "source": "安全感",
+      "target": "信任",
+      "relation": "requires"
+    },
+    {
+      "source": "安全感",
+      "target": "焦虑",
+      "relation": "absence_of"
+    },
+    {
+      "source": "安全感",
+      "target": "安全型依恋",
+      "relation": "characteristic_of"
+    },
+    {
+      "source": "孤独感",
+      "target": "悲伤",
+      "relation": "related_to"
+    },
+    {
+      "source": "重复",
+      "target": "强调",
+      "relation": "creates"
+    },
+    {
+      "source": "反问",
+      "target": "表态",
+      "relation": "is_type_of"
+    },
+    {
+      "source": "自嘲",
+      "target": "幽默理论",
+      "relation": "uses"
+    },
+    {
+      "source": "转移话题",
+      "target": "话题转换",
+      "relation": "facilitates"
+    },
+    {
+      "source": "附和",
+      "target": "从众",
+      "relation": "manifestation_of"
+    },
+    {
+      "source": "质疑",
+      "target": "断言",
+      "relation": "challenges"
+    },
+    {
+      "source": "暗示",
+      "target": "言外之意",
+      "relation": "produces"
+    },
+    {
+      "source": "确认偏误",
+      "target": "群体思维",
+      "relation": "contributes_to"
+    },
+    {
+      "source": "光环效应",
+      "target": "可信度",
+      "relation": "influences"
+    },
+    {
+      "source": "损失厌恶",
+      "target": "恐惧",
+      "relation": "driven_by"
+    },
+    {
+      "source": "从众",
+      "target": "群体极化",
+      "relation": "contributes_to"
+    },
+    {
+      "source": "从众",
+      "target": "社会认同理论",
+      "relation": "driven_by"
+    },
+    {
+      "source": "服从",
+      "target": "权力与话语",
+      "relation": "manifested_in"
+    },
+    {
+      "source": "群体思维",
+      "target": "群体极化",
+      "relation": "leads_to"
+    },
+    {
+      "source": "否认",
+      "target": "恐惧",
+      "relation": "coping_with"
+    },
+    {
+      "source": "合理化",
+      "target": "内疚",
+      "relation": "coping_with"
+    },
+    {
+      "source": "投射",
+      "target": "羞耻",
+      "relation": "coping_with"
+    },
+    {
+      "source": "投射",
+      "target": "过度解读",
+      "relation": "related_to"
+    },
+    {
+      "source": "压抑",
+      "target": "焦虑",
+      "relation": "coping_with"
+    },
+    {
+      "source": "反向形成",
+      "target": "傲慢",
+      "relation": "coping_with"
+    },
+    {
+      "source": "外向性",
+      "target": "话轮转换理论",
+      "relation": "influences"
+    },
+    {
+      "source": "宜人性",
+      "target": "礼貌策略",
+      "relation": "facilitates"
+    },
+    {
+      "source": "神经质",
+      "target": "焦虑",
+      "relation": "predisposes_to"
+    },
+    {
+      "source": "可信度",
+      "target": "权威诉求",
+      "relation": "enhanced_by"
+    },
+    {
+      "source": "情感诉求",
+      "target": "情绪感染理论",
+      "relation": "related_to"
+    },
+    {
+      "source": "逻辑诉求",
+      "target": "论证结构",
+      "relation": "uses"
+    },
+    {
+      "source": "互惠原则",
+      "target": "礼貌策略",
+      "relation": "related_to"
+    },
+    {
+      "source": "开场白",
+      "target": "面子理论",
+      "relation": "establishes"
+    },
+    {
+      "source": "修正",
+      "target": "话轮转换理论",
+      "relation": "occurs_in"
+    },
+    {
+      "source": "亲密关系",
+      "target": "信任",
+      "relation": "requires"
+    },
+    {
+      "source": "冲突",
+      "target": "权力关系",
+      "relation": "arises_from"
+    },
+    {
+      "source": "和解",
+      "target": "面子理论",
+      "relation": "involves"
+    },
+    {
+      "source": "依赖",
+      "target": "共生依赖",
+      "relation": "extreme_form"
+    },
+    {
+      "source": "暗喻",
+      "target": "隐喻理论",
+      "relation": "is_type_of"
+    },
+    {
+      "source": "拟人",
+      "target": "认知语言学",
+      "relation": "uses"
+    },
+    {
+      "source": "反语",
+      "target": "会话含义理论",
+      "relation": "violates"
+    },
+    {
+      "source": "双关",
+      "target": "语用学",
+      "relation": "analyzed_by"
+    },
+    {
+      "source": "讽刺",
+      "target": "批判话语分析",
+      "relation": "analyzed_by"
+    },
+    {
+      "source": "积极情感",
+      "target": "喜悦",
+      "relation": "includes"
+    },
+    {
+      "source": "消极情感",
+      "target": "悲伤",
+      "relation": "includes"
+    },
+    {
+      "source": "消极情感",
+      "target": "愤怒",
+      "relation": "includes"
+    },
+    {
+      "source": "消极情感",
+      "target": "恐惧",
+      "relation": "includes"
+    },
+    {
+      "source": "情感抑制",
+      "target": "压抑",
+      "relation": "related_to"
+    },
+    {
+      "source": "情感放大",
+      "target": "自恋",
+      "relation": "related_to"
+    },
+    {
+      "source": "注意力",
+      "target": "聚光灯效应",
+      "relation": "related_to"
+    },
+    {
+      "source": "推理",
+      "target": "代表性",
+      "relation": "can_lead_to"
+    },
+    {
+      "source": "判断",
+      "target": "可得性",
+      "relation": "can_lead_to"
+    },
+    {
+      "source": "归因",
+      "target": "自利偏误",
+      "relation": "can_lead_to"
+    },
+    {
+      "source": "图式",
+      "target": "刻板印象",
+      "relation": "creates"
+    },
+    {
+      "source": "启发式",
+      "target": "锚定效应",
+      "relation": "uses"
+    },
+    {
+      "source": "友谊",
+      "target": "亲密关系",
+      "relation": "is_type_of"
+    },
+    {
+      "source": "上下级关系",
+      "target": "权力距离",
+      "relation": "characterized_by"
+    },
+    {
+      "source": "陌生关系",
+      "target": "礼貌策略",
+      "relation": "uses"
+    },
+    {
+      "source": "竞争关系",
+      "target": "冲突",
+      "relation": "leads_to"
+    },
+    {
+      "source": "合作关系",
+      "target": "信任",
+      "relation": "requires"
+    },
+    {
+      "source": "误解",
+      "target": "修正",
+      "relation": "resolved_by"
+    },
+    {
+      "source": "偏见",
+      "target": "刻板印象",
+      "relation": "based_on"
+    },
+    {
+      "source": "选择性倾听",
+      "target": "确认偏误",
+      "relation": "related_to"
+    },
+    {
+      "source": "情绪干扰",
+      "target": "情绪感染",
+      "relation": "caused_by"
+    },
+    {
+      "source": "文化差异",
+      "target": "高语境沟通",
+      "relation": "manifested_in"
+    },
+    {
+      "source": "显性权力",
+      "target": "权力断言",
+      "relation": "exercised_through"
+    },
+    {
+      "source": "隐性权力",
+      "target": "暗示",
+      "relation": "exercised_through"
+    },
+    {
+      "source": "话语权",
+      "target": "批判话语分析",
+      "relation": "analyzed_by"
+    },
+    {
+      "source": "议程设置",
+      "target": "框架理论",
+      "relation": "related_to"
+    },
+    {
+      "source": "诉诸理性",
+      "target": "逻辑诉求",
+      "relation": "is"
+    },
+    {
+      "source": "诉诸情感",
+      "target": "诉诸情感谬误",
+      "relation": "can_become"
+    },
+    {
+      "source": "诉诸人格",
+      "target": "权威诉求",
+      "relation": "related_to"
+    },
+    {
+      "source": "诉诸恐惧",
+      "target": "恐惧诉求",
+      "relation": "is"
+    },
+    {
+      "source": "集体主义",
+      "target": "儒家面子理论",
+      "relation": "context_for"
+    },
+    {
+      "source": "个人主义",
+      "target": "社会认同理论",
+      "relation": "contrasts_with"
+    },
+    {
+      "source": "高权力距离",
+      "target": "权力距离",
+      "relation": "is"
+    },
+    {
+      "source": "不确定性规避",
+      "target": "期望违反理论",
+      "relation": "related_to"
+    },
+    {
+      "source": "归属感",
+      "target": "孤独感",
+      "relation": "absence_of"
+    },
+    {
+      "source": "自尊",
+      "target": "自卑",
+      "relation": "opposite_of"
+    },
+    {
+      "source": "能力感",
+      "target": "自我效能",
+      "relation": "related_to"
+    },
+    {
+      "source": "预设",
+      "target": "言语行为理论",
+      "relation": "analyzed_by"
+    },
+    {
+      "source": "蕴含",
+      "target": "会话含义理论",
+      "relation": "analyzed_by"
+    },
+    {
+      "source": "回避",
+      "target": "沉默",
+      "relation": "uses"
+    },
+    {
+      "source": "模糊化",
+      "target": "模糊语",
+      "relation": "uses"
+    },
+    {
+      "source": "认知重评",
+      "target": "认知行为理论",
+      "relation": "uses"
+    },
+    {
+      "source": "表达抑制",
+      "target": "情绪抑制",
+      "relation": "is"
+    },
+    {
+      "source": "情境选择",
+      "target": "回避型应对",
+      "relation": "related_to"
+    },
+    {
+      "source": "大五人格",
+      "target": "外向性",
+      "relation": "includes"
+    },
+    {
+      "source": "大五人格",
+      "target": "神经质",
+      "relation": "includes"
+    },
+    {
+      "source": "依恋类型",
+      "target": "焦虑",
+      "relation": "related_to"
+    },
+    {
+      "source": "依恋类型",
+      "target": "信任",
+      "relation": "related_to"
+    },
+    {
+      "source": "自利偏误",
+      "target": "归因理论",
+      "relation": "related_to"
+    },
+    {
+      "source": "聚光灯效应",
+      "target": "自卑",
+      "relation": "amplifies"
+    },
+    {
+      "source": "虚假共识",
+      "target": "从众",
+      "relation": "related_to"
+    },
+    {
+      "source": "沉没成本",
+      "target": "损失厌恶",
+      "relation": "driven_by"
+    },
+    {
+      "source": "峰终定律",
+      "target": "记忆",
+      "relation": "shapes"
+    },
+    {
+      "source": "权威服从",
+      "target": "服从",
+      "relation": "is"
+    },
+    {
+      "source": "信息性影响",
+      "target": "可信度",
+      "relation": "based_on"
+    },
+    {
+      "source": "规范性影响",
+      "target": "从众",
+      "relation": "causes"
+    },
+    {
+      "source": "社会比较",
+      "target": "嫉妒",
+      "relation": "can_cause"
+    },
+    {
+      "source": "去个体化",
+      "target": "键盘侠",
+      "relation": "explains"
+    },
+    {
+      "source": "暧昧期",
+      "target": "心动",
+      "relation": "characterized_by"
+    },
+    {
+      "source": "暧昧期",
+      "target": "安全感测试",
+      "relation": "uses"
+    },
+    {
+      "source": "热恋期",
+      "target": "理想化",
+      "relation": "characterized_by"
+    },
+    {
+      "source": "热恋期",
+      "target": "心动",
+      "relation": "includes"
+    },
+    {
+      "source": "磨合期",
+      "target": "冲突",
+      "relation": "involves"
+    },
+    {
+      "source": "磨合期",
+      "target": "有效沟通",
+      "relation": "requires"
+    },
+    {
+      "source": "稳定期",
+      "target": "信任",
+      "relation": "based_on"
+    },
+    {
+      "source": "稳定期",
+      "target": "仪式感",
+      "relation": "maintained_by"
+    },
+    {
+      "source": "倦怠期",
+      "target": "失望",
+      "relation": "characterized_by"
+    },
+    {
+      "source": "倦怠期",
+      "target": "情感劳动",
+      "relation": "related_to"
+    },
+    {
+      "source": "危机期",
+      "target": "冲突",
+      "relation": "involves"
+    },
+    {
+      "source": "危机期",
+      "target": "冷暴力",
+      "relation": "may_involve"
+    },
+    {
+      "source": "分手",
+      "target": "心碎",
+      "relation": "causes"
+    },
+    {
+      "source": "分手",
+      "target": "断联",
+      "relation": "may_involve"
+    },
+    {
+      "source": "复合",
+      "target": "挽回",
+      "relation": "preceded_by"
+    },
+    {
+      "source": "复合",
+      "target": "信任",
+      "relation": "requires"
+    },
+    {
+      "source": "心动",
+      "target": "暗恋",
+      "relation": "may_become"
+    },
+    {
+      "source": "吃醋",
+      "target": "独占欲",
+      "relation": "driven_by"
+    },
+    {
+      "source": "吃醋",
+      "target": "嫉妒",
+      "relation": "is_type_of"
+    },
+    {
+      "source": "不安全感",
+      "target": "焦虑型依恋",
+      "relation": "related_to"
+    },
+    {
+      "source": "失望",
+      "target": "去理想化",
+      "relation": "leads_to"
+    },
+    {
+      "source": "心碎",
+      "target": "悲伤",
+      "relation": "is_type_of"
+    },
+    {
+      "source": "释怀",
+      "target": "自我成长",
+      "relation": "leads_to"
+    },
+    {
+      "source": "怀疑",
+      "target": "信任",
+      "relation": "opposite_of"
+    },
+    {
+      "source": "冷暴力",
+      "target": "回避型依恋",
+      "relation": "associated_with"
+    },
+    {
+      "source": "冷暴力",
+      "target": "沉默",
+      "relation": "uses"
+    },
+    {
+      "source": "热暴力",
+      "target": "情绪调节困难",
+      "relation": "caused_by"
+    },
+    {
+      "source": "有效沟通",
+      "target": "安全型依恋",
+      "relation": "associated_with"
+    },
+    {
+      "source": "无效沟通",
+      "target": "冲突",
+      "relation": "leads_to"
+    },
+    {
+      "source": "被动攻击",
+      "target": "冷暴力",
+      "relation": "related_to"
+    },
+    {
+      "source": "情感勒索",
+      "target": "内疚",
+      "relation": "induces"
+    },
+    {
+      "source": "情感勒索",
+      "target": "情感操控",
+      "relation": "is_type_of"
+    },
+    {
+      "source": "煤气灯效应",
+      "target": "怀疑",
+      "relation": "induces"
+    },
+    {
+      "source": "煤气灯效应",
+      "target": "情感操控",
+      "relation": "is_type_of"
+    },
+    {
+      "source": "回避冲突",
+      "target": "回避型依恋",
+      "relation": "associated_with"
+    },
+    {
+      "source": "过度解读",
+      "target": "焦虑型依恋",
+      "relation": "associated_with"
+    },
+    {
+      "source": "查手机",
+      "target": "怀疑",
+      "relation": "driven_by"
+    },
+    {
+      "source": "查手机",
+      "target": "边界设定",
+      "relation": "violates"
+    },
+    {
+      "source": "翻旧账",
+      "target": "冲突",
+      "relation": "escalates"
+    },
+    {
+      "source": "翻旧账",
+      "target": "沉没成本",
+      "relation": "related_to"
+    },
+    {
+      "source": "作",
+      "target": "安全感测试",
+      "relation": "is_form_of"
+    },
+    {
+      "source": "撒娇",
+      "target": "情感劳动",
+      "relation": "is_form_of"
+    },
+    {
+      "source": "仪式感",
+      "target": "热恋期",
+      "relation": "maintains"
+    },
+    {
+      "source": "安全感测试",
+      "target": "焦虑型依恋",
+      "relation": "associated_with"
+    },
+    {
+      "source": "付出不对等",
+      "target": "失望",
+      "relation": "leads_to"
+    },
+    {
+      "source": "边界设定",
+      "target": "有效沟通",
+      "relation": "requires"
+    },
+    {
+      "source": "断联",
+      "target": "回避型依恋",
+      "relation": "associated_with"
+    },
+    {
+      "source": "挽回",
+      "target": "焦虑型依恋",
+      "relation": "associated_with"
+    },
+    {
+      "source": "反弹关系",
+      "target": "心碎",
+      "relation": "coping_with"
+    },
+    {
+      "source": "反弹关系",
+      "target": "回避型应对",
+      "relation": "is_form_of"
+    },
+    {
+      "source": "前任回头",
+      "target": "暧昧期",
+      "relation": "restarts"
+    },
+    {
+      "source": "心碎综合症",
+      "target": "心碎",
+      "relation": "manifestation_of"
+    },
+    {
+      "source": "断舍离",
+      "target": "释怀",
+      "relation": "facilitates"
+    },
+    {
+      "source": "自我成长",
+      "target": "分手",
+      "relation": "outcome_of"
+    },
+    {
+      "source": "左滑右滑",
+      "target": "选择过载",
+      "relation": "causes"
+    },
+    {
+      "source": "照骗",
+      "target": "信任",
+      "relation": "undermines"
+    },
+    {
+      "source": "幽灵化",
+      "target": "心碎",
+      "relation": "causes"
+    },
+    {
+      "source": "面包屑",
+      "target": "暧昧期",
+      "relation": "maintains"
+    },
+    {
+      "source": "养鱼",
+      "target": "暧昧期",
+      "relation": "involves"
+    },
+    {
+      "source": "杀猪盘",
+      "target": "信任",
+      "relation": "exploits"
+    },
+    {
+      "source": "焦虑型依恋",
+      "target": "安全感测试",
+      "relation": "engages_in"
+    },
+    {
+      "source": "焦虑型依恋",
+      "target": "过度解读",
+      "relation": "tends_to"
+    },
+    {
+      "source": "回避型依恋",
+      "target": "冷暴力",
+      "relation": "may_use"
+    },
+    {
+      "source": "回避型依恋",
+      "target": "回避冲突",
+      "relation": "tends_to"
+    },
+    {
+      "source": "安全型依恋",
+      "target": "有效沟通",
+      "relation": "excels_at"
+    },
+    {
+      "source": "安全型依恋",
+      "target": "边界设定",
+      "relation": "practices"
+    },
+    {
+      "source": "混乱型依恋",
+      "target": "推拉",
+      "relation": "engages_in"
+    },
+    {
+      "source": "理想化",
+      "target": "热恋期",
+      "relation": "characteristic_of"
+    },
+    {
+      "source": "理想化",
+      "target": "光环效应",
+      "relation": "related_to"
+    },
+    {
+      "source": "去理想化",
+      "target": "磨合期",
+      "relation": "characteristic_of"
+    },
+    {
+      "source": "选择性注意",
+      "target": "怀疑",
+      "relation": "reinforces"
+    },
+    {
+      "source": "灾难化思维",
+      "target": "不安全感",
+      "relation": "amplifies"
+    },
+    {
+      "source": "灾难化思维",
+      "target": "认知扭曲",
+      "relation": "is_type_of"
+    },
+    {
+      "source": "读心术",
+      "target": "过度解读",
+      "relation": "related_to"
+    },
+    {
+      "source": "读心术",
+      "target": "认知扭曲",
+      "relation": "is_type_of"
+    },
+    {
+      "source": "男性沟通模式",
+      "target": "回避冲突",
+      "relation": "tends_toward"
+    },
+    {
+      "source": "女性沟通模式",
+      "target": "情感表达",
+      "relation": "emphasizes"
+    },
+    {
+      "source": "性别刻板印象",
+      "target": "性别角色压力",
+      "relation": "creates"
+    },
+    {
+      "source": "性别角色压力",
+      "target": "冲突",
+      "relation": "may_cause"
+    },
+    {
+      "source": "关系主导权",
+      "target": "权力距离",
+      "relation": "related_to"
+    },
+    {
+      "source": "情感劳动",
+      "target": "女性沟通模式",
+      "relation": "often_falls_on"
+    },
+    {
+      "source": "经济权力",
+      "target": "关系主导权",
+      "relation": "influences"
+    },
+    {
+      "source": "社会支持",
+      "target": "信任",
+      "relation": "supports"
+    },
+    {
+      "source": "theory_001",
+      "target": "sa_assert",
+      "relation": "defines"
+    },
+    {
+      "source": "theory_001",
+      "target": "sa_directive",
+      "relation": "defines"
+    },
+    {
+      "source": "theory_001",
+      "target": "sa_commissive",
+      "relation": "defines"
+    },
+    {
+      "source": "theory_001",
+      "target": "sa_expressive",
+      "relation": "defines"
+    },
+    {
+      "source": "theory_001",
+      "target": "sa_declaration",
+      "relation": "defines"
+    },
+    {
+      "source": "theory_001",
+      "target": "c_illocutionary_force",
+      "relation": "explains"
+    },
+    {
+      "source": "theory_001",
+      "target": "c_perlocutionary_effect",
+      "relation": "explains"
+    },
+    {
+      "source": "theory_002",
+      "target": "c_cp",
+      "relation": "defines"
+    },
+    {
+      "source": "theory_002",
+      "target": "c_implicature",
+      "relation": "explains"
+    },
+    {
+      "source": "c_cp",
+      "target": "c_quantity",
+      "relation": "contains"
+    },
+    {
+      "source": "c_cp",
+      "target": "c_quality",
+      "relation": "contains"
+    },
+    {
+      "source": "c_cp",
+      "target": "c_relevance",
+      "relation": "contains"
+    },
+    {
+      "source": "c_cp",
+      "target": "c_manner",
+      "relation": "contains"
+    },
+    {
+      "source": "c_implicature",
+      "target": "ps_cognitive_load",
+      "relation": "increases"
+    },
+    {
+      "source": "theory_003",
+      "target": "c_positive_face",
+      "relation": "defines"
+    },
+    {
+      "source": "theory_003",
+      "target": "c_negative_face",
+      "relation": "defines"
+    },
+    {
+      "source": "theory_003",
+      "target": "c_fta",
+      "relation": "defines"
+    },
+    {
+      "source": "c_fta",
+      "target": "c_positive_face",
+      "relation": "threatens"
+    },
+    {
+      "source": "c_fta",
+      "target": "c_negative_face",
+      "relation": "threatens"
+    },
+    {
+      "source": "c_fta",
+      "target": "ps_self_protection",
+      "relation": "triggers"
+    },
+    {
+      "source": "theory_004",
+      "target": "c_lian",
+      "relation": "defines"
+    },
+    {
+      "source": "theory_004",
+      "target": "c_mianzi",
+      "relation": "defines"
+    },
+    {
+      "source": "theory_004",
+      "target": "c_fta",
+      "relation": "extends"
+    },
+    {
+      "source": "c_lian",
+      "target": "ps_self_protection",
+      "relation": "motivates"
+    },
+    {
+      "source": "c_mianzi",
+      "target": "ps_belonging",
+      "relation": "motivates"
+    },
+    {
+      "source": "theory_010",
+      "target": "c_positive_face",
+      "relation": "precursor_of"
+    },
+    {
+      "source": "theory_010",
+      "target": "c_negative_face",
+      "relation": "precursor_of"
+    },
+    {
+      "source": "theory_005",
+      "target": "c_implicature",
+      "relation": "amplifies"
+    },
+    {
+      "source": "theory_005",
+      "target": "lf_indirect",
+      "relation": "explains"
+    },
+    {
+      "source": "theory_005",
+      "target": "lf_silence",
+      "relation": "explains"
+    },
+    {
+      "source": "lf_indirect",
+      "target": "ps_self_protection",
+      "relation": "serves"
+    },
+    {
+      "source": "lf_silence",
+      "target": "ps_suppression",
+      "relation": "signals"
+    },
+    {
+      "source": "theory_006",
+      "target": "lf_honorific",
+      "relation": "explains"
+    },
+    {
+      "source": "theory_006",
+      "target": "lf_address",
+      "relation": "explains"
+    },
+    {
+      "source": "theory_006",
+      "target": "lf_passive",
+      "relation": "explains"
+    },
+    {
+      "source": "lf_honorific",
+      "target": "ps_power",
+      "relation": "marks"
+    },
+    {
+      "source": "lf_address",
+      "target": "ps_power",
+      "relation": "marks"
+    },
+    {
+      "source": "lf_passive",
+      "target": "ps_defense",
+      "relation": "serves"
+    },
+    {
+      "source": "theory_007",
+      "target": "c_framing_effect",
+      "relation": "analyzes"
+    },
+    {
+      "source": "theory_007",
+      "target": "ps_power",
+      "relation": "reveals"
+    },
+    {
+      "source": "c_framing_effect",
+      "target": "cognitive_bias",
+      "relation": "exploits"
+    },
+    {
+      "source": "theory_008",
+      "target": "lf_modality",
+      "relation": "analyzes"
+    },
+    {
+      "source": "theory_008",
+      "target": "lf_passive",
+      "relation": "analyzes"
+    },
+    {
+      "source": "theory_009",
+      "target": "c_implicature",
+      "relation": "explains"
+    },
+    {
+      "source": "theory_009",
+      "target": "r_irony",
+      "relation": "explains"
+    },
+    {
+      "source": "theory_009",
+      "target": "cognitive_bias",
+      "relation": "mitigates"
+    },
+    {
+      "source": "r_irony",
+      "target": "c_implicature",
+      "relation": "generates"
+    },
+    {
+      "source": "r_irony",
+      "target": "c_quality",
+      "relation": "violates"
+    },
+    {
+      "source": "theory_011",
+      "target": "c_conceptual_metaphor",
+      "relation": "builds_on"
+    },
+    {
+      "source": "theory_011",
+      "target": "c_framing_effect",
+      "relation": "defines"
+    },
+    {
+      "source": "c_conceptual_metaphor",
+      "target": "cognitive_bias",
+      "relation": "shapes"
+    },
+    {
+      "source": "theory_012",
+      "target": "ps_social_identity",
+      "relation": "constructs"
+    },
+    {
+      "source": "theory_013",
+      "target": "r_pathos",
+      "relation": "analyzes"
+    },
+    {
+      "source": "theory_013",
+      "target": "ps_anxiety",
+      "relation": "detects"
+    },
+    {
+      "source": "theory_014",
+      "target": "lf_topic_shift",
+      "relation": "analyzes"
+    },
+    {
+      "source": "theory_014",
+      "target": "lf_silence",
+      "relation": "analyzes"
+    },
+    {
+      "source": "lf_topic_shift",
+      "target": "ps_self_protection",
+      "relation": "serves"
+    },
+    {
+      "source": "theory_015",
+      "target": "lf_honorific",
+      "relation": "determines"
+    },
+    {
+      "source": "theory_015",
+      "target": "lf_modality",
+      "relation": "determines"
+    },
+    {
+      "source": "theory_016",
+      "target": "lf_code_switching",
+      "relation": "explains"
+    },
+    {
+      "source": "theory_016",
+      "target": "ps_belonging",
+      "relation": "motivates"
+    },
+    {
+      "source": "theory_016",
+      "target": "ps_social_identity",
+      "relation": "motivates"
+    },
+    {
+      "source": "lf_code_switching",
+      "target": "ps_social_identity",
+      "relation": "negotiates"
+    },
+    {
+      "source": "theory_017",
+      "target": "lf_code_switching",
+      "relation": "explains"
+    },
+    {
+      "source": "theory_017",
+      "target": "ps_social_identity",
+      "relation": "negotiates"
+    },
+    {
+      "source": "theory_018",
+      "target": "ps_power",
+      "relation": "reveals"
+    },
+    {
+      "source": "theory_018",
+      "target": "c_framing_effect",
+      "relation": "analyzes"
+    },
+    {
+      "source": "theory_019",
+      "target": "c_conceptual_metaphor",
+      "relation": "defines"
+    },
+    {
+      "source": "theory_019",
+      "target": "c_prototype",
+      "relation": "defines"
+    },
+    {
+      "source": "theory_019",
+      "target": "r_metaphor",
+      "relation": "explains"
+    },
+    {
+      "source": "theory_019",
+      "target": "r_simile",
+      "relation": "explains"
+    },
+    {
+      "source": "r_metaphor",
+      "target": "c_conceptual_metaphor",
+      "relation": "realizes"
+    },
+    {
+      "source": "r_simile",
+      "target": "c_conceptual_metaphor",
+      "relation": "realizes"
+    },
+    {
+      "source": "theory_020",
+      "target": "r_ethos",
+      "relation": "defines"
+    },
+    {
+      "source": "theory_020",
+      "target": "r_pathos",
+      "relation": "defines"
+    },
+    {
+      "source": "theory_020",
+      "target": "r_logos",
+      "relation": "defines"
+    },
+    {
+      "source": "r_hyperbole",
+      "target": "c_quantity",
+      "relation": "violates"
+    },
+    {
+      "source": "r_euphemism",
+      "target": "c_fta",
+      "relation": "mitigates"
+    },
+    {
+      "source": "r_parallelism",
+      "target": "r_pathos",
+      "relation": "strengthens"
+    },
+    {
+      "source": "lf_hedging",
+      "target": "ps_anxiety",
+      "relation": "signals"
+    },
+    {
+      "source": "lf_repetition",
+      "target": "ps_cognitive_load",
+      "relation": "reduces"
+    },
+    {
+      "source": "情绪感染理论",
+      "target": "情感诉求",
+      "relation": "enables"
+    },
+    {
+      "source": "权力与话语",
+      "target": "批判话语分析",
+      "relation": "analyzed_by"
+    },
+    {
+      "source": "社会认同理论",
+      "target": "从众",
+      "relation": "explains"
+    },
+    {
+      "source": "话轮转换理论",
+      "target": "会话分析",
+      "relation": "part_of"
+    },
+    {
+      "source": "批判话语分析",
+      "target": "权力与话语",
+      "relation": "examines"
+    },
+    {
+      "source": "隐喻理论",
+      "target": "认知语言学",
+      "relation": "part_of"
+    },
+    {
+      "source": "言语适应理论",
+      "target": "社会认同理论",
+      "relation": "related_to"
+    },
+    {
+      "source": "言语适应理论",
+      "target": "附和",
+      "relation": "explains"
+    },
+    {
+      "source": "期望违反理论",
+      "target": "社会认同理论",
+      "relation": "related_to"
+    },
+    {
+      "source": "期望违反理论",
+      "target": "惊讶",
+      "relation": "triggers"
+    },
+    {
+      "source": "归因理论",
+      "target": "认知偏误",
+      "relation": "involves"
+    },
+    {
+      "source": "归因理论",
+      "target": "合理化",
+      "relation": "related_to"
+    },
+    {
+      "source": "认知偏误",
+      "target": "确认偏误",
+      "relation": "includes"
+    },
+    {
+      "source": "认知偏误",
+      "target": "锚定效应",
+      "relation": "includes"
+    },
+    {
+      "source": "认知偏误",
+      "target": "可得性偏误",
+      "relation": "includes"
+    },
+    {
+      "source": "认知偏误",
+      "target": "框架效应",
+      "relation": "includes"
+    },
+    {
+      "source": "语言相对论",
+      "target": "认知语言学",
+      "relation": "related_to"
+    },
+    {
+      "source": "语言相对论",
+      "target": "框架理论",
+      "relation": "supports"
+    },
+    {
+      "source": "社会心理",
+      "target": "从众",
+      "relation": "includes"
+    },
+    {
+      "source": "社会心理",
+      "target": "服从",
+      "relation": "includes"
+    },
+    {
+      "source": "社会心理",
+      "target": "群体极化",
+      "relation": "includes"
+    },
+    {
+      "source": "说服与影响",
+      "target": "可信度",
+      "relation": "uses"
+    },
+    {
+      "source": "说服与影响",
+      "target": "情感诉求",
+      "relation": "uses"
+    },
+    {
+      "source": "说服与影响",
+      "target": "逻辑诉求",
+      "relation": "uses"
+    },
+    {
+      "source": "anxious_attachment",
+      "target": "依恋理论",
+      "relation": "analyzed_by"
+    },
+    {
+      "source": "anxious_attachment",
+      "target": "防御机制理论",
+      "relation": "analyzed_by"
+    },
+    {
+      "source": "anxious_attachment",
+      "target": "认知扭曲理论",
+      "relation": "analyzed_by"
+    },
+    {
+      "source": "anxious_attachment",
+      "target": "归因理论",
+      "relation": "analyzed_by"
+    },
+    {
+      "source": "conflict_escalation",
+      "target": "煤气灯效应理论",
+      "relation": "analyzed_by"
+    },
+    {
+      "source": "conflict_escalation",
+      "target": "认知扭曲理论",
+      "relation": "analyzed_by"
+    },
+    {
+      "source": "conflict_escalation",
+      "target": "言语行为理论",
+      "relation": "analyzed_by"
+    },
+    {
+      "source": "conflict_escalation",
+      "target": "会话含义理论",
+      "relation": "analyzed_by"
+    },
+    {
+      "source": "jealousy_conflict",
+      "target": "礼貌策略",
+      "relation": "analyzed_by"
+    },
+    {
+      "source": "jealousy_conflict",
+      "target": "面子理论（Goffman）",
+      "relation": "analyzed_by"
+    },
+    {
+      "source": "jealousy_conflict",
+      "target": "依恋理论",
+      "relation": "analyzed_by"
+    },
+    {
+      "source": "jealousy_conflict",
+      "target": "会话含义理论",
+      "relation": "analyzed_by"
+    },
+    {
+      "source": "push_pull",
+      "target": "情感操控理论",
+      "relation": "analyzed_by"
+    },
+    {
+      "source": "push_pull",
+      "target": "防御机制理论",
+      "relation": "analyzed_by"
+    },
+    {
+      "source": "push_pull",
+      "target": "归因理论",
+      "relation": "analyzed_by"
+    },
+    {
+      "source": "push_pull",
+      "target": "社会交换理论",
+      "relation": "analyzed_by"
+    },
+    {
+      "source": "欺骗检测理论",
+      "target": "距离化语言",
+      "relation": "defines"
+    },
+    {
+      "source": "欺骗检测理论",
+      "target": "细节缺失",
+      "relation": "defines"
+    },
+    {
+      "source": "欺骗检测理论",
+      "target": "过度否认",
+      "relation": "defines"
+    },
+    {
+      "source": "欺骗检测理论",
+      "target": "认知负荷",
+      "relation": "uses_concept"
+    },
+    {
+      "source": "欺骗检测理论",
+      "target": "线索泄露",
+      "relation": "defines"
+    },
+    {
+      "source": "欺骗检测理论",
+      "target": "故事不一致",
+      "relation": "defines"
+    },
+    {
+      "source": "欺骗检测理论",
+      "target": "印象管理",
+      "relation": "related_to"
+    },
+    {
+      "source": "说服知识模型",
+      "target": "社会证明",
+      "relation": "defines"
+    },
+    {
+      "source": "说服知识模型",
+      "target": "稀缺性",
+      "relation": "defines"
+    },
+    {
+      "source": "说服知识模型",
+      "target": "互惠原则",
+      "relation": "defines"
+    },
+    {
+      "source": "说服知识模型",
+      "target": "承诺一致性",
+      "relation": "defines"
+    },
+    {
+      "source": "说服知识模型",
+      "target": "认知防御",
+      "relation": "defines"
+    },
+    {
+      "source": "说服知识模型",
+      "target": "修辞学",
+      "relation": "related_to"
+    },
+    {
+      "source": "自我决定理论",
+      "target": "自主性需求",
+      "relation": "defines"
+    },
+    {
+      "source": "自我决定理论",
+      "target": "胜任感需求",
+      "relation": "defines"
+    },
+    {
+      "source": "自我决定理论",
+      "target": "关系性需求",
+      "relation": "defines"
+    },
+    {
+      "source": "自我决定理论",
+      "target": "控制性语言",
+      "relation": "analyzes"
+    },
+    {
+      "source": "自我决定理论",
+      "target": "自主支持性语言",
+      "relation": "analyzes"
+    },
+    {
+      "source": "自我决定理论",
+      "target": "内在动机",
+      "relation": "defines"
+    },
+    {
+      "source": "自我决定理论",
+      "target": "外在动机",
+      "relation": "defines"
+    },
+    {
+      "source": "认知失调理论",
+      "target": "认知失调",
+      "relation": "defines"
+    },
+    {
+      "source": "认知失调理论",
+      "target": "失调减少策略",
+      "relation": "defines"
+    },
+    {
+      "source": "认知失调理论",
+      "target": "事后合理化",
+      "relation": "defines"
+    },
+    {
+      "source": "认知失调理论",
+      "target": "酸葡萄效应",
+      "relation": "explains"
+    },
+    {
+      "source": "认知失调理论",
+      "target": "承诺升级",
+      "relation": "explains"
+    },
+    {
+      "source": "认知失调理论",
+      "target": "合理化",
+      "relation": "related_to"
+    },
+    {
+      "source": "社会交换理论",
+      "target": "成本收益分析",
+      "relation": "defines"
+    },
+    {
+      "source": "社会交换理论",
+      "target": "公平感",
+      "relation": "defines"
+    },
+    {
+      "source": "社会交换理论",
+      "target": "比较水平",
+      "relation": "defines"
+    },
+    {
+      "source": "社会交换理论",
+      "target": "互惠规范",
+      "relation": "defines"
+    },
+    {
+      "source": "戈特曼四骑士",
+      "target": "批评模式",
+      "relation": "defines"
+    },
+    {
+      "source": "戈特曼四骑士",
+      "target": "蔑视模式",
+      "relation": "defines"
+    },
+    {
+      "source": "戈特曼四骑士",
+      "target": "防御模式",
+      "relation": "defines"
+    },
+    {
+      "source": "戈特曼四骑士",
+      "target": "冷战模式",
+      "relation": "defines"
+    },
+    {
+      "source": "戈特曼四骑士",
+      "target": "关系修复尝试",
+      "relation": "defines"
+    },
+    {
+      "source": "戈特曼四骑士",
+      "target": "情感淹没",
+      "relation": "defines"
+    },
+    {
+      "source": "戈特曼四骑士",
+      "target": "依恋理论",
+      "relation": "related_to"
+    },
+    {
+      "source": "依恋理论",
+      "target": "安全型依恋",
+      "relation": "defines"
+    },
+    {
+      "source": "依恋理论",
+      "target": "焦虑型依恋",
+      "relation": "defines"
+    },
+    {
+      "source": "依恋理论",
+      "target": "回避型依恋",
+      "relation": "defines"
+    },
+    {
+      "source": "依恋理论",
+      "target": "恐惧回避型依恋",
+      "relation": "defines"
+    },
+    {
+      "source": "依恋理论",
+      "target": "内部工作模型",
+      "relation": "defines"
+    },
+    {
+      "source": "依恋理论",
+      "target": "安全基地",
+      "relation": "defines"
+    },
+    {
+      "source": "面子协商理论",
+      "target": "自我面子关注",
+      "relation": "defines"
+    },
+    {
+      "source": "面子协商理论",
+      "target": "他人面子关注",
+      "relation": "defines"
+    },
+    {
+      "source": "面子协商理论",
+      "target": "共同面子关注",
+      "relation": "defines"
+    },
+    {
+      "source": "面子协商理论",
+      "target": "冲突风格",
+      "relation": "defines"
+    },
+    {
+      "source": "面子协商理论",
+      "target": "礼貌策略",
+      "relation": "extends"
+    },
+    {
+      "source": "面子协商理论",
+      "target": "儒家面子理论",
+      "relation": "related_to"
+    },
+    {
+      "source": "面子协商理论",
+      "target": "高语境沟通",
+      "relation": "related_to"
+    },
+    {
+      "source": "期望违背理论",
+      "target": "交际期望",
+      "relation": "defines"
+    },
+    {
+      "source": "期望违背理论",
+      "target": "正面期望违背",
+      "relation": "defines"
+    },
+    {
+      "source": "期望违背理论",
+      "target": "负面期望违背",
+      "relation": "defines"
+    },
+    {
+      "source": "期望违背理论",
+      "target": "奖励价值",
+      "relation": "defines"
+    },
+    {
+      "source": "期望违背理论",
+      "target": "适应理论",
+      "relation": "related_to"
+    },
+    {
+      "source": "社会渗透理论",
+      "target": "自我表露深度",
+      "relation": "defines"
+    },
+    {
+      "source": "社会渗透理论",
+      "target": "自我表露广度",
+      "relation": "defines"
+    },
+    {
+      "source": "社会渗透理论",
+      "target": "表露互惠性",
+      "relation": "defines"
+    },
+    {
+      "source": "社会渗透理论",
+      "target": "关系渗透",
+      "relation": "defines"
+    },
+    {
+      "source": "社会渗透理论",
+      "target": "关系解体",
+      "relation": "defines"
+    },
+    {
+      "source": "社会渗透理论",
+      "target": "依恋理论",
+      "relation": "related_to"
+    },
+    {
+      "source": "社会渗透理论",
+      "target": "会话分析",
+      "relation": "related_to"
+    },
+    {
+      "source": "认知失调理论",
+      "target": "防御机制理论",
+      "relation": "related_to"
+    },
+    {
+      "source": "社会交换理论",
+      "target": "礼貌策略",
+      "relation": "related_to"
+    },
+    {
+      "source": "说服知识模型",
+      "target": "框架理论",
+      "relation": "related_to"
+    },
+    {
+      "source": "欺骗检测理论",
+      "target": "会话含义理论",
+      "relation": "related_to"
+    },
+    {
+      "source": "自我决定理论",
+      "target": "权力距离",
+      "relation": "related_to"
+    }
   ]
 }

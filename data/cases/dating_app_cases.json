@@ -1,0 +1,122 @@
+[
+  {
+    "id": "da_001", "type": "dating_app", "subtype": "profile_optimization",
+    "text": "我选了最好看的那张照片。P了一下。大家不都这样吗？",
+    "keywords": ["最好看", "P了一下", "都这样"],
+    "analysis": "形象管理：选择性展示（最好看的照片）。P图是美化。大家不都这样是从众合理化。",
+    "psychological_state": "想展示最好的自己但可能过度美化",
+    "theories": ["自我呈现理论", "印象管理"]
+  },
+  {
+    "id": "da_002", "type": "dating_app", "subtype": "swipe_fatigue",
+    "text": "每天刷几百个。已经分不清谁是谁了。",
+    "keywords": ["几百个", "分不清"],
+    "analysis": "选择疲劳：过多选择导致决策疲劳。分不清谁是谁是认知过载。",
+    "psychological_state": "选择过多导致的疲惫和困惑",
+    "theories": ["选择过载理论", "决策疲劳"]
+  },
+  {
+    "id": "da_003", "type": "dating_app", "subtype": "first_date_anxiety",
+    "text": "第一次见面好紧张。跟网上聊天感觉完全不一样。",
+    "keywords": ["好紧张", "完全不一样"],
+    "analysis": "首次约会焦虑：线上线下的落差感。紧张是社交焦虑。",
+    "psychological_state": "对线下见面感到不安",
+    "theories": ["社交焦虑理论", "线上线下转换"]
+  },
+  {
+    "id": "da_004", "type": "dating_app", "subtype": "ghosting",
+    "text": "聊了一个月，突然就不回消息了。连个告别都没有。",
+    "keywords": ["一个月", "不回消息", "没有告别"],
+    "analysis": "幽灵化：突然断联没有任何解释。连个告别都没有暗示缺乏尊重。",
+    "psychological_state": "被突然断联的困惑和受伤",
+    "theories": ["幽灵化理论", "现代约会心理学"]
+  },
+  {
+    "id": "da_005", "type": "dating_app", "subtype": "multi_dating",
+    "text": "同时跟三个人在聊。还没确定关系，多看看选择。",
+    "keywords": ["三个人", "多看看"],
+    "analysis": "多线并行：同时与多人保持暧昧。多看看是理性化。",
+    "psychological_state": "想最大化选择但可能导致关系浅薄",
+    "theories": ["选择理论", "现代约会心理学"]
+  },
+  {
+    "id": "da_006", "type": "dating_app", "subtype": "catfish_fear",
+    "text": "照片跟本人差距太大了。我被骗了。",
+    "keywords": ["差距太大", "被骗"],
+    "analysis": "照骗恐惧：线上形象与线下不符。被骗是信任破裂。",
+    "psychological_state": "对网络交友的信任危机",
+    "theories": ["信任理论", "自我呈现理论"]
+  },
+  {
+    "id": "da_007", "type": "dating_app", "subtype": "bio_strategy",
+    "text": "我写了'喜欢旅行和美食'。大家都这么写。",
+    "keywords": ["喜欢旅行", "大家都"],
+    "analysis": "个人简介策略：使用安全话题（旅行美食）。大家都这么写是从众。",
+    "psychological_state": "想展示有趣但用安全方式",
+    "theories": ["自我呈现理论", "印象管理"]
+  },
+  {
+    "id": "da_008", "type": "dating_app", "subtype": "match_celebration",
+    "text": "配对成功了！但不知道说什么开场白。",
+    "keywords": ["配对成功", "不知道说什么"],
+    "analysis": "匹配后的焦虑：成功匹配后的开场白压力。不知道说什么是社交焦虑。",
+    "psychological_state": "既兴奋又紧张",
+    "theories": ["社交焦虑理论", "开场白理论"]
+  },
+  {
+    "id": "da_009", "type": "dating_app", "subtype": "unmatch_pain",
+    "text": "他突然取消配对了。我做错什么了吗？",
+    "keywords": ["取消配对", "做错什么"],
+    "analysis": "被取消配对：突然被断联的困惑。做错什么是自我归因。",
+    "psychological_state": "被拒绝后的困惑和自我怀疑",
+    "theories": ["拒绝敏感性", "归因理论"]
+  },
+  {
+    "id": "da_010", "type": "dating_app", "subtype": "algorithm_frustration",
+    "text": "系统推荐的都不合适。算法根本不懂我。",
+    "keywords": ["不合适", "不懂我"],
+    "analysis": "算法不满：对推荐结果失望。不懂我是对技术的拟人化。",
+    "psychological_state": "对科技解决情感问题的能力感到失望",
+    "theories": ["算法信任理论", "技术心理学"]
+  },
+  {
+    "id": "da_011", "type": "dating_app", "subtype": "conversation_dying",
+    "text": "聊着聊着就没话了。每次都是这样。",
+    "keywords": ["没话了", "每次都是"],
+    "analysis": "对话死亡：线上聊天的常见困境。每次都是是过度概括。",
+    "psychological_state": "对重复的失败模式感到挫败",
+    "theories": ["沟通理论", "模式识别"]
+  },
+  {
+    "id": "da_012", "type": "dating_app", "subtype": "hookup_culture",
+    "text": "他说只是想约炮。但我想要认真的关系。",
+    "keywords": ["约炮", "认真的关系"],
+    "analysis": "目的不匹配：一方想要 casual 另一方想要 serious。期望冲突。",
+    "psychological_state": "期望不匹配带来的失望",
+    "theories": ["关系期望理论", "现代约会文化"]
+  },
+  {
+    "id": "da_013", "type": "dating_app", "subtype": "height_filter",
+    "text": "他资料写的180，见面才发现只有170。",
+    "keywords": ["180", "170"],
+    "analysis": "资料造假：身高虚报是常见问题。发现真相后的信任破裂。",
+    "psychological_state": "感到被欺骗，信任受损",
+    "theories": ["信任理论", "自我呈现理论"]
+  },
+  {
+    "id": "da_014", "type": "dating_app", "subtype": "texting_before_meeting",
+    "text": "我们聊了两个月还没见过面。我都不知道他长什么样。",
+    "keywords": ["两个月", "没见过面"],
+    "analysis": "线上拖延：长期线上聊天但不推进到线下。可能是回避或不认真。",
+    "psychological_state": "对关系进展感到困惑",
+    "theories": ["关系进展理论", "回避行为"]
+  },
+  {
+    "id": "da_015", "type": "dating_app", "subtype": "delete_app_fantasy",
+    "text": "等我找到对象就把这个软件删了。",
+    "keywords": ["找到对象", "删了"],
+    "analysis": "删除幻想：将删除软件作为目标达成的象征。但可能永远在找。",
+    "psychological_state": "对约会软件既依赖又厌倦",
+    "theories": ["技术依赖理论", "目标理论"]
+  }
+]

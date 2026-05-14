@@ -1,0 +1,82 @@
+[
+  {
+    "id": "md_001", "type": "media", "subtype": "clickbait",
+    "text": "震惊！这个方法竟然能让你月入十万！",
+    "keywords": ["震惊", "竟然", "月入十万"],
+    "analysis": "标题党：震惊制造惊讶。竟然暗示意外。月入十万是夸张承诺。",
+    "psychological_state": "利用好奇心和贪婪吸引点击",
+    "theories": ["注意力经济", "说服理论"]
+  },
+  {
+    "id": "md_002", "type": "media", "subtype": "fake_news",
+    "text": "据知情人士透露，某明星已经秘密离婚。消息来源可靠。",
+    "keywords": ["知情人士", "秘密离婚", "可靠"],
+    "analysis": "假新闻特征：模糊来源（知情人士）+ 耸动内容（秘密离婚）+ 可靠性声明（可靠）。",
+    "psychological_state": "制造话题吸引关注",
+    "theories": ["假新闻理论", "媒体素养"]
+  },
+  {
+    "id": "md_003", "type": "media", "subtype": "propaganda",
+    "text": "我们的产品是世界上最好的。没有任何竞争对手能比得上。",
+    "keywords": ["最好", "没有任何", "比得上"],
+    "analysis": "宣传话语：绝对化（最好、没有任何）。通过否定对手来抬高自己。",
+    "psychological_state": "通过极端化语言建立品牌忠诚",
+    "theories": ["宣传理论", "批判话语分析"]
+  },
+  {
+    "id": "md_004", "type": "media", "subtype": "astroturfing",
+    "text": "我是普通用户，但我觉得这个产品真的很好用。推荐给大家！",
+    "keywords": ["普通用户", "真的很好", "推荐"],
+    "analysis": "水军伪装：声称是普通用户增加可信度。推荐给大家是营销目的。",
+    "psychological_state": "伪装成普通消费者进行营销",
+    "theories": ["水军理论", "社会认同理论"]
+  },
+  {
+    "id": "md_005", "type": "media", "subtype": "fear_mongering",
+    "text": "最新研究显示，你每天用的这个东西可能致癌！",
+    "keywords": ["最新研究", "可能致癌"],
+    "analysis": "恐惧营销：最新研究增加权威性。可能致癌制造恐惧。通常夸大或断章取义。",
+    "psychological_state": "利用健康恐惧吸引关注",
+    "theories": ["恐惧诉求", "媒体伦理"]
+  },
+  {
+    "id": "md_006", "type": "media", "subtype": "bandwagon",
+    "text": "已经有百万用户选择了我们。你还在等什么？",
+    "keywords": ["百万用户", "还在等"],
+    "analysis": "从众营销：百万用户是社会认同。还在等什么是紧迫感。",
+    "psychological_state": "利用从众心理促进转化",
+    "theories": ["社会认同理论", "营销心理学"]
+  },
+  {
+    "id": "md_007", "type": "media", "subtype": "testimonials",
+    "text": "用了这个产品之后，我的人生彻底改变了！强烈推荐！",
+    "keywords": ["彻底改变", "强烈推荐"],
+    "analysis": "用户见证：彻底改变是夸张。强烈推荐是情感呼吁。",
+    "psychological_state": "利用正面案例影响他人",
+    "theories": ["社会认同理论", "口碑营销"]
+  },
+  {
+    "id": "md_008", "type": "media", "subtype": "scarcity",
+    "text": "限量版！全球仅售1000件！错过不再有！",
+    "keywords": ["限量版", "仅售1000", "错过不再"],
+    "analysis": "稀缺性营销：限量和仅售创造稀缺感。错过不再是损失框架。",
+    "psychological_state": "利用稀缺性和紧迫感",
+    "theories": ["稀缺性原理", "营销心理学"]
+  },
+  {
+    "id": "md_009", "type": "media", "subtype": "emotional_manipulation",
+    "text": "看到这个视频的人都哭了。你忍心不转发吗？",
+    "keywords": ["都哭了", "忍心不转发"],
+    "analysis": "情感操控：都哭了是情感传染。忍心不是道德绑架。",
+    "psychological_state": "利用内疚和情感压力促进传播",
+    "theories": ["情感操控", "病毒传播理论"]
+  },
+  {
+    "id": "md_010", "type": "media", "subtype": "authority_endorsement",
+    "text": "某知名专家强烈推荐！99%的医生都认可！",
+    "keywords": ["专家推荐", "99%医生"],
+    "analysis": "权威背书：专家和医生是权威来源。99%是虚假精确。",
+    "psychological_state": "利用权威增加可信度",
+    "theories": ["权威诉求", "虚假精确效应"]
+  }
+]

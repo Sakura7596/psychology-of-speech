@@ -1,0 +1,122 @@
+[
+  {
+    "id": "at_001", "type": "attachment", "subtype": "anxious_attachment",
+    "text": "他一个小时没回消息了。是不是不爱我了？是不是跟别人在一起？",
+    "keywords": ["一个小时", "不爱我", "跟别人"],
+    "analysis": "焦虑型依恋：对短暂失联过度解读。从一个小时推导到不爱和出轨。",
+    "psychological_state": "高度需要安全感，对关系信号过度敏感",
+    "theories": ["依恋理论", "焦虑型依恋"]
+  },
+  {
+    "id": "at_002", "type": "attachment", "subtype": "avoidant_attachment",
+    "text": "我需要自己的空间。你不要总是粘着我。",
+    "keywords": ["自己的空间", "不要粘着"],
+    "analysis": "回避型依恋：强调独立性（自己的空间）。将亲密行为标签化为粘着。",
+    "psychological_state": "对亲密感到不适，需要距离",
+    "theories": ["依恋理论", "回避型依恋"]
+  },
+  {
+    "id": "at_003", "type": "attachment", "subtype": "secure_attachment",
+    "text": "我知道你忙。等你有空再回我就好。我爱你。",
+    "keywords": ["知道你忙", "有空再回", "我爱你"],
+    "analysis": "安全型依恋：理解对方有自己的生活（知道你忙）。不强迫即时回应。表达爱但不施压。",
+    "psychological_state": "有安全感，信任伴侣",
+    "theories": ["依恋理论", "安全型依恋"]
+  },
+  {
+    "id": "at_004", "type": "attachment", "subtype": "disorganized_attachment",
+    "text": "我想靠近你，但又害怕受伤。我不知道该怎么办。",
+    "keywords": ["想靠近", "害怕受伤", "不知道"],
+    "analysis": "混乱型依恋：既渴望亲密（想靠近）又恐惧亲密（害怕受伤）。内心矛盾。",
+    "psychological_state": "对亲密关系既渴望又恐惧",
+    "theories": ["依恋理论", "混乱型依恋"]
+  },
+  {
+    "id": "at_005", "type": "attachment", "subtype": "protest_behavior",
+    "text": "你不回我消息，那我也不回你了。看谁先忍不住。",
+    "keywords": ["不回", "看谁先"],
+    "analysis": "抗议行为：用对等报复来获取关注。看谁先是博弈思维。",
+    "psychological_state": "通过行为抗议来寻求关注",
+    "theories": ["抗议行为理论", "依恋理论"]
+  },
+  {
+    "id": "at_006", "type": "attachment", "subtype": "anxious_pursuit",
+    "text": "你为什么不回我消息？你是不是不爱我了？你是不是有别人了？",
+    "keywords": ["为什么不回", "不爱我", "有别人"],
+    "analysis": "焦虑追逐：连续追问施加压力。从不回消息推导到不爱和出轨。",
+    "psychological_state": "极度需要确认和安全感",
+    "theories": ["焦虑型依恋", "追求行为"]
+  },
+  {
+    "id": "at_007", "type": "attachment", "subtype": "deactivating_strategy",
+    "text": "我其实一个人也挺好的。不需要依赖任何人。",
+    "keywords": ["一个人挺好", "不需要依赖"],
+    "analysis": "去激活策略：否认对亲密的需求。不需要依赖是防御性独立。",
+    "psychological_state": "压抑对亲密的渴望",
+    "theories": ["去激活策略", "回避型依恋"]
+  },
+  {
+    "id": "at_008", "type": "attachment", "subtype": "hyperactivation",
+    "text": "你必须每个小时都给我发消息。不然我会担心。",
+    "keywords": ["必须每小时", "会担心"],
+    "analysis": "过度激活：要求频繁联系以缓解焦虑。会担心是焦虑的表达。",
+    "psychological_state": "高度需要持续的联系和确认",
+    "theories": ["过度激活策略", "焦虑型依恋"]
+  },
+  {
+    "id": "at_009", "type": "attachment", "subtype": "fear_of_abandonment",
+    "text": "你不会离开我吧？答应我永远不会离开我。",
+    "keywords": ["不会离开", "永远"],
+    "analysis": "被抛弃恐惧：需要承诺（不会离开）。永远是不切实际的要求。",
+    "psychological_state": "深层的被抛弃恐惧",
+    "theories": ["被抛弃恐惧", "依恋理论"]
+  },
+  {
+    "id": "at_010", "type": "attachment", "subtype": "intimacy_avoidance",
+    "text": "我们进展太快了。慢一点好不好？",
+    "keywords": ["太快", "慢一点"],
+    "analysis": "亲密回避：对关系进展感到不安。慢一点是控制节奏的方式。",
+    "psychological_state": "对亲密感到不适，需要控制进度",
+    "theories": ["亲密回避", "回避型依恋"]
+  },
+  {
+    "id": "at_011", "type": "attachment", "subtype": "testing_behavior",
+    "text": "如果他真的爱我，他就会主动来找我。",
+    "keywords": ["真的爱", "主动来找"],
+    "analysis": "测试行为：通过设置条件来测试对方的爱。但对方可能不知道这个测试。",
+    "psychological_state": "需要通过测试来确认爱",
+    "theories": ["测试行为", "焦虑型依恋"]
+  },
+  {
+    "id": "at_012", "type": "attachment", "subtype": "emotional_unavailability",
+    "text": "他从来不谈自己的感受。问他什么都是'没事'。",
+    "keywords": ["不谈感受", "没事"],
+    "analysis": "情感不可及：不分享内心世界。没事是情感关闭的信号。",
+    "psychological_state": "伴侣可能是回避型，不善于情感表达",
+    "theories": ["情感不可及", "回避型依恋"]
+  },
+  {
+    "id": "at_013", "type": "attachment", "subtype": "codependency",
+    "text": "没有他我都不知道该怎么活了。我的世界只有他。",
+    "keywords": ["不知道怎么活", "只有他"],
+    "analysis": "共生依赖：将自我完全依附于他人。不知道怎么活是过度依赖。",
+    "psychological_state": "自我边界模糊，过度依赖伴侣",
+    "theories": ["共生依赖理论", "自我边界"]
+  },
+  {
+    "id": "at_014", "type": "attachment", "subtype": "commitment_phobia",
+    "text": "我还没准备好进入一段认真的关系。可能永远都准备不好。",
+    "keywords": ["没准备好", "永远"],
+    "analysis": "承诺恐惧：用没准备好来回避承诺。永远暗示这是永久状态。",
+    "psychological_state": "对承诺感到恐惧",
+    "theories": ["承诺恐惧理论", "回避型依恋"]
+  },
+  {
+    "id": "at_015", "type": "attachment", "subtype": "healthy_boundaries",
+    "text": "我爱你，但我也需要自己的时间和空间。这不是不爱你。",
+    "keywords": ["爱你", "自己的时间", "不是不爱"],
+    "analysis": "健康边界：平衡亲密和独立。明确解释边界不是拒绝。",
+    "psychological_state": "有清晰的自我边界，同时保持亲密",
+    "theories": ["健康依恋", "自我边界理论"]
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "hl_001", "type": "health", "subtype": "denial",
+    "text": "我身体好得很，不需要体检。去医院的都是没病找病。",
+    "keywords": ["好得很", "不需要", "没病找病"],
+    "analysis": "否认防御机制：否认健康风险（好得很）。贬低预防行为（没病找病）。",
+    "psychological_state": "害怕发现疾病，用否认应对焦虑",
+    "theories": ["否认理论", "健康心理学"]
+  },
+  {
+    "id": "hl_002", "type": "health", "subtype": "catastrophizing",
+    "text": "我头疼，是不是得了脑瘤？我在网上查了，症状都对上了。",
+    "keywords": ["头疼", "脑瘤", "网上查"],
+    "analysis": "灾难化+自我诊断：将普通症状（头疼）灾难化为严重疾病（脑瘤）。网上查增加焦虑。",
+    "psychological_state": "健康焦虑，网络搜索加剧恐惧",
+    "theories": ["灾难化理论", "网络健康焦虑"]
+  },
+  {
+    "id": "hl_003", "type": "health", "subtype": "avoidance",
+    "text": "我不去医院。查出来有病更难受。不知道还好。",
+    "keywords": ["不去医院", "查出来", "不知道"],
+    "analysis": "回避型应对：通过回避信息来减少焦虑。不知道还好是鸵鸟心态。",
+    "psychological_state": "害怕坏消息，选择回避",
+    "theories": ["回避应对理论", "健康心理学"]
+  },
+  {
+    "id": "hl_004", "type": "health", "subtype": "doctor_trust",
+    "text": "医生说的肯定是对的。医生让我怎么做我就怎么做。",
+    "keywords": ["医生说的", "肯定对", "怎么做"],
+    "analysis": "盲目信任权威：完全服从医生意见。肯定对是绝对化信任。",
+    "psychological_state": "将健康责任完全交给权威",
+    "theories": ["权威服从理论", "医患关系"]
+  },
+  {
+    "id": "hl_005", "type": "health", "subtype": "alternative_medicine",
+    "text": "西药副作用太大了。还是中药好，纯天然没有副作用。",
+    "keywords": ["副作用", "纯天然", "没有副作用"],
+    "analysis": "自然主义偏见：夸大西药副作用，美化中药。纯天然不等于安全。",
+    "psychological_state": "对现代医学有偏见，偏好自然疗法",
+    "theories": ["自然主义偏误", "健康信念模型"]
+  },
+  {
+    "id": "hl_006", "type": "health", "subtype": "illness_identity",
+    "text": "我是糖尿病患者，这个不能吃那个不能吃。我的人生太痛苦了。",
+    "keywords": ["糖尿病", "不能吃", "太痛苦"],
+    "analysis": "疾病认同：将疾病作为身份标签（我是糖尿病患者）。限制感放大痛苦。",
+    "psychological_state": "疾病成为自我认同的核心部分",
+    "theories": ["疾病认同理论", "慢性病心理学"]
+  },
+  {
+    "id": "hl_007", "type": "health", "subtype": "compliance_issue",
+    "text": "我知道要吃药，但是总忘。而且感觉好了就不想吃了。",
+    "keywords": ["总忘", "好了不吃"],
+    "analysis": "依从性问题：总忘是记忆问题。好了不吃是症状驱动的决策。",
+    "psychological_state": "缺乏疾病管理的动力或技能",
+    "theories": ["健康信念模型", "行为改变理论"]
+  },
+  {
+    "id": "hl_008", "type": "health", "subtype": "stress_somatization",
+    "text": "工作压力大的时候就头疼。去医院检查什么问题都没有。",
+    "keywords": ["压力大", "头疼", "没问题"],
+    "analysis": "压力躯体化：心理压力通过身体症状（头疼）表达。检查没问题说明是心理因素。",
+    "psychological_state": "压力通过身体症状表达",
+    "theories": ["躯体化理论", "心身医学"]
+  },
+  {
+    "id": "hl_009", "type": "health", "subtype": "social_support",
+    "text": "我生病了你也不来看我。你根本不在乎我。",
+    "keywords": ["生病", "不来看", "不在乎"],
+    "analysis": "疾病与关系：用生病测试关系。不来看等同于不在乎。将健康问题与关系绑定。",
+    "psychological_state": "通过疾病寻求关注和关爱",
+    "theories": ["社会支持理论", "疾病行为理论"]
+  },
+  {
+    "id": "hl_010", "type": "health", "subtype": "optimism_bias",
+    "text": "我才二十多岁，不会有什么大问题的。年轻就是资本。",
+    "keywords": ["二十多岁", "不会", "年轻"],
+    "analysis": "乐观偏见：年轻就不会生病的错误信念。年轻就是资本是过度自信。",
+    "psychological_state": "低估健康风险，过度自信",
+    "theories": ["乐观偏误理论", "健康心理学"]
+  },
+  {
+    "id": "hl_011", "type": "health", "subtype": "diagnosis_denial",
+    "text": "不可能，我怎么会得这个病？一定是检查搞错了。我要去别的医院再查。",
+    "keywords": ["不可能", "搞错了", "别的医院"],
+    "analysis": "诊断否认：不可能是心理拒绝。搞错了是否定医疗结果。别的医院是寻求确认偏见。无法接受诊断是面对重大疾病时的典型防御机制。",
+    "psychological_state": "面对重大诊断的心理冲击，启动否认防御",
+    "theories": ["库伯勒-罗斯模型", "健康心理学"]
+  },
+  {
+    "id": "hl_012", "type": "health", "subtype": "treatment_resistance",
+    "text": "药我不吃了，吃了也没用，副作用还大。还不如我自己调理。",
+    "keywords": ["不吃", "没用", "副作用大", "自己调理"],
+    "analysis": "治疗抗拒：不吃是行为抗拒。没用是否定疗效。副作用大是夸大风险。自己调理是替代方案的合理化。多重理由叠加强化抗拒立场。",
+    "psychological_state": "对治疗方案失去信心，寻求替代控制感",
+    "theories": ["健康信念模型", "治疗依从性理论"]
+  },
+  {
+    "id": "hl_013", "type": "health", "subtype": "symptom_catastrophizing",
+    "text": "我胸口疼了一下，是不是心脏要出问题了？万一猝死了怎么办？",
+    "keywords": ["胸口疼", "心脏问题", "猝死"],
+    "analysis": "症状灾难化：将普通症状（胸口疼一下）放大为致命危机（猝死）。万一怎么办是灾难化想象。过度关注身体感觉加剧焦虑循环。",
+    "psychological_state": "高度健康焦虑，对身体感觉过度警觉",
+    "theories": ["灾难化理论", "躯体警觉理论"]
+  },
+  {
+    "id": "hl_014", "type": "health", "subtype": "medical_gaslighting",
+    "text": "你就是想太多了。检查都正常，你哪有什么病？别自己吓自己了。",
+    "keywords": ["想太多", "都正常", "没有病", "吓自己"],
+    "analysis": "医疗煤气灯：想太多是否定主观痛苦。都正常用客观数据否定主观体验。没有病是全面否认。别吓自己将问题归因于患者自身。这种话语让患者怀疑自己的感受。",
+    "psychological_state": "用理性否定他人的主观痛苦体验",
+    "theories": ["煤气灯效应", "医患沟通理论"]
+  },
+  {
+    "id": "hl_015", "type": "health", "subtype": "wellness_moralizing",
+    "text": "你生病是因为你不注意养生。我每天喝果汁、做瑜伽，从来不生病。",
+    "keywords": ["不养生", "喝果汁", "从来不生病"],
+    "analysis": "健康道德化：将疾病归因于个人责任（不养生）。我从来不生病是道德优越感。喝果汁做瑜伽暗示健康是可以通过自律获得的。忽视基因、环境等因素。",
+    "psychological_state": "将健康等同于道德，对患病者隐含指责",
+    "theories": ["健康道德化理论", "公正世界假设"]
+  }
+]

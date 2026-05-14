@@ -1,0 +1,122 @@
+[
+  {
+    "id": "rb_001", "type": "romantic_breakup", "subtype": "breakup_rhetoric",
+    "text": "我们不合适，你值得更好的人。希望你能找到真正爱你的人。",
+    "keywords": ["不合适", "值得更好的", "真正爱你"],
+    "analysis": "分手委婉话术：不合适是模糊归因。值得更好的是虚假安慰。希望你能找到是结束语。",
+    "psychological_state": "想结束关系但不想承担伤害的责任",
+    "theories": ["礼貌策略", "归因理论"]
+  },
+  {
+    "id": "rb_002", "type": "romantic_breakup", "subtype": "no_contact",
+    "text": "我们不要再联系了。对大家都好。",
+    "keywords": ["不要联系", "对大家都好"],
+    "analysis": "断联决定：明确的边界设定。对大家都好是合理化。",
+    "psychological_state": "需要空间来疗愈",
+    "theories": ["断联理论", "关系边界"]
+  },
+  {
+    "id": "rb_003", "type": "romantic_breakup", "subtype": "closure_seeking",
+    "text": "我想知道为什么。是我哪里做得不够好吗？",
+    "keywords": ["为什么", "做得不够好"],
+    "analysis": "寻求closure：需要一个理由来理解结束。自我归因（做得不够好）。",
+    "psychological_state": "无法接受结束，需要解释",
+    "theories": ["closure理论", "归因理论"]
+  },
+  {
+    "id": "rb_004", "type": "romantic_breakup", "subtype": "rebound_rush",
+    "text": "分手才一个月就找了新的。他说不是找替代品。",
+    "keywords": ["一个月", "新的", "替代品"],
+    "analysis": "反弹关系：快速进入新关系。不是替代品是否认。",
+    "psychological_state": "可能在用新关系逃避旧伤痛",
+    "theories": ["反弹关系理论", "悲伤理论"]
+  },
+  {
+    "id": "rb_005", "type": "romantic_breakup", "subtype": "social_media_pain",
+    "text": "看到他发的朋友圈，跟新女友在一起。心好痛。",
+    "keywords": ["朋友圈", "新女友", "心好痛"],
+    "analysis": "社交媒体痛苦：被迫看到前任的新生活。心好痛是真实的悲伤。",
+    "psychological_state": "社交媒体加剧了分手的痛苦",
+    "theories": ["社交媒体心理学", "悲伤理论"]
+  },
+  {
+    "id": "rb_006", "type": "romantic_breakup", "subtype": "hoovering",
+    "text": "分开三个月了，他突然发消息说想我了。",
+    "keywords": ["三个月", "突然", "想我了"],
+    "analysis": "回头试探：分开一段时间后突然联系。想我了可能是真诚也可能是寂寞。",
+    "psychological_state": "可能在试探是否还有机会",
+    "theories": ["hoovering理论", "依恋理论"]
+  },
+  {
+    "id": "rb_007", "type": "romantic_breakup", "subtype": "mutual_friends",
+    "text": "我们有共同朋友，以后聚会怎么办？好尴尬。",
+    "keywords": ["共同朋友", "聚会", "尴尬"],
+    "analysis": "社交网络困境：分手后共同社交圈的尴尬。好尴尬是社交焦虑。",
+    "psychological_state": "需要重新定义社交边界",
+    "theories": ["社交网络理论", "关系管理"]
+  },
+  {
+    "id": "rb_008", "type": "romantic_breakup", "subtype": "keeping_mementos",
+    "text": "他的东西我还留着。舍不得扔。但看到就难过。",
+    "keywords": ["留着", "舍不得", "难过"],
+    "analysis": "物品依恋：保留前任物品是情感依恋的延伸。舍不得和难过是矛盾情感。",
+    "psychological_state": "无法完全放下过去",
+    "theories": ["依恋理论", "物品心理学"]
+  },
+  {
+    "id": "rb_009", "type": "romantic_breakup", "subtype": "self_blame",
+    "text": "都是我的错。如果我当时做得更好，我们就不会分手了。",
+    "keywords": ["我的错", "做得更好", "不会分手"],
+    "analysis": "自责：将分手责任全归于自己。如果当时是反事实思维。",
+    "psychological_state": "过度自责，无法释怀",
+    "theories": ["归因理论", "认知扭曲理论"]
+  },
+  {
+    "id": "rb_010", "type": "romantic_breakup", "subtype": "anger_phase",
+    "text": "他就是个渣男/渣女。我瞎了眼才会跟他在一起。",
+    "keywords": ["渣男渣女", "瞎了眼"],
+    "analysis": "愤怒阶段：通过贬低前任来保护自尊。瞎了眼是否定过去的判断。",
+    "psychological_state": "愤怒是悲伤的防御",
+    "theories": ["悲伤五阶段理论", "防御机制"]
+  },
+  {
+    "id": "rb_011", "type": "romantic_breakup", "subtype": "bargaining",
+    "text": "如果我改掉那些缺点，我们还能重新开始吗？",
+    "keywords": ["改掉缺点", "重新开始"],
+    "analysis": "讨价还价阶段：试图通过改变自己来挽回关系。重新开始是希望的表达。",
+    "psychological_state": "不愿接受结束，试图找到挽回的可能",
+    "theories": ["悲伤五阶段理论", "关系修复"]
+  },
+  {
+    "id": "rb_012", "type": "romantic_breakup", "subtype": "depression_phase",
+    "text": "我再也不会爱上任何人了。这辈子就这样了。",
+    "keywords": ["再也不会", "这辈子"],
+    "analysis": "抑郁阶段：对未来绝望（再也不会）。这辈子是绝对化思维。",
+    "psychological_state": "深度悲伤，对爱情失去信心",
+    "theories": ["悲伤五阶段理论", "认知扭曲理论"]
+  },
+  {
+    "id": "rb_013", "type": "romantic_breakup", "subtype": "acceptance",
+    "text": "我们确实不合适。分开对我们都好。我祝他幸福。",
+    "keywords": ["确实不合适", "都好", "祝他幸福"],
+    "analysis": "接受阶段：承认不合适。分开是理性判断。祝他幸福是真正的释怀。",
+    "psychological_state": "接受了分手的事实，开始向前看",
+    "theories": ["悲伤五阶段理论", "心理韧性"]
+  },
+  {
+    "id": "rb_014", "type": "romantic_breakup", "subtype": "lesson_learned",
+    "text": "这段感情让我学到了很多。我知道自己想要什么样的人了。",
+    "keywords": ["学到了", "想要什么"],
+    "analysis": "成长视角：从经历中学习。知道自己想要什么是自我认知的提升。",
+    "psychological_state": "从痛苦中成长，获得清晰的自我认知",
+    "theories": ["创伤后成长理论", "自我认知"]
+  },
+  {
+    "id": "rb_015", "type": "romantic_breakup", "subtype": "staying_friends",
+    "text": "我们说好做朋友。但每次见面都好尴尬。",
+    "keywords": ["做朋友", "尴尬"],
+    "analysis": "分手后友谊：承诺做朋友但实际很难。尴尬是情感残留。",
+    "psychological_state": "试图维持联系但情感界限模糊",
+    "theories": ["分手后友谊理论", "关系转换"]
+  }
+]

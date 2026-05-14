@@ -1,0 +1,122 @@
+[
+  {
+    "id": "rcf_001", "type": "romantic_conflict", "subtype": "silent_treatment",
+    "text": "我没事。你想多了。我就是不想说话而已。",
+    "keywords": ["没事", "不想说话", "你想多了"],
+    "analysis": "冷暴力：声称没事但不想说话是矛盾信号。你想多了是否认对方的感知。",
+    "psychological_state": "通过被动攻击表达不满",
+    "theories": ["冷暴力理论", "被动攻击理论"]
+  },
+  {
+    "id": "rcf_002", "type": "romantic_conflict", "subtype": "jealousy_conflict",
+    "text": "你跟她关系真好啊。我没什么，就是随便问问。",
+    "keywords": ["关系真好", "没什么", "随便问问"],
+    "analysis": "嫉妒表达：表面随便问问实际在质问。关系真好是试探。没什么是否认嫉妒。",
+    "psychological_state": "感到嫉妒但不想直接表达",
+    "theories": ["情绪理论", "防御机制理论"]
+  },
+  {
+    "id": "rcf_003", "type": "romantic_conflict", "subtype": "accusation",
+    "text": "你从来都不关心我。你心里只有你自己。",
+    "keywords": ["从来不", "不关心", "只有你自己"],
+    "analysis": "绝对化指责：从来都是绝对化否定。不关心和只有你自己是全面否定。",
+    "psychological_state": "感到被忽视，用绝对化语言表达不满",
+    "theories": ["认知扭曲理论", "冲突沟通理论"]
+  },
+  {
+    "id": "rcf_004", "type": "romantic_conflict", "subtype": "defensive_apology",
+    "text": "好好好，都是我的错行了吧？你满意了吗？",
+    "keywords": ["都是我的错", "行了吧", "满意了吗"],
+    "analysis": "伪道歉：表面认错实际是反讽。行了吧和满意了吗暗示对方在无理取闹。",
+    "psychological_state": "感到被指责但不想真正认错",
+    "theories": ["防御机制理论", "面子理论"]
+  },
+  {
+    "id": "rcf_005", "type": "romantic_conflict", "subtype": "comparison_conflict",
+    "text": "你看看别人男朋友/女朋友，再看看你。",
+    "keywords": ["别人", "再看看你"],
+    "analysis": "比较施压：引入他人（别人）进行比较。再看看你是直接贬低。",
+    "psychological_state": "对伴侣不满，用比较表达期望",
+    "theories": ["社会比较理论", "期望管理理论"]
+  },
+  {
+    "id": "rcf_006", "type": "romantic_conflict", "subtype": "overthinking_conflict",
+    "text": "他那句话是什么意思？是不是我哪里做得不好？还是他根本就不在乎我？",
+    "keywords": ["什么意思", "做得不好", "不在乎"],
+    "analysis": "过度解读：对一句话进行多层负面解读。从具体行为推导到自我否定再到灾难化。",
+    "psychological_state": "焦虑型依恋，过度关注关系信号",
+    "theories": ["认知扭曲理论", "依恋理论"]
+  },
+  {
+    "id": "rcf_007", "type": "romantic_conflict", "subtype": "boundary_violation",
+    "text": "你为什么看我手机？你是不是不信任我？",
+    "keywords": ["看手机", "不信任"],
+    "analysis": "边界侵犯：查看手机是隐私侵犯。不信任是将问题转移。",
+    "psychological_state": "信任危机，边界意识模糊",
+    "theories": ["边界理论", "信任理论"]
+  },
+  {
+    "id": "rcf_008", "type": "romantic_conflict", "subtype": "gaslighting",
+    "text": "我什么时候说过那种话？你记错了吧。你总是这样，疑神疑鬼的。",
+    "keywords": ["什么时候说过", "记错了", "疑神疑鬼"],
+    "analysis": "煤气灯效应：否认自己说过的话。质疑对方记忆。反向指责。",
+    "psychological_state": "可能在进行情感操控",
+    "theories": ["煤气灯效应理论", "情感操控理论"]
+  },
+  {
+    "id": "rcf_009", "type": "romantic_conflict", "subtype": "guilt_tripping",
+    "text": "我为你付出了这么多，你就这样对我？",
+    "keywords": ["付出这么多", "就这样对我"],
+    "analysis": "内疚诱导：通过强调自己的付出让对方感到亏欠。",
+    "psychological_state": "感到付出未被认可",
+    "theories": ["情感操控理论", "社会交换理论"]
+  },
+  {
+    "id": "rcf_010", "type": "romantic_conflict", "subtype": "breakup_threat",
+    "text": "你再这样我们就分手。",
+    "keywords": ["再这样", "分手"],
+    "analysis": "分手威胁：用分手作为控制手段。再这样是条件威胁。",
+    "psychological_state": "试图通过威胁来改变对方行为",
+    "theories": ["情感操控理论", "权力动态"]
+  },
+  {
+    "id": "rcf_011", "type": "romantic_conflict", "subtype": "emotional_exhaustion",
+    "text": "我真的好累。不是身体累，是心累。这段关系让我好疲惫。",
+    "keywords": ["好累", "心累", "疲惫"],
+    "analysis": "情感耗竭：区分身体累和心累。关系让人疲惫是关系倦怠的信号。",
+    "psychological_state": "关系倦怠，情感能量耗尽",
+    "theories": ["关系倦怠理论", "情感耗竭理论"]
+  },
+  {
+    "id": "rcf_012", "type": "romantic_conflict", "subtype": "trust_issue",
+    "text": "你跟谁出去了？男的女的？为什么不告诉我？",
+    "keywords": ["谁出去", "男的女的", "不告诉"],
+    "analysis": "信任问题：连续追问是控制行为。为什么不告诉我是质问。",
+    "psychological_state": "缺乏安全感，需要控制来缓解焦虑",
+    "theories": ["焦虑型依恋", "控制理论"]
+  },
+  {
+    "id": "rcf_013", "type": "romantic_conflict", "subtype": "avoidance_conflict",
+    "text": "这个问题以后再说吧。现在不想讨论。我们聊点别的。",
+    "keywords": ["以后再说", "不想讨论", "聊点别的"],
+    "analysis": "回避冲突：用推迟和话题转移来回避问题。但问题不会消失。",
+    "psychological_state": "害怕冲突，选择回避",
+    "theories": ["回避型依恋", "冲突应对理论"]
+  },
+  {
+    "id": "rcf_014", "type": "romantic_conflict", "subtype": "score_keeping",
+    "text": "上次我请你吃饭，这次你请我。我们算清楚。",
+    "keywords": ["上次", "这次", "算清楚"],
+    "analysis": "记账式关系：将关系中的付出量化。算清楚暗示关系是交易。",
+    "psychological_state": "将关系视为交换而非情感连接",
+    "theories": ["社会交换理论", "公平理论"]
+  },
+  {
+    "id": "rcf_015", "type": "romantic_conflict", "subtype": "reconciliation_attempt",
+    "text": "我知道我错了。给我一个机会好不好？我保证以后不会了。",
+    "keywords": ["错了", "给机会", "保证"],
+    "analysis": "挽回尝试：承认错误（错了）+ 请求机会（给机会）+ 承诺改变（保证）。但保证是空头支票。",
+    "psychological_state": "想修复关系但可能缺乏真正的改变意愿",
+    "theories": ["关系修复理论", "承诺理论"]
+  }
+]

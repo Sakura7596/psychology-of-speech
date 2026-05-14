@@ -98,31 +98,31 @@ def test_base_agent_is_abstract():
 from src.agents.orchestrator import Orchestrator, AnalysisPlan
 
 
-def test_orchestrator_short_text_routing():
+async def test_orchestrator_short_text_routing():
     """测试短文本动态路由（<100字）"""
     orchestrator = Orchestrator()
-    plan = orchestrator.plan_analysis("你好")
+    plan = await orchestrator.plan_analysis("你好")
     assert plan.depth == AnalysisDepth.QUICK
     assert "logic_analyst" not in plan.agents or plan.agent_params.get(
         "logic_analyst", {}
     ).get("skip_deep", False)
 
 
-def test_orchestrator_medium_text_routing():
+async def test_orchestrator_medium_text_routing():
     """测试中等文本路由（100-500字）"""
     text = "这" * 150  # 150 字
     orchestrator = Orchestrator()
-    plan = orchestrator.plan_analysis(text)
+    plan = await orchestrator.plan_analysis(text)
     assert "text_analyst" in plan.agents
     assert "psychology_analyst" in plan.agents
     assert "logic_analyst" in plan.agents
 
 
-def test_orchestrator_long_text_routing():
+async def test_orchestrator_long_text_routing():
     """测试长文本路由（>500字）"""
     text = "这" * 600  # 600 字
     orchestrator = Orchestrator()
-    plan = orchestrator.plan_analysis(text)
+    plan = await orchestrator.plan_analysis(text)
     assert plan.depth == AnalysisDepth.DEEP
     assert plan.segment is True
 
@@ -138,14 +138,15 @@ def test_analysis_plan_creation():
     assert plan.depth == AnalysisDepth.STANDARD
 
 
-def test_orchestrator_full_pipeline():
+@pytest.mark.asyncio
+async def test_orchestrator_full_pipeline():
     """测试完整分析管道"""
-    from unittest.mock import MagicMock
+    from unittest.mock import AsyncMock
 
     orchestrator = Orchestrator()
 
     def make_mock(name, data):
-        mock = MagicMock()
+        mock = AsyncMock()
         mock.analyze.return_value = AgentResult(
             agent_name=name, analysis=data, confidence=0.8, sources=["mock"]
         )
@@ -159,7 +160,7 @@ def test_orchestrator_full_pipeline():
     }
 
     ctx = AnalysisContext(text="这是一段测试文本，用于验证协调器的完整管道。", depth=AnalysisDepth.STANDARD)
-    result = orchestrator.run_pipeline(ctx, agents)
+    result = await orchestrator.run_pipeline(ctx, agents)
 
     assert result is not None
     assert "report" in result.analysis or "analyses" in result

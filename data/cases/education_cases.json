@@ -1,0 +1,122 @@
+[
+  {
+    "id": "ed_001", "type": "education", "subtype": "teacher_criticism",
+    "text": "这么简单的题你都不会？你上课有没有听讲？",
+    "keywords": ["简单", "不会", "有没有听讲"],
+    "analysis": "教师批评：通过质疑简单性（这么简单）来贬低学生能力。有没有听讲是归因于态度问题。",
+    "psychological_state": "感到失望，用了伤害性的表达方式",
+    "theories": ["归因理论", "教育心理学"]
+  },
+  {
+    "id": "ed_002", "type": "education", "subtype": "peer_pressure",
+    "text": "大家都在补课，你不补就落后了。",
+    "keywords": ["大家", "补课", "落后"],
+    "analysis": "同伴压力：大家是模糊权威。落后制造焦虑。利用从众心理。",
+    "psychological_state": "利用社会压力促使行动",
+    "theories": ["从众理论", "教育焦虑"]
+  },
+  {
+    "id": "ed_003", "type": "education", "subtype": "parental_expectation",
+    "text": "爸妈对你期望很高。你不要让我们失望。",
+    "keywords": ["期望很高", "不要失望"],
+    "analysis": "父母期望施压：通过表达高期望来施加压力。不要让我们失望是情感绑架。",
+    "psychological_state": "将自我价值与子女成就绑定",
+    "theories": ["期望理论", "亲子关系"]
+  },
+  {
+    "id": "ed_004", "type": "education", "subtype": "student_excuse",
+    "text": "我昨天复习到很晚，可能考试的时候太紧张了。",
+    "keywords": ["复习到很晚", "太紧张"],
+    "analysis": "学生借口：先展示努力（复习到很晚）再找外部原因（太紧张）。维护自我形象。",
+    "psychological_state": "想为不佳表现找合理解释",
+    "theories": ["归因理论", "自我保护理论"]
+  },
+  {
+    "id": "ed_005", "type": "education", "subtype": "comparison",
+    "text": "你看看人家小明，每次都考第一。你怎么就不行？",
+    "keywords": ["小明", "第一", "怎么不行"],
+    "analysis": "比较施压：引入优秀他人（小明）进行比较。怎么不行是否定能力。",
+    "psychological_state": "用比较激励但实际造成压力",
+    "theories": ["社会比较理论", "教育心理学"]
+  },
+  {
+    "id": "ed_006", "type": "education", "subtype": "labeling",
+    "text": "你就是数学不好。可能天生不适合学数学。",
+    "keywords": ["数学不好", "天生不适合"],
+    "analysis": "标签化：将暂时的困难定义为永久特质（天生不适合）。限制性信念。",
+    "psychological_state": "可能出于安慰但限制了学生成长",
+    "theories": ["标签理论", "成长型思维理论"]
+  },
+  {
+    "id": "ed_007", "type": "education", "subtype": "encouragement",
+    "text": "这次没考好没关系，下次继续努力。我相信你可以的。",
+    "keywords": ["没关系", "继续努力", "我相信"],
+    "analysis": "正面鼓励：先安慰（没关系）再鼓励（继续努力）最后表达信任（我相信）。健康的教育方式。",
+    "psychological_state": "支持性态度，培养成长型思维",
+    "theories": ["成长型思维理论", "正面教育"]
+  },
+  {
+    "id": "ed_008", "type": "education", "subtype": "test_anxiety",
+    "text": "我一看到考试卷子就大脑空白。明明复习过的都想不起来了。",
+    "keywords": ["大脑空白", "想不起来", "复习过"],
+    "analysis": "考试焦虑：大脑空白是焦虑的生理反应。明明复习过暗示能力与表现不匹配。",
+    "psychological_state": "考试焦虑，表现焦虑",
+    "theories": ["焦虑理论", "记忆干扰理论"]
+  },
+  {
+    "id": "ed_009", "type": "education", "subtype": "grade_focus",
+    "text": "你这次考了多少分？班里最高分是多少？",
+    "keywords": ["多少分", "最高分"],
+    "analysis": "分数导向：关注分数而非学习过程。最高分暗示要与最好比较。",
+    "psychological_state": "过度关注成绩，忽视学习本身",
+    "theories": ["成就目标理论", "教育心理学"]
+  },
+  {
+    "id": "ed_010", "type": "education", "subtype": "study_habit",
+    "text": "我每天学到凌晨两点，但成绩还是上不去。",
+    "keywords": ["凌晨两点", "成绩上不去"],
+    "analysis": "努力与回报不匹配：强调付出（凌晨两点）但结果不佳。可能学习方法有问题。",
+    "psychological_state": "感到挫败和困惑",
+    "theories": ["归因理论", "学习策略理论"]
+  },
+  {
+    "id": "ed_011", "type": "education", "subtype": "helicopter_parenting",
+    "text": "你不用管了，我来帮你选课。你选的那些课对升学没用。",
+    "keywords": ["不用管", "帮你选", "没用"],
+    "analysis": "直升机父母：剥夺孩子自主权（不用管我来帮）。没用是价值判断，将教育完全工具化。孩子丧失决策能力和自我效能感。",
+    "psychological_state": "过度控制，将孩子视为需要管理的项目",
+    "theories": ["直升机教养理论", "自主性发展理论"]
+  },
+  {
+    "id": "ed_012", "type": "education", "subtype": "grade_anxiety",
+    "text": "这次月考退步了5名，这样下去中考怎么办？你的人生就毁了！",
+    "keywords": ["退步5名", "中考怎么办", "人生毁了"],
+    "analysis": "成绩焦虑：将小幅波动（退步5名）灾难化为人生危机（人生毁了）。中考怎么办是滑坡推理。过度关注排名制造巨大心理压力。",
+    "psychological_state": "对成绩波动过度敏感，灾难化思维",
+    "theories": ["灾难化理论", "教育焦虑代际传递"]
+  },
+  {
+    "id": "ed_013", "type": "education", "subtype": "teacher_favoritism",
+    "text": "老师只喜欢成绩好的同学。我们这种中等生，问问题都不耐烦。",
+    "keywords": ["只喜欢", "成绩好", "不耐烦"],
+    "analysis": "感知到的偏爱：老师只喜欢是全称否定。中等生是自我标签化。问问题都不耐烦暗示被忽视。无论是否属实，这种感知会影响学习动力和自我价值。",
+    "psychological_state": "感到被忽视和不公平对待",
+    "theories": ["教师期望效应", "教育公平感知理论"]
+  },
+  {
+    "id": "ed_014", "type": "education", "subtype": "peer_pressure_rhetoric",
+    "text": "全班都在上那个冲刺班了，就你不上。你不怕被甩开吗？",
+    "keywords": ["全班都在", "就你不上", "甩开"],
+    "analysis": "同伴压力话术：全班都在制造从众压力。就你不上是孤立暗示。不怕被甩开是恐惧诉求。利用群体行为规范迫使个体服从。",
+    "psychological_state": "利用从众心理制造焦虑，推动消费决策",
+    "theories": ["从众理论", "教育市场化批判"]
+  },
+  {
+    "id": "ed_015", "type": "education", "subtype": "academic_cheating_rationalization",
+    "text": "大家都在抄，就你傻乎乎自己写。而且这个作业本来就没什么意义。",
+    "keywords": ["都在抄", "傻乎乎", "没什么意义"],
+    "analysis": "学术作弊合理化：大家都在是常态化解构。傻乎乎是贬低诚实行为。没什么意义是否定作业价值。通过合理化降低道德认知失调。",
+    "psychological_state": "为违规行为寻找合理借口，减轻内疚感",
+    "theories": ["道德脱离理论", "认知失调理论"]
+  }
+]

@@ -27,7 +27,7 @@ async def analyze_text(text: str, depth: str = "standard") -> dict:
 
     # 协调器规划
     orchestrator = Orchestrator()
-    plan = orchestrator.plan_analysis(
+    plan = await orchestrator.plan_analysis(
         text, AnalysisDepth(depth) if depth else None
     )
 

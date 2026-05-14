@@ -1,0 +1,82 @@
+[
+  {
+    "id": "pl_001", "type": "political", "subtype": "euphemism",
+    "text": "我们需要进行人员优化，以提升组织效率。",
+    "keywords": ["人员优化", "提升效率"],
+    "analysis": "政治委婉语：人员优化是裁员的委婉说法。通过正面词汇（优化、提升）掩盖负面行动（裁员）。",
+    "psychological_state": "用语言美化政策以减少反对",
+    "theories": ["批判话语分析", "框架理论"]
+  },
+  {
+    "id": "pl_002", "type": "political", "subtype": "populism",
+    "text": "精英们不懂我们普通人的苦。我们要为普通人发声！",
+    "keywords": ["精英", "普通人", "发声"],
+    "analysis": "民粹主义话语：建立精英vs普通人的对立。通过声称代表普通人来获得支持。",
+    "psychological_state": "利用群体对立获得政治支持",
+    "theories": ["批判话语分析", "社会认同理论"]
+  },
+  {
+    "id": "pl_003", "type": "political", "subtype": "deflection",
+    "text": "这个问题要从多个角度来看，不能简单地下结论。",
+    "keywords": ["多个角度", "不能简单", "下结论"],
+    "analysis": "回避策略：用多角度分析回避直接回答。不能简单下结论暗示问题复杂到无法回答。",
+    "psychological_state": "避免表态以减少政治风险",
+    "theories": ["政治话语分析", "模糊语理论"]
+  },
+  {
+    "id": "pl_004", "type": "political", "subtype": "nationalism",
+    "text": "我们中华民族有五千年的文明，任何困难都打不倒我们。",
+    "keywords": ["中华民族", "五千年", "打不倒"],
+    "analysis": "民族主义话语：通过历史自豪感（五千年）和集体认同（我们）来激励团结。",
+    "psychological_state": "利用民族认同增强凝聚力",
+    "theories": ["社会认同理论", "民族主义研究"]
+  },
+  {
+    "id": "pl_005", "type": "political", "subtype": "scapegoating",
+    "text": "经济不景气都是因为外部势力的打压，我们必须团结起来。",
+    "keywords": ["外部势力", "打压", "团结"],
+    "analysis": "替罪羊策略：将内部问题归因于外部因素。通过制造外部敌人来团结内部。",
+    "psychological_state": "转移责任，利用外部威胁感",
+    "theories": ["替罪羊理论", "群体动力学"]
+  },
+  {
+    "id": "pl_006", "type": "political", "subtype": "dog_whistle",
+    "text": "我们要保护传统家庭价值观。",
+    "keywords": ["传统", "家庭价值观"],
+    "analysis": "暗号话语：表面是保护传统，实际向特定群体传递政治信号。家庭价值观是保守派的暗号。",
+    "psychological_state": "向特定群体传递信息而不引起其他群体注意",
+    "theories": ["暗号话语理论", "政治传播学"]
+  },
+  {
+    "id": "pl_007", "type": "political", "subtype": "straw_man",
+    "text": "他们想完全取消市场经济，回到计划经济时代。",
+    "keywords": ["完全取消", "计划经济"],
+    "analysis": "稻草人谬误：歪曲对方立场（完全取消市场经济）来使其显得荒谬。",
+    "psychological_state": "通过歪曲对手立场来攻击",
+    "theories": ["稻草人谬误", "政治修辞"]
+  },
+  {
+    "id": "pl_008", "type": "political", "subtype": "appeal_to_tradition",
+    "text": "自古以来就是这样做的，我们没有理由改变。",
+    "keywords": ["自古以来", "没有理由", "改变"],
+    "analysis": "诉诸传统：用历史悠久（自古以来）作为合理性的依据。拒绝改变。",
+    "psychological_state": "用传统权威抵制变革",
+    "theories": ["诉诸传统谬误", "保守主义"]
+  },
+  {
+    "id": "pl_009", "type": "political", "subtype": "false_dilemma",
+    "text": "你要么支持我们，要么就是反对我们。",
+    "keywords": ["要么支持", "要么反对"],
+    "analysis": "虚假二分法：将复杂的选择简化为非此即彼。忽略了中间立场。",
+    "psychological_state": "迫使对方选择立场",
+    "theories": ["虚假二分法谬误", "政治话语"]
+  },
+  {
+    "id": "pl_010", "type": "political", "subtype": "loaded_language",
+    "text": "这些所谓的专家只会纸上谈兵，根本不了解实际情况。",
+    "keywords": ["所谓的", "纸上谈兵", "根本不了解"],
+    "analysis": "负载语言：所谓的暗示不配称为专家。纸上谈兵贬低理论价值。根本不了解否定其能力。",
+    "psychological_state": "通过贬低对手来提升自己立场",
+    "theories": ["批判话语分析", "修辞学"]
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "fm_001", "type": "family", "subtype": "parental_guilt",
+    "text": "我这么辛苦都是为了你，你怎么这么不听话？",
+    "keywords": ["辛苦", "为了你", "不听话"],
+    "analysis": "父母内疚诱导：通过强调牺牲（辛苦为了你）来控制子女行为。不听话是将不服从等同于不孝。",
+    "psychological_state": "感到付出未被认可，用内疚控制子女",
+    "theories": ["情感操控理论", "亲子关系理论"]
+  },
+  {
+    "id": "fm_002", "type": "family", "subtype": "sibling_comparison",
+    "text": "你看你姐姐，多懂事。你什么时候能像她一样？",
+    "keywords": ["你看", "多懂事", "像她一样"],
+    "analysis": "同胞比较：通过引入比较对象（姐姐）来贬低当前子女。多懂事是理想化他人。",
+    "psychological_state": "希望子女进步但用了伤害性方式",
+    "theories": ["社会比较理论", "同胞竞争理论"]
+  },
+  {
+    "id": "fm_003", "type": "family", "subtype": "marital_conflict",
+    "text": "你从来都不关心我。你心里只有你自己。",
+    "keywords": ["从来不", "不关心", "只有你自己"],
+    "analysis": "婚姻冲突话语：从来都是绝对化否定。不关心和只有你自己是全面否定对方的付出。",
+    "psychological_state": "感到被忽视，用绝对化语言表达不满",
+    "theories": ["认知扭曲理论", "婚姻沟通理论"]
+  },
+  {
+    "id": "fm_004", "type": "family", "subtype": "in_law_conflict",
+    "text": "你妈说的就对，我说的就不对是吧？",
+    "keywords": ["你妈说的", "我说的", "不对"],
+    "analysis": "婆媳矛盾表达：通过对比建立对立。是吧是反问，暗示对方偏袒。",
+    "psychological_state": "感到被排挤或不被重视",
+    "theories": ["权力与话语", "家庭系统理论"]
+  },
+  {
+    "id": "fm_005", "type": "family", "subtype": "empty_nest",
+    "text": "你们都走了，家里就剩我一个人了。没事，你们忙你们的。",
+    "keywords": ["都走了", "一个人", "忙你们的"],
+    "analysis": "空巢表达：先表达孤独（都走了、一个人）再用没事和忙你们的压抑真实需求。",
+    "psychological_state": "感到孤独但不想成为负担",
+    "theories": ["依恋理论", "情绪压抑理论"]
+  },
+  {
+    "id": "fm_006", "type": "family", "subtype": "conditional_approval",
+    "text": "你要是考上了名牌大学，爸妈就脸上有光了。",
+    "keywords": ["要是考上", "脸上有光"],
+    "analysis": "有条件的爱：将父母的面子与子女成就绑定。暗示考不上就不够好。",
+    "psychological_state": "将自我价值与子女成就绑定",
+    "theories": ["有条件的积极关注", "面子理论"]
+  },
+  {
+    "id": "fm_007", "type": "family", "subtype": "boundary_violation",
+    "text": "我是你妈，我看你日记怎么了？小孩子有什么隐私？",
+    "keywords": ["我是你妈", "看日记", "有什么隐私"],
+    "analysis": "边界侵犯合理化：用身份权威（我是你妈）合理化侵犯行为。否定子女的隐私权。",
+    "psychological_state": "过度控制，缺乏边界意识",
+    "theories": ["边界理论", "控制理论"]
+  },
+  {
+    "id": "fm_008", "type": "family", "subtype": "parentification",
+    "text": "你是家里的老大，要照顾弟弟妹妹。爸妈指望你了。",
+    "keywords": ["老大", "照顾", "指望你"],
+    "analysis": "角色倒置：将成人责任推给儿童。指望你是将子女工具化。",
+    "psychological_state": "可能出于无奈但对子女不公平",
+    "theories": ["角色倒置理论", "家庭系统理论"]
+  },
+  {
+    "id": "fm_009", "type": "family", "subtype": "overprotection",
+    "text": "外面太危险了，你还是待在家里吧。我这是为你好。",
+    "keywords": ["太危险", "待在家里", "为你好"],
+    "analysis": "过度保护：夸大外部危险（太危险）限制自主性（待在家里）。为你好是合理化控制。",
+    "psychological_state": "焦虑型依恋，过度担心子女安全",
+    "theories": ["依恋理论", "过度保护理论"]
+  },
+  {
+    "id": "fm_010", "type": "family", "subtype": "emotional_parentification",
+    "text": "你爸又喝醉了。你去劝劝他，他听你的。",
+    "keywords": ["喝醉了", "你去劝", "听你的"],
+    "analysis": "情感角色倒置：让子女承担调解父母关系的责任。他听你是将子女放在成人位置。",
+    "psychological_state": "家庭功能失调，子女被迫承担成人角色",
+    "theories": ["家庭系统理论", "角色倒置理论"]
+  },
+  {
+    "id": "fm_011", "type": "family", "subtype": "in_law_boundary",
+    "text": "这是我的家，我想什么时候来就什么时候来。你们结婚了我也是你妈。",
+    "keywords": ["我的家", "想来就来", "也是你妈"],
+    "analysis": "婆媳边界侵犯：我的家是领地宣示。想来就来否定小家庭的独立空间。也是你妈用血缘权威压制配偶关系。核心冲突在于原生家庭与新生家庭的边界。",
+    "psychological_state": "难以接受子女独立，用权威维持控制",
+    "theories": ["家庭系统理论", "边界理论"]
+  },
+  {
+    "id": "fm_012", "type": "family", "subtype": "sibling_rivalry",
+    "text": "你哥每个月给家里寄五千块，你呢？就知道向家里要钱。",
+    "keywords": ["你哥", "五千块", "要钱"],
+    "analysis": "同胞竞争激化：引入兄弟的贡献（五千块）进行比较。就知道要钱是全盘否定。公开比较制造兄弟间的敌意和自卑感。",
+    "psychological_state": "用比较激励但制造同胞间的对立",
+    "theories": ["同胞竞争理论", "社会比较理论"]
+  },
+  {
+    "id": "fm_013", "type": "family", "subtype": "inheritance_conflict",
+    "text": "爸妈的房子就该归我，我照顾他们最多。你们平时都不回来。",
+    "keywords": ["就该归我", "照顾最多", "不回来"],
+    "analysis": "遗产冲突话语：就该归我是权利宣示。照顾最多是道德筹码。不回来是贬低他人贡献。将赡养义务工具化为遗产谈判的筹码。",
+    "psychological_state": "将亲情付出与物质回报挂钩",
+    "theories": ["公平理论", "家庭资源分配理论"]
+  },
+  {
+    "id": "fm_014", "type": "family", "subtype": "holiday_guilt",
+    "text": "过年都不回来，邻居问起来我怎么说？你让我的脸往哪搁？",
+    "keywords": ["不回来", "邻居问", "脸往哪搁"],
+    "analysis": "节日内疚施压：不回来是行为指责。邻居问起来引入社会评价。脸往哪搁将子女回家与父母面子绑定。用社会压力迫使子女服从。",
+    "psychological_state": "将子女行为与自身社会面子绑定",
+    "theories": ["面子理论", "内疚诱导心理学"]
+  },
+  {
+    "id": "fm_015", "type": "family", "subtype": "role_reversal",
+    "text": "你爸最近身体不好，你多管管他。我现在也顾不过来了，全靠你了。",
+    "keywords": ["你管管", "顾不过来", "全靠你"],
+    "analysis": "角色反转：将照顾配偶的责任转移给子女。顾不过来是自我卸责。全靠你是将子女推入成人角色。健康的家庭中，父母应照顾子女而非反之。",
+    "psychological_state": "家庭功能失调，子女被迫承担照护者角色",
+    "theories": ["角色倒置理论", "照护者负担理论"]
+  }
+]

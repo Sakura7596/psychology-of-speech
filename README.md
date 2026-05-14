@@ -4,35 +4,58 @@
 
 ## 快速开始
 
-1. 安装依赖：
-   ```bash
-   pip install -r requirements.txt
-   ```
+### 1. 克隆项目
 
-2. 配置 API Key：
-   ```bash
-   cp .env.example .env
-   # 编辑 .env 文件，填入 DEEPSEEK_API_KEY
-   ```
+```bash
+git clone https://github.com/你的用户名/psychology-of-speech.git
+cd psychology-of-speech
+```
 
-3. 运行分析：
-   ```bash
-   # CLI 模式
-   python -m src.main "要分析的文本"
-   python -m src.main "要分析的文本" deep    # 深度分析
-   python -m src.main "要分析的文本" quick   # 快速分析
+### 2. 安装后端依赖
 
-   # Web 服务模式（后端 API）
-   python -m src.main serve                   # 启动 http://localhost:8000
+```bash
+pip install -r requirements.txt
+```
 
-   # 前端界面（需要同时启动后端）
-   cd frontend && npm install && npm run dev  # 启动 http://localhost:5173
-   ```
+### 3. 配置 API Key
 
-4. 运行测试：
-   ```bash
-   DEEPSEEK_API_KEY=test-key python -m pytest tests/ -v
-   ```
+```bash
+cp .env.example .env
+```
+
+编辑 `.env` 文件，填入你的 [DeepSeek API Key](https://platform.deepseek.com/api_keys)：
+
+```
+DEEPSEEK_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+### 4. 运行分析
+
+```bash
+# CLI 模式
+python -m src.main "要分析的文本"
+python -m src.main "要分析的文本" deep    # 深度分析
+python -m src.main "要分析的文本" quick   # 快速分析
+
+# Web 服务模式（后端 API）
+python -m src.main serve                   # 启动 http://localhost:8000
+```
+
+### 5. 启动前端界面（可选）
+
+需要同时运行后端服务：
+
+```bash
+cd frontend
+npm install
+npm run dev    # 启动 http://localhost:5173
+```
+
+### 6. 运行测试
+
+```bash
+DEEPSEEK_API_KEY=test-key python -m pytest tests/ -v
+```
 
 ## 项目结构
 
@@ -92,6 +115,9 @@ src/
 |------|------|------|
 | `/health` | GET | 健康检查 |
 | `/analyze` | POST | 文本分析（body: `{text, depth?, output_format?}`） |
+| `/analyze/stream` | POST | SSE 流式分析（实时返回 Agent 进度和报告内容） |
+| `/scrape` | POST | 触发知识库爬取（body: `{query, sources?, max_items_per_source?}`） |
+| `/scrape/sources` | GET | 列出可用爬取源 |
 
 ## 前端界面
 
@@ -108,11 +134,12 @@ npm run build        # 生产构建
 
 ## 项目统计
 
-- 109 个测试全部通过
+- 144 个测试全部通过
 - 6 个阶段全部完成 + 前端界面
 - 5 个 Agent（协调器、文本解析、心理分析、逻辑推理、报告生成）
 - 3 层 Guardrails（幻觉防御、伦理守则、隐私保护）
 - RAG 知识引擎（向量库 + 知识图谱 + 案例库）
+- 40+ 案例库文件（涵盖职场、情感、家庭、社交等场景）
 
 ## 技术栈
 

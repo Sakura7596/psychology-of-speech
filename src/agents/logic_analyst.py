@@ -12,15 +12,17 @@ from src.knowledge.case_library import CaseLibrary
 class LogicAnalystAgent(BaseAgent):
     """逻辑推理 Agent - 论证分析与谬误检测"""
 
-    def __init__(self):
-        settings = get_settings()
-        adapter = DeepSeekAdapter(
-            api_key=settings.deepseek_api_key,
-            base_url=settings.deepseek_base_url,
-            model=settings.llm_model,
-            temperature=settings.llm_temperature,
-        )
-        self._llm = LLMClient(adapter=adapter)
+    def __init__(self, llm_client: LLMClient | None = None):
+        if llm_client is None:
+            settings = get_settings()
+            adapter = DeepSeekAdapter(
+                api_key=settings.deepseek_api_key,
+                base_url=settings.deepseek_base_url,
+                model=settings.llm_model,
+                temperature=settings.llm_temperature,
+            )
+            llm_client = LLMClient(adapter=adapter)
+        self._llm = llm_client
         self._retriever = KnowledgeRetriever(
             case_library=CaseLibrary("data/cases"),
         )

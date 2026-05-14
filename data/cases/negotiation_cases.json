@@ -1,0 +1,82 @@
+[
+  {
+    "id": "ng_001", "type": "negotiation", "subtype": "anchoring",
+    "text": "这个东西我最多出500块。你考虑一下。",
+    "keywords": ["最多", "500块", "考虑一下"],
+    "analysis": "锚定策略：先给出低价锚点（500块）建立谈判起点。考虑一下是给对方施压。",
+    "psychological_state": "试图控制谈判起点",
+    "theories": ["锚定效应", "谈判理论"]
+  },
+  {
+    "id": "ng_002", "type": "negotiation", "subtype": "bogey",
+    "text": "这个功能对我们来说不太重要，可以去掉。价格能降多少？",
+    "keywords": ["不太重要", "可以去掉", "降多少"],
+    "analysis": "假装不在意策略：假装某个功能不重要以换取价格优惠。实际可能很需要。",
+    "psychological_state": "通过伪装偏好获取利益",
+    "theories": ["谈判策略", "信息不对称理论"]
+  },
+  {
+    "id": "ng_003", "type": "negotiation", "subtype": "deadline_pressure",
+    "text": "今天是最后一天了。明天就恢复原价。",
+    "keywords": ["最后一天", "恢复原价"],
+    "analysis": "最后期限策略：创造时间压力。恢复原价暗示不行动会有损失。",
+    "psychological_state": "利用紧迫感迫使快速决策",
+    "theories": ["稀缺性原理", "损失厌恶"]
+  },
+  {
+    "id": "ng_004", "type": "negotiation", "subtype": "split_difference",
+    "text": "你要1000，我出500。不如我们各让一步，750成交？",
+    "keywords": ["各让一步", "750", "成交"],
+    "analysis": "折中策略：通过取中间值制造公平感。750实际是自己想要的价格。",
+    "psychological_state": "利用公平心理达成目标价格",
+    "theories": ["公平理论", "谈判策略"]
+  },
+  {
+    "id": "ng_005", "type": "negotiation", "subtype": "nibble",
+    "text": "价格没问题。对了，能顺便帮我安装一下吗？",
+    "keywords": ["没问题", "顺便", "安装"],
+    "analysis": "蚕食策略：在大交易达成后提出小要求。顺便降低对方拒绝的心理门槛。",
+    "psychological_state": "利用已建立的承诺追加利益",
+    "theories": ["承诺一致性原理", "谈判策略"]
+  },
+  {
+    "id": "ng_006", "type": "negotiation", "subtype": "good_cop_bad_cop",
+    "text": "我个人很想帮你，但我的合伙人不同意这个价格。",
+    "keywords": ["我想帮你", "合伙人不同意"],
+    "analysis": "红白脸策略：自己扮演好人（想帮你），将阻力归于不在场的第三方（合伙人）。",
+    "psychological_state": "通过第三方借口保持谈判空间",
+    "theories": ["红白脸策略", "谈判理论"]
+  },
+  {
+    "id": "ng_007", "type": "negotiation", "subtype": "walk_away",
+    "text": "这个价格我接受不了。算了，我去别家看看。",
+    "keywords": ["接受不了", "算了", "别家"],
+    "analysis": "离开策略：表示准备离开以施加压力。暗示有替代选择。",
+    "psychological_state": "通过威胁离开获取更好的条件",
+    "theories": ["最佳替代方案理论", "谈判策略"]
+  },
+  {
+    "id": "ng_008", "type": "negotiation", "subtype": "flinching",
+    "text": "什么？这个价格太离谱了吧！",
+    "keywords": ["什么", "太离谱"],
+    "analysis": "退缩策略：对价格表现出震惊。太离谱暗示对方报价不合理。",
+    "psychological_state": "通过情绪反应施加压力",
+    "theories": ["谈判心理", "情绪操控"]
+  },
+  {
+    "id": "ng_009", "type": "negotiation", "subtype": "logrolling",
+    "text": "价格我可以接受，但交货时间必须提前一周。",
+    "keywords": ["可以接受", "但", "必须"],
+    "analysis": "利益交换：在一个议题上让步以在另一个议题上获得优势。但转折是关键。",
+    "psychological_state": "通过跨议题交易最大化利益",
+    "theories": ["利益交换理论", "谈判策略"]
+  },
+  {
+    "id": "ng_010", "type": "negotiation", "subtype": "conditional_offer",
+    "text": "如果你能一次买三件，我给你打八折。",
+    "keywords": ["如果", "三件", "八折"],
+    "analysis": "有条件报价：通过增加数量换取折扣。如果建立条件关系。",
+    "psychological_state": "通过批量购买增加总收益",
+    "theories": ["有条件谈判", "数量折扣策略"]
+  }
+]

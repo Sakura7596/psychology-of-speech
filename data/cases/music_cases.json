@@ -1,0 +1,82 @@
+[
+  {
+    "id": "mu_001", "type": "music", "subtype": "identity_expression",
+    "text": "我只听独立音乐。流行音乐太肤浅了。",
+    "keywords": ["只听独立", "太肤浅"],
+    "analysis": "音乐身份：通过音乐偏好建立身份认同。太肤浅是贬低他者。",
+    "psychological_state": "用音乐品味区分自我与大众",
+    "theories": ["社会认同理论", "亚文化理论"]
+  },
+  {
+    "id": "mu_002", "type": "music", "subtype": "nostalgia",
+    "text": "这首歌让我想起高中时候。那时候多无忧无虑啊。",
+    "keywords": ["想起高中", "无忧无虑"],
+    "analysis": "音乐怀旧：歌曲触发记忆。无忧无虑是对过去的美化。",
+    "psychological_state": "通过音乐怀念过去",
+    "theories": ["怀旧理论", "音乐记忆"]
+  },
+  {
+    "id": "mu_003", "type": "music", "subtype": "emotional_regulation",
+    "text": "心情不好的时候就听悲伤的歌。听完反而好点了。",
+    "keywords": ["心情不好", "悲伤的歌", "好点了"],
+    "analysis": "情绪调节：用悲伤音乐处理负面情绪。听完好点了是情绪宣泄。",
+    "psychological_state": "用音乐作为情绪调节工具",
+    "theories": ["情绪调节理论", "音乐治疗"]
+  },
+  {
+    "id": "mu_004", "type": "music", "subtype": "gatekeeping",
+    "text": "你连这个乐队都不知道？你算什么乐迷？",
+    "keywords": ["连都不知道", "算什么"],
+    "analysis": "音乐守门：通过质疑他人知识来建立优越感。算什么是否定身份。",
+    "psychological_state": "通过音乐知识建立群体边界",
+    "theories": ["守门理论", "亚文化理论"]
+  },
+  {
+    "id": "mu_005", "type": "music", "subtype": "guilty_pleasure",
+    "text": "我知道这首歌很俗。但我就是喜欢听。",
+    "keywords": ["很俗", "就是喜欢"],
+    "analysis": "罪恶快感：承认音乐品味的社会评价（很俗）但坚持个人喜好（就是喜欢）。",
+    "psychological_state": "在社会标准和个人喜好之间挣扎",
+    "theories": ["罪恶快感理论", "认知失调"]
+  },
+  {
+    "id": "mu_006", "type": "music", "subtype": "social_bonding",
+    "text": "我们都喜欢同一个乐队。所以我们成了好朋友。",
+    "keywords": ["都喜欢", "好朋友"],
+    "analysis": "音乐社交：共同音乐爱好建立社交联系。音乐是社交货币。",
+    "psychological_state": "通过音乐建立社交联结",
+    "theories": ["社会认同理论", "社交心理学"]
+  },
+  {
+    "id": "mu_007", "type": "music", "subtype": "generation_gap",
+    "text": "你们年轻人听的什么歌？乱七八糟的。",
+    "keywords": ["年轻人", "乱七八糟"],
+    "analysis": "代际差异：用乱七八糟贬低年轻一代的音乐品味。是代际冲突的表现。",
+    "psychological_state": "对新一代文化感到不适",
+    "theories": ["代际理论", "文化冲突"]
+  },
+  {
+    "id": "mu_008", "type": "music", "subtype": "concert_experience",
+    "text": "现场演唱会太震撼了。比听录音强一万倍。",
+    "keywords": ["现场", "震撼", "一万倍"],
+    "analysis": "现场体验：现场演唱会的独特价值。一万倍是夸张表达。",
+    "psychological_state": "追求独特的体验和情感高峰",
+    "theories": ["体验经济", "高峰体验理论"]
+  },
+  {
+    "id": "mu_009", "type": "music", "subtype": "lyrics_interpretation",
+    "text": "这首歌的歌词写的就是我的故事。完全就是我的心声。",
+    "keywords": ["我的故事", "心声"],
+    "analysis": "歌词投射：将自己的经历投射到歌词中。完全就是暗示完美契合。",
+    "psychological_state": "通过音乐寻找共鸣和理解",
+    "theories": ["投射理论", "音乐心理学"]
+  },
+  {
+    "id": "mu_010", "type": "music", "subtype": "background_noise",
+    "text": "工作的时候一定要听音乐。不然效率很低。",
+    "keywords": ["一定要听", "效率很低"],
+    "analysis": "音乐依赖：将音乐与工作效率绑定。不然是灾难化思维。",
+    "psychological_state": "将音乐作为工作必需品",
+    "theories": ["注意力理论", "环境心理学"]
+  }
+]

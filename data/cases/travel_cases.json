@@ -1,0 +1,82 @@
+[
+  {
+    "id": "tr_001", "type": "travel", "subtype": "vacation_stress",
+    "text": "这次旅行一定要玩得开心。不能有任何不愉快。",
+    "keywords": ["一定", "不能有", "不愉快"],
+    "analysis": "度假压力：对旅行有过高期望（一定开心）。不能有不愉快是完美主义。",
+    "psychological_state": "将旅行视为必须完美的体验",
+    "theories": ["期望管理", "完美主义理论"]
+  },
+  {
+    "id": "tr_002", "type": "travel", "subtype": "cultural_shock",
+    "text": "这个地方的人怎么这样？一点都不文明。",
+    "keywords": ["怎么这样", "不文明"],
+    "analysis": "文化冲击：用自己的标准评判他者文化。不文明是文化优越感。",
+    "psychological_state": "缺乏文化相对主义视角",
+    "theories": ["文化冲击理论", "民族中心主义"]
+  },
+  {
+    "id": "tr_003", "type": "travel", "subtype": "tourist_trap",
+    "text": "这个纪念品好便宜啊！肯定跟外面卖的不一样。",
+    "keywords": ["好便宜", "不一样"],
+    "analysis": "旅游陷阱：好便宜是价格诱导。不一样是独特性暗示。",
+    "psychological_state": "旅游情境下的非理性消费",
+    "theories": ["消费心理学", "旅游行为"]
+  },
+  {
+    "id": "tr_004", "type": "travel", "subtype": "social_media_travel",
+    "text": "这个地方拍照好好看。先拍照再体验。",
+    "keywords": ["拍照好看", "先拍照"],
+    "analysis": "社交媒体旅行：拍照优先于体验。为社交媒体而非自己旅行。",
+    "psychological_state": "体验被展示取代",
+    "theories": ["社交媒体心理学", "体验经济"]
+  },
+  {
+    "id": "tr_005", "type": "travel", "subtype": "travel_anxiety",
+    "text": "出门前总担心忘带东西。检查了三遍还是不放心。",
+    "keywords": ["忘带", "检查三遍", "不放心"],
+    "analysis": "旅行焦虑：反复检查是焦虑行为。不放心是预期焦虑。",
+    "psychological_state": "旅行前的焦虑和过度准备",
+    "theories": ["焦虑理论", "强迫行为"]
+  },
+  {
+    "id": "tr_006", "type": "travel", "subtype": "fomo",
+    "text": "朋友们都去了日本。我也得去。不然就落伍了。",
+    "keywords": ["都去了", "也得去", "落伍"],
+    "analysis": "错失恐惧：都去了是从众压力。也得去是被动需求。落伍是社会焦虑。",
+    "psychological_state": "害怕被排斥或落后于他人",
+    "theories": ["FOMO理论", "社会比较理论"]
+  },
+  {
+    "id": "tr_007", "type": "travel", "subtype": "nostalgia",
+    "text": "十年前来这里的时候，这里还没有这么商业化。",
+    "keywords": ["十年前", "商业化"],
+    "analysis": "怀旧情感：通过对比过去和现在表达失落感。商业化是负面标签。",
+    "psychological_state": "对变化感到失落",
+    "theories": ["怀旧理论", "变化心理学"]
+  },
+  {
+    "id": "tr_008", "type": "travel", "subtype": "budget_conflict",
+    "text": "难得出来玩一次，贵点就贵点吧。",
+    "keywords": ["难得", "贵点就贵点"],
+    "analysis": "预算弹性：难得是合理化借口。贵点就贵点是降低价格敏感度。",
+    "psychological_state": "旅游情境下的非理性消费",
+    "theories": ["心理账户理论", "消费心理学"]
+  },
+  {
+    "id": "tr_009", "type": "travel", "subtype": "travel_comparison",
+    "text": "你去了马尔代夫？那有什么。我去年去了南极。",
+    "keywords": ["马尔代夫", "南极", "那有什么"],
+    "analysis": "旅行攀比：通过比较目的地价值来建立优越感。那有什么是否定对方体验。",
+    "psychological_state": "通过旅行经历展示社会地位",
+    "theories": ["社会比较理论", "炫耀性消费"]
+  },
+  {
+    "id": "tr_010", "type": "travel", "subtype": "post_vacation_blues",
+    "text": "旅行结束了，又要回到无聊的日常生活了。",
+    "keywords": ["结束", "无聊", "日常生活"],
+    "analysis": "假期后忧郁：旅行结束带来的失落感。日常生活被标签化为无聊。",
+    "psychological_state": "从高峰体验回到日常的落差感",
+    "theories": ["峰终定律", "适应性理论"]
+  }
+]

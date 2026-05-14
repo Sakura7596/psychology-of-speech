@@ -1,0 +1,82 @@
+[
+  {
+    "id": "wt_001", "type": "weather", "subtype": "mood_link",
+    "text": "今天下雨了。心情也跟着变差了。",
+    "keywords": ["下雨", "心情变差"],
+    "analysis": "天气与情绪：将天气与情绪直接关联。下雨=坏心情是条件反射。",
+    "psychological_state": "情绪受外部环境影响",
+    "theories": ["环境心理学", "情绪传染"]
+  },
+  {
+    "id": "wt_002", "type": "weather", "subtype": "small_talk",
+    "text": "今天天气真好啊。适合出去走走。",
+    "keywords": ["天气真好", "出去走走"],
+    "analysis": "天气寒暄：天气是安全话题。出去走走是建议。",
+    "psychological_state": "用天气开启社交互动",
+    "theories": ["寒暄理论", "社交礼仪"]
+  },
+  {
+    "id": "wt_003", "type": "weather", "subtype": "complaint",
+    "text": "热死了！这种天气怎么出门？",
+    "keywords": ["热死了", "怎么出门"],
+    "analysis": "天气抱怨：热死了是夸张表达。怎么出门是合理化不出门。",
+    "psychological_state": "用天气作为回避行为的借口",
+    "theories": ["回避策略", "合理化理论"]
+  },
+  {
+    "id": "wt_004", "type": "weather", "subtype": "nostalgia",
+    "text": "小时候冬天经常下大雪。现在很少见了。",
+    "keywords": ["小时候", "大雪", "很少见"],
+    "analysis": "天气怀旧：通过天气变化怀旧。过去的大雪代表失去的纯真时光。",
+    "psychological_state": "对变化感到失落",
+    "theories": ["怀旧理论", "环境变化心理学"]
+  },
+  {
+    "id": "wt_005", "type": "weather", "subtype": "superstition",
+    "text": "出门下雨了，今天肯定不顺利。",
+    "keywords": ["下雨", "不顺利"],
+    "analysis": "天气迷信：将天气与运势关联。下雨=不顺利是迷信思维。",
+    "psychological_state": "寻找模式和意义，即使不存在",
+    "theories": ["迷信思维", "模式识别"]
+  },
+  {
+    "id": "wt_006", "type": "weather", "subtype": "seasonal_affective",
+    "text": "一到冬天就特别抑郁。可能是季节性情绪障碍。",
+    "keywords": ["冬天", "抑郁", "季节性"],
+    "analysis": "季节性情绪：冬天与抑郁关联。季节性情绪障碍是自我诊断。",
+    "psychological_state": "季节性情绪波动",
+    "theories": ["季节性情绪障碍", "环境心理学"]
+  },
+  {
+    "id": "wt_007", "type": "weather", "subtype": "metaphorical",
+    "text": "我的心情就像今天的天气一样阴沉。",
+    "keywords": ["心情", "天气", "阴沉"],
+    "analysis": "天气隐喻：用天气比喻心情。阴沉是消极情感的投射。",
+    "psychological_state": "用外部天气表达内在情感",
+    "theories": ["隐喻理论", "情感表达"]
+  },
+  {
+    "id": "wt_008", "type": "weather", "subtype": "procrastination",
+    "text": "太冷了，明天再去跑步吧。",
+    "keywords": ["太冷", "明天再去"],
+    "analysis": "天气拖延：用天气作为不行动的借口。明天再去是典型拖延。",
+    "psychological_state": "用外部条件合理化不行动",
+    "theories": ["拖延理论", "合理化"]
+  },
+  {
+    "id": "wt_009", "type": "weather", "subtype": "climate_anxiety",
+    "text": "今年夏天特别热。地球真的在变暖。好担心未来。",
+    "keywords": ["特别热", "变暖", "担心"],
+    "analysis": "气候焦虑：将天气现象与气候变化关联。担心未来是存在焦虑。",
+    "psychological_state": "对环境变化感到焦虑",
+    "theories": ["气候焦虑理论", "生态心理学"]
+  },
+  {
+    "id": "wt_010", "type": "weather", "subtype": "ice_breaker",
+    "text": "今天好冷啊。你穿够了吗？",
+    "keywords": ["好冷", "穿够了吗"],
+    "analysis": "天气破冰：用天气作为社交开场。穿够了吗表达关心。",
+    "psychological_state": "通过天气话题建立社交联系",
+    "theories": ["寒暄理论", "社交礼仪"]
+  }
+]
